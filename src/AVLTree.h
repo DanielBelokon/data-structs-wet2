@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cmath>
+#include "Exceptions.h"
 #include "TreeNode.h"
 
 template <typename T>
@@ -19,7 +20,7 @@ public:
     {
     }
 
-    void insert(T data);
+    void insert(T data, int rank = 0);
     void remove(T data);
     void merge(AVLTree<T> *tree);
 
@@ -29,6 +30,7 @@ public:
     T find(T object);
     T *getInOrderArray(int amount = 0);
     T getHighest();
+    int getHighestMRankSum(int m);
 
     ~AVLTree();
 
@@ -42,7 +44,7 @@ private:
         return node1 < node2;
     }
 
-    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent);
+    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent, int rank = 0);
     void removeAux(T toDelete, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
@@ -80,24 +82,24 @@ T AVLTree<T>::getHighest()
 }
 
 template <typename T>
-void AVLTree<T>::insert(T data)
+void AVLTree<T>::insert(T data, int rank)
 {
     if (root == nullptr)
     {
-        root = new Node<T>(data);
+        root = new Node<T>(data, rank);
         size++;
         return;
     }
     Node<T> *current = root;
-    insertAux(data, current, nullptr);
+    insertAux(data, current, nullptr, rank);
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent)
+Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int rank)
 {
     if (current == nullptr)
     {
-        current = new Node<T>(data);
+        current = new Node<T>(data, rank);
         size++;
         return current;
     }
@@ -309,6 +311,8 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
+    if (find(object) == nullptr)
+        return;
     removeAux(object, root, nullptr);
     size--;
 }
@@ -448,6 +452,38 @@ Node<T> *AVLTree<T>::buildEmptyTree(int h)
     head->setLeft(buildEmptyTree(h - 1));
     head->setRight(buildEmptyTree(h - 1));
     return head;
+}
+
+// find the node that have m bigger node than the current node
+template <typename T>
+int AVLTree<T>::getHighestMRankSum(int m)
+{
+    int cur_bigger_rank = 0;
+    int cur_bigger_size = 0;
+
+    int cur_node = this->root;
+
+    while (cur_node != nullptr)
+    {
+        if (cur_bigger_size + cur_node->getRightSize() > m)
+        {
+            cur_node = cur_node->getRight();
+            continue;
+        }
+        else if (cur_bigger_size + cur_node->getRightSize() < m)
+        {
+            cur_bigger_rank += cur_node->getRightRank();
+            cur_bigger_size += cur_node->getRightSize();
+            cur_node = cur_node->getLeft();
+        }
+        else if (cur_bigger_size + cur_node->getRightSize() == m)
+        {
+            cur_bigger_rank += cur_node->getRightRank();
+            return cur_bigger_rank;
+        }
+    }
+
+    return cur_bigger_rank;
 }
 
 template <typename T>
