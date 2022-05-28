@@ -1,7 +1,7 @@
 #ifndef DYNAMICARRAY_H
 #define DYNAMICARRAY_H
 
-#define DEFAULT_CAPACITY 30
+#define DEFAULT_CAPACITY 8
 
 template <class T>
 class DynamicArray
@@ -11,7 +11,6 @@ private:
     int cur_size;
     int capacity;
     T *array;
-    int *(customHash)(int);
 
 public:
     DynamicArray(int capacity = DEFAULT_CAPACITY, int *customHash(int) = void);
@@ -66,7 +65,7 @@ void DynamicArray<T>::resize()
     T *new_array = new T[capacity];
     for (int i = 0; i < size; i++)
     {
-        new_array[customHash(i)] = array[i];
+        new_array[i] = array[i];
     }
     delete[] array;
     array = new_array;
