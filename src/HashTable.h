@@ -46,8 +46,8 @@ public:
     int hash(int id);
     ~HashTable();
 
-    T &operator[](int id);
-    T &operator[](int id) const;
+    T operator[](int id);
+    T operator[](int id) const;
 
     void merge(HashTable<T> &other);
 
@@ -83,14 +83,21 @@ T HashTable<T>::search(int id)
     int key = hash(id);
     for (int i = 0; i < table.getCapacity(); i++)
     {
-        if (!table[key].isDeleted() && (table[key].getId() == id || table[key].getId() == -1))
+        if (!table[key].isDeleted())
         {
-            return table[key].getData();
+            if (table[key].getId() == id)
+            {
+                return (table[key].getData());
+            }
+            else if (table[key].getId() == -1)
+            {
+                return nullptr;
+            }
         }
         key = (key + 1) % table.getCapacity();
     }
 
-    return table[key].getData();
+    return nullptr;
 }
 
 template <class T>
@@ -134,6 +141,18 @@ void HashTable<T>::resize()
     }
     delete[] table;
     table = new_array;
+}
+
+template <class T>
+T HashTable<T>::operator[](int id)
+{
+    return search(id);
+}
+
+template <class T>
+T HashTable<T>::operator[](int id) const
+{
+    return search(id);
 }
 
 #endif /* HASHTABLE_H */
