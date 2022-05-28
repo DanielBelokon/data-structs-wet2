@@ -18,34 +18,38 @@ private:
     // AVLTree<Employee *> employees_tree;
     // AVLTree<Employee *> employees_tree_by_salary;
     // Employee *highest_earner;
-    UnionFind<Company> companies;
+    UnionFind<Company *> companies;
     HashTable<Employee *> employees;
     AVLTree<Employee *> employees_tree_by_salary;
+    int num_of_companies;
 
 public:
     MainDataStructure();
     void AddCompany(int companyID, int value);
-    // void RemoveCompany(int companyID, bool force = false);
     void AddEmployee(int employeeID, int companyID, int grade);
     void RemoveEmployee(int employeeID);
     bool AcquireCompany(int companyId, int aquiredCompanyId, double factor);
-
-    // int GetHighestEarner(int companyId);
-    // void setHighesEarner(Employee *emp);
-    int GetAllEmployeesBySalary(int companyId, int **employees); // returns num of employees
-    void GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners);
-    int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int minGrad, int *inRange);
-
-    void GetCompanyInfo(int companyId, int *value, int *numOfEmployees);
-    void GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade);
-    void IncreaseCompanyValue(int companyID, int valueIncrease);
-    void PromoteEmployee(int EmployeeID, int salaryIncrease, int bumpGrade);
-    void HireEmployee(int EmployeeID, int newCompanyID);
-
+    void EmployeeSalaryIncrease(int employeeID, int salaryIncrease);
+    int SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int m);
+    void AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary, void *averageBumpGrade);
+    void PromoteEmployee(int EmployeeID, int bumpGrade);
+    void companyValue(int compnayID, void *standing);
+    void BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade);
     ~MainDataStructure();
 
+    // void RemoveCompany(int companyID, bool force = false);
+    // void HireEmployee(int EmployeeID, int newCompanyID);
+    // int GetHighestEarner(int companyId);
+    // void setHighesEarner(Employee *emp);
+    // int GetAllEmployeesBySalary(int companyId, int **employees); // returns num of employees
+    // void GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners);
+    // int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int minGrad, int *inRange);
+
+    // void GetCompanyInfo(int companyId, int *value, int *numOfEmployees);
+    // void GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade);
+    // void IncreaseCompanyValue(int companyID, int valueIncrease);
 private:
-    void checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
+    // void checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
     Company *findCompanyById(int id);
     Employee *findEmployeeById(int id);
 };
