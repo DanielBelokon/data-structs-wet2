@@ -49,6 +49,8 @@ public:
     T &operator[](int id);
     T &operator[](int id) const;
 
+    void merge(HashTable<T> &other);
+
 private:
     bool isDeleted(int id);
     void resize();
@@ -101,6 +103,18 @@ int HashTable<T>::hash(int id)
         key = (key + 1) % table.getCapacity();
     };
     return key;
+}
+
+template <class T>
+void HashTable<T>::merge(HashTable<T> &other)
+{
+    for (int i = 0; i < other.getCapacity(); i++)
+    {
+        if (other[i].getData() != NULL && !other[i].isDeleted())
+        {
+            insert(other[i].getId(), other[i].getData());
+        }
+    }
 }
 
 template <class T>
