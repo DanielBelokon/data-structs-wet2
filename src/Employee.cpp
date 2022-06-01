@@ -11,7 +11,7 @@ bool Employee::compareBySalary(Employee *const &temp1, Employee *const &temp2)
     else if (temp1->getSalary() > temp2->getSalary())
         return false;
     else
-        return temp1->getEmployeeID() > temp2->getEmployeeID();
+        return temp1->getEmployeeID() < temp2->getEmployeeID();
 }
 
 bool Employee::compareByPointer(Employee *const &temp1, Employee *const &temp2)
