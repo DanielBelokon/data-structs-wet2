@@ -27,6 +27,8 @@ public:
     int getSize();
     Node<T> *getRoot() { return root; }
 
+    int getRank(T data, int *place);
+
     T find(T object);
     T *getInOrderArray(int amount = 0);
     T getHighest();
@@ -49,7 +51,6 @@ private:
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
-    Node<T> *findNode(T object, Node<T> **prev = nullptr);
     void inOrderAux(T *array, int *index, Node<T> *current, int amount);
     void trim(Node<T> *current, Node<T> *parent, int *amount);
     T *mergeArrays(T *arr1, T *arr2, int size1, int size2);
@@ -57,6 +58,9 @@ private:
     Node<T> *buildEmptyTree(int h);
     void rotateLeft(Node<T> *current, Node<T> *parent);
     void rotateRight(Node<T> *current, Node<T> *parent);
+
+public:
+    Node<T> *findNode(T object, Node<T> **prev = nullptr);
 };
 
 template <typename T>
@@ -484,6 +488,33 @@ int AVLTree<T>::getHighestMRankSum(int m)
     }
 
     return cur_bigger_rank;
+}
+
+template <typename T>
+int AVLTree<T>::getRank(T object, int *place)
+{
+    Node<T> *current = root;
+    int rank = 0;
+    *place = 0;
+    while (current != nullptr)
+    {
+        if (compare(object, current->getData()))
+        {
+            current = current->getLeft();
+        }
+        else if (compare(current->getData(), object))
+        {
+            rank += current->getLeftRank() + current->getRank();
+            place += current->getLeftSize() + 1;
+
+            current = current->getRight();
+        }
+        else
+        {
+            return rank + current->getLeftRank();
+        }
+    }
+    return rank;
 }
 
 template <typename T>
