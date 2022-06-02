@@ -93,7 +93,7 @@ void Company::merge(Company *company, double factor)
     // employees_tree.merge(company->getEmployeesTree());
 
     // TODO: Transfer employees to new company
-    employees.merge(company->getEmployees());
+    employees.merge(&company->getEmployees());
     employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
     setHighesEarner(company->getHighestEarner());
 }

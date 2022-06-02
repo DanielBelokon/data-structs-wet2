@@ -371,7 +371,7 @@ static errorType OnAverageBumpGradeBetweenSalaryByGroup (void* DS, const char* c
 
 static errorType OnCompanyValue(void* DS, const char* const command) {
     int companyID;
-    ValidateRead(sscanf(command, "%d %d %d", &companyID), 1,
+    ValidateRead(sscanf(command, "%d", &companyID), 1,
                  "CompanyValue failed.\n");
     void* standing;
     StatusType res = CompanyValue(DS, companyID, &standing);
@@ -392,7 +392,7 @@ static errorType OnCompanyValue(void* DS, const char* const command) {
 /* OnBumpGradeToEmployees                                                        */
 /***************************************************************************/
 /*
-  20 points Bonus function:*/
+ * 20 points Bonus function:
 static errorType OnBumpGradeToEmployees(void* DS, const char* const command) {
     int lowerSalary;
     int higherSalary;
@@ -410,7 +410,7 @@ static errorType OnBumpGradeToEmployees(void* DS, const char* const command) {
 
     return error_free;
 }
-//*/
+*/
 
 /***************************************************************************/
 /* OnQuit                                                                  */

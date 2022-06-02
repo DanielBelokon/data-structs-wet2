@@ -465,7 +465,7 @@ int AVLTree<T>::getHighestMRankSum(int m)
     int cur_bigger_rank = 0;
     int cur_bigger_size = 0;
 
-    int cur_node = this->root;
+    Node<T> *cur_node = this->root;
 
     while (cur_node != nullptr)
     {
