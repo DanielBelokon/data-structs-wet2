@@ -7,16 +7,16 @@ template <class T>
 class UnionFind
 {
 private:
-    DynamicArray<int> size;
-    DynamicArray<int> parent;
-    DynamicArray<T> objects;
+    int *size;
+    int *parent;
+    T *objects;
 
 public:
     UnionFind(int initial = 0);
-    ~UnionFind();
-    T makeSet(T element, int id);
+    void makeSet(T element, int id);
     T find(int id);
     void merge(int, int);
+    bool isEmpty(int id);
 
 private:
     int compressRecoursive(int id);
@@ -25,16 +25,22 @@ private:
 template <class T>
 UnionFind<T>::UnionFind(int initial)
 {
-    size = DynamicArray<int>(initial);
-    parent = DynamicArray<int>(initial);
-    objects = DynamicArray<T>(initial);
+    size = new int[initial];
+    for (int i = 0; i < initial; i++)
+    {
+        size[i] = 0;
+    }
+
+    parent = new int[initial];
+    objects = new T[initial];
 }
 
 template <class T>
-T UnionFind<T>::makeSet(T element, int id)
+void UnionFind<T>::makeSet(T element, int id)
 {
     objects[id] = element;
-    size[id] = id;
+    parent[id] = id;
+    size[id] = 1;
 }
 
 template <class T>
@@ -74,4 +80,17 @@ void UnionFind<T>::merge(int set1, int set2)
     }
 }
 
+template <class T>
+bool UnionFind<T>::isEmpty(int id)
+{
+    return (size[id] == 0);
+}
+
+// // destructor
+// template <class T>
+// UnionFind<T>::~UnionFind()
+// {
+//     delete size;
+//     delete parent;
+// }
 #endif /* UNIONFIND_H */
