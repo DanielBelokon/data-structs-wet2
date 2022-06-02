@@ -24,17 +24,17 @@ private:
     int num_of_companies;
 
 public:
-    MainDataStructure();
+    MainDataStructure(int k);
     void AddCompany(int companyID, int value);
     void AddEmployee(int employeeID, int companyID, int grade);
     void RemoveEmployee(int employeeID);
     bool AcquireCompany(int companyId, int aquiredCompanyId, double factor);
     void EmployeeSalaryIncrease(int employeeID, int salaryIncrease);
-    int SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int m);
-    void AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary, void *averageBumpGrade);
     void PromoteEmployee(int EmployeeID, int bumpGrade);
-    void companyValue(int compnayID, void *standing);
-    void BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade);
+    int SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int m);
+    void AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary, void **averageBumpGrade);
+    double companyValue(int compnayID);
+    void BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade); // BONUS
     ~MainDataStructure();
 
     // void RemoveCompany(int companyID, bool force = false);
