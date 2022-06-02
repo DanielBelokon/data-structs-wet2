@@ -8,7 +8,7 @@
 #define RESIZE_THRESHOLD 0.75
 #define INITIAL_CAPACITY 30
 
-template <class T>
+template <typename T>
 class HashTable
 {
 private:
@@ -21,7 +21,6 @@ private:
 
     public:
         HashNode() : data(), is_deleted(false) {}
-        HashNode() : is_deleted(false) {}
         T getData() { return data; }
         void setData(T data) { this->data = data; }
         int getId() { return id; }
@@ -36,27 +35,31 @@ private:
     HashNode *table;
 
 public:
-    HashTable(int *custom_hash(int) = void) : customHash(custom_hash)
+    HashTable()
     {
         table = new HashNode[INITIAL_CAPACITY];
+        capacity = INITIAL_CAPACITY;
     }
     void insert(int id, T value);
     void remove(int id);
     T search(int id);
     int hash(int id);
+    bool isEmpty(int id);
     ~HashTable();
+    int getCapacity() { return capacity; }
 
     T operator[](int id);
     T operator[](int id) const;
 
-    void merge(HashTable<T> &other);
+    void merge(HashTable<T> *other);
 
 private:
     bool isDeleted(int id);
+    int getId(int key);
     void resize();
 };
 
-template <class T>
+template <typename T>
 void HashTable<T>::insert(int id, T value)
 {
     if (size > RESIZE_THRESHOLD * capacity)
@@ -64,24 +67,25 @@ void HashTable<T>::insert(int id, T value)
         resize();
     }
 
-    int key = hash(key);
-    table[key].setData(data);
+    int key = hash(id);
+    table[key].setData(value);
     table[key].setId(id);
+    table[key].setDeleted(false);
 }
 
-template <class T>
+template <typename T>
 void HashTable<T>::remove(int id)
 {
-    int key = hash(key);
+    int key = hash(id);
     table[key].setData(NULL);
     table[key].setDeleted(true);
 }
 
-template <class T>
+template <typename T>
 T HashTable<T>::search(int id)
 {
     int key = hash(id);
-    for (int i = 0; i < table.getCapacity(); i++)
+    for (int i = 0; i < capacity; i++)
     {
         if (!table[key].isDeleted())
         {
@@ -94,65 +98,84 @@ T HashTable<T>::search(int id)
                 return nullptr;
             }
         }
-        key = (key + 1) % table.getCapacity();
+        key = (key + 1) % capacity;
     }
 
     return nullptr;
 }
 
-template <class T>
+template <typename T>
 int HashTable<T>::hash(int id)
 {
-    int key = (int)(modf(id * BETA) * table.getCapacity());
+    double tmp;
+    int key = (int)(modf(id * BETA, &tmp) * capacity);
     // Linear Probing
-    while (!isDeleted(key))
+    while (!isDeleted(key) && table[key].getId() != id)
     {
-        key = (key + 1) % table.getCapacity();
+        key = (key + 1) % capacity;
     };
     return key;
 }
 
-template <class T>
-void HashTable<T>::merge(HashTable<T> &other)
+template <typename T>
+void HashTable<T>::merge(HashTable<T> *other)
 {
-    for (int i = 0; i < other.getCapacity(); i++)
+    for (int i = 0; i < other->getCapacity(); i++)
     {
-        if (other[i].getData() != NULL && !other[i].isDeleted())
+        if (other->getId(i) != -1 && !other->isDeleted(i))
         {
-            insert(other[i].getId(), other[i].getData());
+            insert(other->getId(i), (*other)[i]);
         }
     }
 }
 
-template <class T>
+template <typename T>
 bool HashTable<T>::isDeleted(int id)
 {
-    return (table[key] == nullptr || table[key].isDeleted());
+    return (table[id].getId() == -1 || table[id].isDeleted());
 }
 
-template <class T>
+template <typename T>
 void HashTable<T>::resize()
 {
     capacity *= 2;
-    T *new_array = new T[capacity];
+    HashNode *new_array = new HashNode[capacity];
     for (int i = 0; i < size; i++)
     {
-        new_array[hash(array[i].getId())] = array[i];
+        new_array[hash(table[i].getId())] = table[i];
     }
     delete[] table;
     table = new_array;
 }
 
-template <class T>
+template <typename T>
 T HashTable<T>::operator[](int id)
 {
     return search(id);
 }
 
-template <class T>
+template <typename T>
 T HashTable<T>::operator[](int id) const
 {
     return search(id);
+}
+
+template <typename T>
+int HashTable<T>::getId(int key)
+{
+    return table[key].getId();
+}
+
+template <typename T>
+bool HashTable<T>::isEmpty(int id)
+{
+    return (table[hash(id)].getId() == -1);
+}
+
+template <typename T>
+HashTable<T>::~HashTable()
+{
+    delete[] table;
 }
 
 #endif /* HASHTABLE_H */
