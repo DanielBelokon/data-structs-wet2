@@ -13,6 +13,8 @@ class Company
     Employee *highest_earner;
     HashTable<Employee *> employees;
     AVLTree<Employee *> employees_tree_by_salary;
+    double factor;
+    double parent_value_at_purchase;
 
 public:
     Company() = default;
@@ -29,7 +31,10 @@ public:
     void addEmployee(Employee *employee);
     void removeEmployee(Employee *employee);
     void merge(Company *company, double factor);
-
+    double getFactor() const;
+    void setFactor(double factor);
+    double getParentValueAtPurchase() const;
+    void setParentValueAtPurchase(double parent_value_at_purchase);
     bool operator<(const Company &other) const;
     bool operator>(const Company &other) const;
     bool operator==(const Company &other) const;
