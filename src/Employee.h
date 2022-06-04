@@ -23,11 +23,11 @@ public:
     int getEmployeeID() const;
     int getCompanyID() const;
     Company *getCompany() const;
+    void setCompany(Company *company);
     void setGrade(int grade);
-    void increaseGrade();
+    void increaseGrade(int bumpGrade);
     void setSalary(int salary);
     void increaseSalary(int salary);
-    void setCompany(Company *company);
 
     bool operator<(const Employee &other) const;
     bool operator>(const Employee &other) const;
