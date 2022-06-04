@@ -76,6 +76,8 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
 
     company->merge(acquiredCompany, factor);
     companies.merge(companyID, acquiredCompanyID);
+    acquiredCompany->setFactor(factor);
+    acquiredCompany->setParentValueAtPurchase(company->getValue());
     return true;
 }
 
@@ -89,7 +91,10 @@ void MainDataStructure::EmployeeSalaryIncrease(int employeeID, int salaryIncreas
     Employee *employee = findEmployeeById(employeeID);
     employee->increaseSalary(salaryIncrease);
     employees_tree_by_salary.remove(employee);
-    employees_tree_by_salary.insert(employee);
+    employees_tree_by_salary.insert(employee, employee->getGrade());
+    Company *company = employee->getCompany();
+    company->getEmployeesTreeBySalary()->remove(employee);
+    company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
 
 void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
@@ -100,10 +105,16 @@ void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
     Employee *employee = findEmployeeById(employeeID);
 
     if (bumpGrade > 0)
-        employee->increaseGrade();
+        employee->increaseGrade(bumpGrade);
+
+    if (employee->getSalary() == 0)
+        return;
 
     employees_tree_by_salary.remove(employee);
-    employees_tree_by_salary.insert(employee);
+    employees_tree_by_salary.insert(employee, employee->getGrade());
+    Company *company = employee->getCompany();
+    company->getEmployeesTreeBySalary()->remove(employee);
+    company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
 
 int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int m)
@@ -130,7 +141,7 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
     return sum;
 }
 
-void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary, void **averageBumpGrade)
+double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary)
 {
     if (companyID < 0 || companyID > num_of_companies || lowerSalary < 0 || higherSalary < 0 || higherSalary < lowerSalary)
     {
@@ -146,27 +157,9 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         Company *company = findCompanyById(companyID);
         cur_tree = company->getEmployeesTreeBySalary();
     }
-    // Node<Employee *> *node = cur_tree->getRoot();
-    // Node<Employee *> *prev_node = nullptr;
-    // while (node != nullptr)
-    // {
-    //     if (node->getData()->getSalary() > lowerSalary)
-    //     {
-    //         prev_node = node;
-    //         node = node->getLeft();
-    //         continue;
-    //     }
-    //     else if (node->getData()->getSalary() < lowerSalary)
-    //     {
-    //         prev_node = node;
-    //         node = node->getRight();
-    //         continue;
-    //     }
-    //     else
-    //     {
-    //         prev_node = node;
-    //     }
-    // }
+
+    if (cur_tree->getSize() == 0)
+        throw EmployeeNotFoundException();
 
     Node<Employee *> *max_node;
     Node<Employee *> *min_node;
@@ -183,7 +176,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
     int amt_min, amt_max, rank_min, rank_max;
     rank_min = cur_tree->getRank(min_node->getData(), &amt_min);
     rank_max = cur_tree->getRank(max_node->getData(), &amt_max);
-    *(double *)*averageBumpGrade = ((rank_max - rank_min) / (amt_max - amt_min));
+    return ((rank_max - rank_min) / (amt_max - amt_min));
 }
 
 double MainDataStructure::companyValue(int compnayID)
@@ -192,10 +185,14 @@ double MainDataStructure::companyValue(int compnayID)
     {
         throw InvalidInputException();
     }
-    Company *company = findCompanyById(compnayID);
+
+    Company *company = companies.findObject(compnayID);
+    Company *parentCompany = findCompanyById(compnayID);
 
     // TODO: why are they sending us a damn void **
-    return company->getValue();
+    if (company == parentCompany)
+        return company->getValue();
+    return parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue();
 }
 
 void MainDataStructure::BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade)

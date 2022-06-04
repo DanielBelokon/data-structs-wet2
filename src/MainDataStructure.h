@@ -32,7 +32,7 @@ public:
     void EmployeeSalaryIncrease(int employeeID, int salaryIncrease);
     void PromoteEmployee(int EmployeeID, int bumpGrade);
     int SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int m);
-    void AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary, void **averageBumpGrade);
+    double AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary);
     double companyValue(int compnayID);
     void BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade); // BONUS
     ~MainDataStructure();

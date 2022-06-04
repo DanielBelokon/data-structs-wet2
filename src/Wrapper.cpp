@@ -106,7 +106,7 @@ StatusType SumOfBumpGradeBetweenTopWorkersByGroup(void *DS, int companyID, int m
         return INVALID_INPUT;
     try
     {
-        *(int *)*sum = ((MainDataStructure *)DS)->SumOfBumpGradeBetweenTopWorkersByGroup(companyID, m);
+        *sum = new double(((MainDataStructure *)DS)->SumOfBumpGradeBetweenTopWorkersByGroup(companyID, m));
         return SUCCESS;
     }
     catch (std::exception &e)
@@ -121,7 +121,7 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
         return INVALID_INPUT;
     try
     {
-        ((MainDataStructure *)DS)->AverageBumpGradeBetweenSalaryByGroup(companyID, lowerSalary, higherSalary, averageBumpGrade);
+        *averageBumpGrade = new double(((MainDataStructure *)DS)->AverageBumpGradeBetweenSalaryByGroup(companyID, lowerSalary, higherSalary));
         return SUCCESS;
     }
     catch (std::exception &e)
@@ -136,7 +136,7 @@ StatusType CompanyValue(void *DS, int CompanyID, void **Value)
         return INVALID_INPUT;
     try
     {
-        ((MainDataStructure *)DS)->companyValue(CompanyID);
+        *Value = new double(((MainDataStructure *)DS)->companyValue(CompanyID));
         return SUCCESS;
     }
     catch (std::exception &e)
