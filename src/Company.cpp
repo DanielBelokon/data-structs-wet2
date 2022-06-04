@@ -5,6 +5,8 @@ Company::Company(int companyID, int value) : companyID(companyID), value(value)
     num_of_employees = 0;
     highest_earner = nullptr;
     employees = HashTable<Employee *>();
+    factor = 0;
+    parent_value_at_purchase = 0;
     employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
 };
 
@@ -93,7 +95,16 @@ void Company::merge(Company *company, double factor)
     // employees_tree.merge(company->getEmployeesTree());
 
     // TODO: Transfer employees to new company
-    employees.merge(&company->getEmployees());
+    HashTable<Employee *> *targetEmployees = &company->getEmployees();
+    for (auto emp : *targetEmployees)
+    {
+        if (emp != nullptr)
+        {
+            emp->setCompany(this);
+            this->addEmployee(emp);
+        }
+    }
+
     employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
     setHighesEarner(company->getHighestEarner());
 }
@@ -124,4 +135,22 @@ HashTable<Employee *> &Company::getEmployees()
 int Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {
     return employees_tree_by_salary.getHighestMRankSum(m);
+}
+double Company::getFactor() const
+{
+    return factor;
+}
+
+double Company::getParentValueAtPurchase() const
+{
+    return parent_value_at_purchase;
+}
+
+void Company::setParentValueAtPurchase(double parent_value_at_purchase)
+{
+    this->parent_value_at_purchase = parent_value_at_purchase;
+}
+void Company::setFactor(double factor)
+{
+    this->factor = factor;
 }
