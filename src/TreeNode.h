@@ -20,7 +20,7 @@ public:
         left = nullptr;
         right = nullptr;
         height = 0;
-        rank = rank;
+        this->rank = rank;
     }
 
     Node()
@@ -47,14 +47,14 @@ public:
         else if (left == nullptr)
         {
             left_size = 0;
-            right_size = 1 + right->getSize();
+            right_size = right->getSize();
             height = 1 + right->getHeight();
             left_rank = 0;
             right_rank = right->getRankSum();
         }
         else if (right == nullptr)
         {
-            left_size = 1 + left->getSize();
+            left_size = left->getSize();
             right_size = 0;
             height = 1 + left->getHeight();
             left_rank = left->getRankSum();
@@ -71,8 +71,8 @@ public:
                 height = 1 + right->getHeight();
             }
 
-            left_size = 1 + left->getSize();
-            right_size = 1 + right->getSize();
+            left_size = left->getSize();
+            right_size = right->getSize();
             left_rank = left->getRankSum();
             right_rank = right->getRankSum();
         }
