@@ -60,9 +60,9 @@ void Employee::setCompany(Company *company)
     this->company = company;
 }
 
-void Employee::increaseGrade()
+void Employee::increaseGrade(int bumpGrade)
 {
-    this->grade++;
+    this->grade += bumpGrade;
 }
 
 bool Employee::operator<(const Employee &other) const
