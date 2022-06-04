@@ -109,13 +109,13 @@ Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int ra
     }
     if (compare(data, current->getData()))
     {
-        Node<T> *newNode = insertAux(data, current->getLeft(), current);
+        Node<T> *newNode = insertAux(data, current->getLeft(), current, rank);
         if (newNode != nullptr)
             current->setLeft(newNode);
     }
     else if (compare(current->getData(), data))
     {
-        Node<T> *newNode = insertAux(data, current->getRight(), current);
+        Node<T> *newNode = insertAux(data, current->getRight(), current, rank);
         if (newNode != nullptr)
             current->setRight(newNode);
     }
@@ -177,9 +177,13 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         return;
 
     if (compare(toDelete, current->getData()))
+    {
         removeAux(toDelete, current->getLeft(), current);
+    }
     else if (compare(current->getData(), toDelete))
+    {
         removeAux(toDelete, current->getRight(), current);
+    }
     else if (current->getRight() == nullptr && current->getLeft() == nullptr)
     {
         replaceChild(parent, current, nullptr);
@@ -469,20 +473,20 @@ int AVLTree<T>::getHighestMRankSum(int m)
 
     while (cur_node != nullptr)
     {
-        if (cur_bigger_size + cur_node->getRightSize() > m)
+        if (cur_bigger_size + cur_node->getRightSize() > m - 1)
         {
             cur_node = cur_node->getRight();
             continue;
         }
-        else if (cur_bigger_size + cur_node->getRightSize() < m)
+        else if (cur_bigger_size + cur_node->getRightSize() < m - 1)
         {
-            cur_bigger_rank += cur_node->getRightRank();
-            cur_bigger_size += cur_node->getRightSize();
+            cur_bigger_rank += cur_node->getRightRank() + cur_node->getRank();
+            cur_bigger_size += cur_node->getRightSize() + 1;
             cur_node = cur_node->getLeft();
         }
-        else if (cur_bigger_size + cur_node->getRightSize() == m)
+        else if (cur_bigger_size + cur_node->getRightSize() == m - 1)
         {
-            cur_bigger_rank += cur_node->getRightRank();
+            cur_bigger_rank += cur_node->getRightRank() + cur_node->getRank();
             return cur_bigger_rank;
         }
     }
