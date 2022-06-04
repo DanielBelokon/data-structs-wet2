@@ -35,23 +35,62 @@ private:
     HashNode *table;
 
 public:
+    class iterator
+    {
+    private:
+        int capacity;
+        HashNode *array;
+        HashTable *table;
+        int current;
+
+    public:
+        iterator(int capacity, HashNode *array, HashTable *table, int current)
+            : capacity(capacity), array(array), table(table), current(current)
+        {
+        }
+        iterator &operator++()
+        {
+            current++;
+            return *this;
+        }
+        bool operator!=(const iterator &other) const
+        {
+            return current != other.current;
+        }
+        T operator*()
+        {
+            return array[current].getData();
+        }
+    };
+
     HashTable()
     {
         table = new HashNode[INITIAL_CAPACITY];
         capacity = INITIAL_CAPACITY;
     }
+
+    iterator begin()
+    {
+        return iterator(capacity, table, this, 0);
+    }
+
+    iterator end()
+    {
+        return iterator(capacity, table, this, capacity);
+    }
+
     void insert(int id, T value);
     void remove(int id);
     T search(int id);
     int hash(int id);
     bool isEmpty(int id);
-    ~HashTable();
     int getCapacity() { return capacity; }
 
     T operator[](int id);
     T operator[](int id) const;
-
     void merge(HashTable<T> *other);
+
+    ~HashTable();
 
 private:
     bool isDeleted(int id);
@@ -68,6 +107,7 @@ void HashTable<T>::insert(int id, T value)
     }
 
     int key = hash(id);
+    size++;
     table[key].setData(value);
     table[key].setId(id);
     table[key].setDeleted(false);
@@ -140,7 +180,7 @@ void HashTable<T>::resize()
 {
     capacity *= 2;
     HashNode *new_array = new HashNode[capacity];
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < capacity; i++)
     {
         new_array[hash(table[i].getId())] = table[i];
     }
