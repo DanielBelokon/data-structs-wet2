@@ -17,6 +17,7 @@ public:
     T find(int id);
     void merge(int, int);
     bool isEmpty(int id);
+    T findObject(int id);
 
 private:
     int compressRecoursive(int id);
@@ -86,11 +87,10 @@ bool UnionFind<T>::isEmpty(int id)
     return (size[id] == 0);
 }
 
-// // destructor
-// template <class T>
-// UnionFind<T>::~UnionFind()
-// {
-//     delete size;
-//     delete parent;
-// }
+template <class T>
+T UnionFind<T>::findObject(int id)
+{
+    return objects[id];
+}
+
 #endif /* UNIONFIND_H */
