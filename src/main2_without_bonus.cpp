@@ -328,7 +328,7 @@ static errorType OnSumOfBumpGradeBetweenTopWorkersByGroup (void* DS, const char*
         printf("SumOfBumpGradeBetweenTopWorkersByGroup: %s\n", ReturnValToStr(res));
         return error_free;
     }
-
+    printf("CompanyValue: %d\n", (*(int *)(sumBumpGrade)));
     /*
      * Implement here the printing of the variable
      */
@@ -374,6 +374,7 @@ static errorType OnCompanyValue(void* DS, const char* const command) {
         printf("CompanyValue: %s\n", ReturnValToStr(res));
         return error_free;
     }
+    printf("CompanyValue: %d\n", (int)(*(double *)(standing)));
 
     /*
      * Implement here the printing of the variable
