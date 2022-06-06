@@ -1,0 +1,7 @@
+//TODO: delete for submission    
+int temp = (int)(*((double*)averageBumpGrade) * 10);
+    double average = ((double)temp)/10;
+    if(abs(average + 0.1 - *((double*)averageBumpGrade)) <= 0.0000000001){
+        average += 0.1;
+    }
+/** print average **/

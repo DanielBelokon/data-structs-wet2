@@ -41,9 +41,9 @@ public:
     bool operator!=(const Company &other) const;
     int SumOfBumpGradeBetweenTopWorkersByGroup(int m);
     static bool compareByPointer(Company *const &a, Company *const &b);
+    HashTable<Employee *> *getEmployees();
 
 private:
-    HashTable<Employee *> &getEmployees();
     void transferEmployees(Company *new_company, Node<Employee *> *current);
 };
 

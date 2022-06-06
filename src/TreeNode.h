@@ -21,6 +21,10 @@ public:
         right = nullptr;
         height = 0;
         this->rank = rank;
+        left_rank = 0;
+        right_rank = 0;
+        left_size = 0;
+        right_size = 0;
     }
 
     Node()
@@ -29,6 +33,10 @@ public:
         right = nullptr;
         height = 0;
         rank = 0;
+        left_rank = 0;
+        right_rank = 0;
+        left_size = 0;
+        right_size = 0;
     }
 
     int getBalanceFactor() { return getHeight(left) - getHeight(right); }

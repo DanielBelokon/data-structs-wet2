@@ -95,7 +95,7 @@ void Company::merge(Company *company, double factor)
     // employees_tree.merge(company->getEmployeesTree());
 
     // TODO: Transfer employees to new company
-    HashTable<Employee *> *targetEmployees = &company->getEmployees();
+    HashTable<Employee *> *targetEmployees = company->getEmployees();
     for (auto emp : *targetEmployees)
     {
         if (emp != nullptr)
@@ -128,9 +128,9 @@ bool Company::compareByPointer(Company *const &a, Company *const &b)
 {
     return a->getCompanyID() < b->getCompanyID();
 }
-HashTable<Employee *> &Company::getEmployees()
+HashTable<Employee *> *Company::getEmployees()
 {
-    return employees;
+    return &employees;
 }
 int Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {

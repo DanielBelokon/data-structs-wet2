@@ -20,12 +20,23 @@ private:
         bool is_deleted;
 
     public:
-        HashNode() : data(), is_deleted(false) {}
+        HashNode() : data(NULL), is_deleted(false) { id = -1; }
+
+        HashNode(const HashNode &node) : data(node.data), is_deleted(node.is_deleted) { id = node.id; }
         T getData() { return data; }
         void setData(T data) { this->data = data; }
         int getId() { return id; }
         void setId(int id) { this->id = id; }
         bool isDeleted() { return is_deleted; }
+        // operator=
+        HashNode &operator=(const HashNode &node)
+        {
+            data = node.data;
+            is_deleted = node.is_deleted;
+            id = node.id;
+            return *this;
+        }
+
         void setDeleted(bool is_deleted) { this->is_deleted = is_deleted; }
     };
 
@@ -88,6 +99,7 @@ public:
 
     T operator[](int id);
     T operator[](int id) const;
+    T getDataAt(int key);
     void merge(HashTable<T> *other);
 
     ~HashTable();
@@ -117,6 +129,7 @@ template <typename T>
 void HashTable<T>::remove(int id)
 {
     int key = hash(id);
+    table[key].setId(-1);
     table[key].setData(NULL);
     table[key].setDeleted(true);
 }
@@ -164,7 +177,7 @@ void HashTable<T>::merge(HashTable<T> *other)
     {
         if (other->getId(i) != -1 && !other->isDeleted(i))
         {
-            insert(other->getId(i), (*other)[i]);
+            insert(other->getId(i), other->getDataAt(i));
         }
     }
 }
@@ -180,9 +193,12 @@ void HashTable<T>::resize()
 {
     capacity *= 2;
     HashNode *new_array = new HashNode[capacity];
-    for (int i = 0; i < capacity; i++)
+    for (int i = 0; i < capacity / 2; i++)
     {
-        new_array[hash(table[i].getId())] = table[i];
+        int key = hash(table[i].getId());
+        new_array[key].setData(table[i].getData());
+        new_array[key].setId(table[i].getId());
+        new_array[key].setDeleted(table[i].isDeleted());
     }
     delete[] table;
     table = new_array;
@@ -204,6 +220,12 @@ template <typename T>
 int HashTable<T>::getId(int key)
 {
     return table[key].getId();
+}
+
+template <typename T>
+T HashTable<T>::getDataAt(int key)
+{
+    return table[key].getData();
 }
 
 template <typename T>

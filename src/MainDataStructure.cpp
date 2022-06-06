@@ -138,6 +138,8 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
 
     if (sum == 0)
         throw EmployeeNotFoundException();
+
+    printf("SumOfBumpGradeBetweenTopWorkersByGroup: %d\n", sum);
     return sum;
 }
 
@@ -176,7 +178,8 @@ double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, in
     int amt_min, amt_max, rank_min, rank_max;
     rank_min = cur_tree->getRank(min_node->getData(), &amt_min);
     rank_max = cur_tree->getRank(max_node->getData(), &amt_max);
-    return ((rank_max - rank_min) / (amt_max - amt_min));
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)(rank_max - rank_min + min_node->getRank()) / (amt_max - amt_min + 1));
+    return (double)(rank_max - rank_min + min_node->getRank()) / (amt_max - amt_min + 1);
 }
 
 double MainDataStructure::companyValue(int compnayID)
@@ -191,7 +194,11 @@ double MainDataStructure::companyValue(int compnayID)
 
     // TODO: why are they sending us a damn void **
     if (company == parentCompany)
+    {
+        printf("CompanyValue: %.1f\n", (double)parentCompany->getValue());
         return company->getValue();
+    }
+    printf("CompanyValue: %.1f\n", parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue());
     return parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue();
 }
 

@@ -1,4 +1,10 @@
 {
+        "cmake.debugConfig": {
+            "args": [
+                "<",
+                "${workspaceFolder}/tests/input/in0.txt"
+            ]
+        },
     "files.associations": {
         ".h": "c",
         "*.js": "javascript",
@@ -30,6 +36,10 @@
         "ostream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "cstdio": "cpp",
+        "deque": "cpp",
+        "iterator": "cpp",
+        "queue": "cpp"
     }
 }

@@ -4,6 +4,9 @@
 
 Employee::Employee(int employee_id, Company *company, int salary, int grade) : employee_id(employee_id), salary(salary), grade(grade), company(company) {}
 
+// copy constctor
+Employee::Employee(const Employee &other) : employee_id(other.employee_id), salary(other.salary), grade(other.grade), company(other.company) {}
+
 bool Employee::compareBySalary(Employee *const &temp1, Employee *const &temp2)
 {
     if (temp1->getSalary() < temp2->getSalary())

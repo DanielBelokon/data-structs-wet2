@@ -1,0 +1,5043 @@
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  1 1:
+Actual company id: 1
+1. id: 61 salary: 16 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  14 1:
+Actual company id: 14
+1. id: 26 salary: 2 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  1 1:
+Actual company id: 1
+1. id: 61 salary: 79 grade: 5
+
+Input line AverageBumpGradeBetweenSalaryByGroup  19 0 9:
+Actual company id: 19 with 11 interns, interns total grade sum: 48
+1. id: 2 grade: 3
+2. id: 4 grade: 0
+3. id: 36 grade: 4
+4. id: 7 grade: 6
+5. id: 169 grade: 3
+6. id: 76 grade: 5
+7. id: 15 grade: 8
+8. id: 145 grade: 1
+9. id: 82 grade: 8
+10. id: 85 grade: 9
+11. id: 155 grade: 1
+
+num of employees in range: 0 with sum of 0
+
+Input line AverageBumpGradeBetweenSalaryByGroup  5 0 0:
+Actual company id: 5 with 11 interns, interns total grade sum: 48
+1. id: 164 grade: 3
+2. id: 134 grade: 4
+3. id: 9 grade: 2
+4. id: 143 grade: 8
+5. id: 207 grade: 0
+6. id: 16 grade: 9
+7. id: 146 grade: 7
+8. id: 178 grade: 7
+9. id: 123 grade: 5
+10. id: 62 grade: 3
+11. id: 63 grade: 0
+
+num of employees in range: 0 with sum of 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 2:
+Actual company id: 15
+1. id: 153 salary: 30 grade: 9
+2. id: 86 salary: 19 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  1 5 5:
+Actual company id: 1
+num of employees in range: 1 with sum of 8
+1. id: 71 salary: 5 grade: 8
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 0 19:
+Actual company id: 17 with 12 interns, interns total grade sum: 63
+1. id: 33 grade: 1
+2. id: 3 grade: 9
+3. id: 70 grade: 4
+4. id: 168 grade: 2
+5. id: 139 grade: 6
+6. id: 107 grade: 5
+7. id: 173 grade: 7
+8. id: 142 grade: 1
+9. id: 117 grade: 6
+10. id: 150 grade: 7
+11. id: 184 grade: 9
+12. id: 94 grade: 6
+
+num of employees in range: 1 with sum of 6
+1. id: 187 salary: 8 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 0 20:
+Actual company id: 6 with 10 interns, interns total grade sum: 42
+1. id: 194 grade: 7
+2. id: 131 grade: 2
+3. id: 37 grade: 6
+4. id: 136 grade: 0
+5. id: 105 grade: 3
+6. id: 138 grade: 7
+7. id: 148 grade: 5
+8. id: 21 grade: 6
+9. id: 154 grade: 0
+10. id: 93 grade: 6
+
+num of employees in range: 0 with sum of 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  1 3:
+Actual company id: 1
+1. id: 61 salary: 81 grade: 5
+2. id: 108 salary: 24 grade: 6
+3. id: 71 salary: 5 grade: 8
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 13 13:
+Actual company id: 11
+num of employees in range: 1 with sum of 9
+1. id: 22 salary: 13 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  14 0 7:
+Actual company id: 14 with 11 interns, interns total grade sum: 30
+1. id: 65 grade: 0
+2. id: 162 grade: 4
+3. id: 210 grade: 3
+4. id: 115 grade: 4
+5. id: 53 grade: 0
+6. id: 118 grade: 0
+7. id: 24 grade: 5
+8. id: 88 grade: 0
+9. id: 74 grade: 0
+10. id: 171 grade: 7
+11. id: 44 grade: 7
+
+num of employees in range: 0 with sum of 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 2:
+Actual company id: 7
+1. id: 35 salary: 9 grade: 6
+2. id: 84 salary: 4 grade: 5
+
+Input line AverageBumpGradeBetweenSalaryByGroup  18 0 0:
+Actual company id: 18 with 6 interns, interns total grade sum: 29
+1. id: 116 grade: 4
+2. id: 54 grade: 2
+3. id: 103 grade: 7
+4. id: 28 grade: 8
+5. id: 221 grade: 3
+6. id: 31 grade: 5
+
+num of employees in range: 0 with sum of 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  12 2:
+Actual company id: 12
+1. id: 78 salary: 24 grade: 8
+2. id: 159 salary: 9 grade: 8
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  17 2:
+Actual company id: 17
+1. id: 191 salary: 23 grade: 3
+2. id: 150 salary: 19 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 0 9:
+ System has 163 interns, interns total grade sum: 713
+0. id: 2 grade: 3
+0. id: 4 grade: 0
+0. id: 5 grade: 1
+0. id: 6 grade: 6
+0. id: 7 grade: 6
+0. id: 8 grade: 2
+0. id: 9 grade: 2
+0. id: 10 grade: 5
+0. id: 13 grade: 0
+0. id: 14 grade: 6
+0. id: 15 grade: 8
+0. id: 16 grade: 9
+0. id: 17 grade: 5
+0. id: 21 grade: 6
+0. id: 23 grade: 4
+0. id: 24 grade: 5
+0. id: 25 grade: 9
+0. id: 27 grade: 9
+0. id: 28 grade: 8
+0. id: 29 grade: 0
+0. id: 31 grade: 5
+0. id: 37 grade: 6
+0. id: 38 grade: 4
+0. id: 40 grade: 9
+0. id: 41 grade: 3
+0. id: 42 grade: 5
+0. id: 44 grade: 7
+0. id: 46 grade: 4
+0. id: 47 grade: 6
+0. id: 48 grade: 13
+0. id: 50 grade: 6
+0. id: 51 grade: 7
+0. id: 52 grade: 9
+0. id: 53 grade: 0
+0. id: 54 grade: 2
+0. id: 56 grade: 8
+0. id: 59 grade: 3
+0. id: 60 grade: 2
+0. id: 62 grade: 3
+0. id: 63 grade: 0
+0. id: 64 grade: 5
+0. id: 65 grade: 0
+0. id: 66 grade: 0
+0. id: 67 grade: 4
+0. id: 68 grade: 5
+0. id: 69 grade: 2
+0. id: 70 grade: 4
+0. id: 72 grade: 9
+0. id: 73 grade: 4
+0. id: 74 grade: 0
+0. id: 75 grade: 8
+0. id: 76 grade: 5
+0. id: 77 grade: 0
+0. id: 79 grade: 3
+0. id: 82 grade: 8
+0. id: 83 grade: 4
+0. id: 87 grade: 6
+0. id: 88 grade: 0
+0. id: 90 grade: 4
+0. id: 92 grade: 7
+0. id: 93 grade: 6
+0. id: 94 grade: 6
+0. id: 95 grade: 7
+0. id: 96 grade: 9
+0. id: 99 grade: 8
+0. id: 101 grade: 8
+0. id: 103 grade: 7
+0. id: 105 grade: 3
+0. id: 107 grade: 5
+0. id: 110 grade: 7
+0. id: 111 grade: 6
+0. id: 113 grade: 5
+0. id: 114 grade: 10
+0. id: 115 grade: 4
+0. id: 116 grade: 4
+0. id: 117 grade: 6
+0. id: 118 grade: 3
+0. id: 121 grade: 4
+0. id: 122 grade: 5
+0. id: 123 grade: 5
+0. id: 124 grade: 3
+0. id: 127 grade: 4
+0. id: 128 grade: 7
+0. id: 129 grade: 1
+0. id: 131 grade: 2
+0. id: 132 grade: 3
+0. id: 133 grade: 4
+0. id: 134 grade: 4
+0. id: 136 grade: 0
+0. id: 137 grade: 3
+0. id: 138 grade: 7
+0. id: 139 grade: 6
+0. id: 142 grade: 1
+0. id: 143 grade: 8
+0. id: 144 grade: 8
+0. id: 145 grade: 1
+0. id: 146 grade: 7
+0. id: 147 grade: 0
+0. id: 148 grade: 5
+0. id: 149 grade: 6
+0. id: 151 grade: 0
+0. id: 152 grade: 9
+0. id: 154 grade: 0
+0. id: 155 grade: 1
+0. id: 156 grade: 1
+0. id: 157 grade: 8
+0. id: 158 grade: 2
+0. id: 160 grade: 3
+0. id: 161 grade: 5
+0. id: 162 grade: 4
+0. id: 164 grade: 3
+0. id: 165 grade: 9
+0. id: 166 grade: 9
+0. id: 167 grade: 5
+0. id: 168 grade: 2
+0. id: 170 grade: 9
+0. id: 171 grade: 7
+0. id: 172 grade: 7
+0. id: 173 grade: 7
+0. id: 174 grade: 7
+0. id: 176 grade: 7
+0. id: 177 grade: 2
+0. id: 178 grade: 7
+0. id: 179 grade: 0
+0. id: 180 grade: 5
+0. id: 181 grade: 3
+0. id: 182 grade: 2
+0. id: 183 grade: 2
+0. id: 184 grade: 9
+0. id: 185 grade: 8
+0. id: 188 grade: 9
+0. id: 193 grade: 2
+0. id: 194 grade: 7
+0. id: 196 grade: 6
+0. id: 198 grade: 8
+0. id: 199 grade: 2
+0. id: 200 grade: 9
+0. id: 202 grade: 4
+0. id: 203 grade: 0
+0. id: 204 grade: 0
+0. id: 205 grade: 4
+0. id: 206 grade: 0
+0. id: 207 grade: 0
+0. id: 208 grade: 2
+0. id: 210 grade: 3
+0. id: 211 grade: 3
+0. id: 212 grade: 1
+0. id: 214 grade: 3
+0. id: 215 grade: 3
+0. id: 216 grade: 4
+0. id: 217 grade: 1
+0. id: 218 grade: 4
+0. id: 221 grade: 3
+0. id: 222 grade: 4
+0. id: 223 grade: 1
+0. id: 224 grade: 0
+0. id: 225 grade: 3
+0. id: 226 grade: 0
+0. id: 227 grade: 4
+0. id: 228 grade: 2
+0. id: 229 grade: 2
+0. id: 230 grade: 0
+0. id: 231 grade: 4
+
+num of employees in range: 20 with sum of 111
+1. id: 3 salary: 9 grade: 9
+2. id: 11 salary: 2 grade: 6
+3. id: 18 salary: 1 grade: 9
+4. id: 32 salary: 2 grade: 3
+5. id: 35 salary: 9 grade: 6
+6. id: 39 salary: 1 grade: 4
+7. id: 49 salary: 2 grade: 8
+8. id: 71 salary: 5 grade: 8
+9. id: 80 salary: 9 grade: 9
+10. id: 84 salary: 4 grade: 5
+11. id: 85 salary: 9 grade: 9
+12. id: 89 salary: 3 grade: 2
+13. id: 125 salary: 8 grade: 1
+14. id: 159 salary: 9 grade: 8
+15. id: 169 salary: 6 grade: 3
+16. id: 187 salary: 8 grade: 6
+17. id: 189 salary: 6 grade: 7
+18. id: 195 salary: 3 grade: 7
+19. id: 201 salary: 7 grade: 0
+20. id: 219 salary: 2 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 26 39:
+Actual company id: 6
+num of employees in range: 1 with sum of 4
+1. id: 45 salary: 26 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 4:
+Actual company id: 11
+1. id: 22 salary: 40 grade: 9
+2. id: 91 salary: 27 grade: 6
+3. id: 124 salary: 15 grade: 6
+4. id: 196 salary: 12 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  13 2:
+Actual company id: 13
+1. id: 102 salary: 26 grade: 1
+2. id: 135 salary: 16 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  20 9 12:
+Actual company id: 14
+num of employees in range: 2 with sum of 14
+1. id: 80 salary: 9 grade: 9
+2. id: 24 salary: 12 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 4:
+Actual company id: 7
+1. id: 66 salary: 19 grade: 0
+2. id: 60 salary: 18 grade: 2
+3. id: 23 salary: 16 grade: 4
+4. id: 43 salary: 12 grade: 8
+
+Input line AverageBumpGradeBetweenSalaryByGroup  3 0 0:
+Actual company id: 3 with 6 interns, interns total grade sum: 20
+1. id: 132 grade: 3
+2. id: 230 grade: 0
+3. id: 121 grade: 4
+4. id: 59 grade: 3
+5. id: 188 grade: 9
+6. id: 223 grade: 1
+
+num of employees in range: 0 with sum of 0
+
+Input line AverageBumpGradeBetweenSalaryByGroup  3 0 8:
+Actual company id: 3 with 6 interns, interns total grade sum: 20
+1. id: 132 grade: 3
+2. id: 230 grade: 0
+3. id: 121 grade: 4
+4. id: 249 grade: 3
+5. id: 188 grade: 9
+6. id: 223 grade: 1
+
+num of employees in range: 2 with sum of 3
+1. id: 228 salary: 6 grade: 2
+2. id: 219 salary: 2 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  3 5:
+Actual company id: 3
+1. id: 126 salary: 18 grade: 9
+2. id: 57 salary: 15 grade: 9
+3. id: 186 salary: 13 grade: 9
+4. id: 59 salary: 9 grade: 3
+5. id: 228 salary: 6 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 4:
+Actual company id: 2
+1. id: 160 salary: 17 grade: 3
+2. id: 120 salary: 11 grade: 8
+3. id: 67 salary: 10 grade: 4
+4. id: 222 salary: 8 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 3:
+Actual company id: 14
+1. id: 203 salary: 29 grade: 0
+2. id: 115 salary: 26 grade: 4
+3. id: 125 salary: 16 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  16 13 23:
+Actual company id: 16
+num of employees in range: 2 with sum of 13
+1. id: 97 salary: 16 grade: 6
+2. id: 130 salary: 13 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 6 30:
+Actual company id: 8
+num of employees in range: 3 with sum of 11
+1. id: 129 salary: 7 grade: 1
+2. id: 246 salary: 28 grade: 3
+3. id: 189 salary: 6 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 1:
+Actual company id: 2
+1. id: 144 salary: 30 grade: 10
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 2 12:
+Actual company id: 11
+num of employees in range: 3 with sum of 18
+1. id: 20 salary: 12 grade: 6
+2. id: 196 salary: 12 grade: 6
+3. id: 137 salary: 2 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  4 1 26:
+Actual company id: 4
+num of employees in range: 1 with sum of 9
+1. id: 18 salary: 1 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 3:
+Actual company id: 7
+1. id: 66 salary: 19 grade: 0
+2. id: 60 salary: 18 grade: 2
+3. id: 23 salary: 16 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  5 5:
+Actual company id: 5
+1. id: 16 salary: 26 grade: 9
+2. id: 32 salary: 18 grade: 3
+3. id: 164 salary: 16 grade: 3
+4. id: 244 salary: 11 grade: 1
+5. id: 143 salary: 9 grade: 8
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  18 2:
+Actual company id: 18
+1. id: 28 salary: 21 grade: 8
+2. id: 103 salary: 19 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  17 3:
+Actual company id: 17
+1. id: 173 salary: 34 grade: 7
+2. id: 191 salary: 23 grade: 3
+3. id: 3 salary: 21 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 8:
+Actual company id: 15
+1. id: 153 salary: 30 grade: 9
+2. id: 106 salary: 29 grade: 0
+3. id: 198 salary: 25 grade: 8
+4. id: 151 salary: 23 grade: 0
+5. id: 217 salary: 22 grade: 1
+6. id: 86 salary: 19 grade: 7
+7. id: 50 salary: 15 grade: 9
+8. id: 170 salary: 13 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 4:
+Actual company id: 7
+1. id: 66 salary: 19 grade: 0
+2. id: 60 salary: 18 grade: 2
+3. id: 23 salary: 16 grade: 4
+4. id: 47 salary: 12 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 0 59:
+Actual company id: 8 with 8 interns, interns total grade sum: 22
+1. id: 226 grade: 0
+2. id: 212 grade: 1
+3. id: 133 grade: 5
+4. id: 248 grade: 2
+5. id: 264 grade: 0
+6. id: 185 grade: 10
+7. id: 77 grade: 0
+8. id: 237 grade: 4
+
+num of employees in range: 7 with sum of 33
+1. id: 129 salary: 7 grade: 1
+2. id: 34 salary: 31 grade: 4
+3. id: 163 salary: 39 grade: 8
+4. id: 5 salary: 28 grade: 1
+5. id: 246 salary: 28 grade: 3
+6. id: 72 salary: 4 grade: 9
+7. id: 189 salary: 6 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 17:
+Actual company id: 14
+1. id: 203 salary: 55 grade: 0
+2. id: 44 salary: 29 grade: 7
+3. id: 115 salary: 26 grade: 4
+4. id: 162 salary: 25 grade: 4
+5. id: 152 salary: 19 grade: 9
+6. id: 65 salary: 18 grade: 4
+7. id: 125 salary: 16 grade: 1
+8. id: 235 salary: 14 grade: 4
+9. id: 232 salary: 14 grade: 2
+10. id: 227 salary: 13 grade: 4
+11. id: 104 salary: 13 grade: 4
+12. id: 24 salary: 12 grade: 5
+13. id: 171 salary: 10 grade: 7
+14. id: 80 salary: 9 grade: 9
+15. id: 118 salary: 7 grade: 3
+16. id: 111 salary: 7 grade: 6
+17. id: 11 salary: 2 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  8 9:
+Actual company id: 8
+1. id: 119 salary: 64 grade: 2
+2. id: 163 salary: 39 grade: 8
+3. id: 34 salary: 31 grade: 4
+4. id: 246 salary: 28 grade: 3
+5. id: 5 salary: 28 grade: 1
+6. id: 185 salary: 18 grade: 10
+7. id: 129 salary: 7 grade: 1
+8. id: 189 salary: 6 grade: 7
+9. id: 72 salary: 4 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 3 12:
+
+num of employees in range: 49 with sum of 234
+1. id: 8 salary: 5 grade: 2
+2. id: 13 salary: 10 grade: 2
+3. id: 19 salary: 12 grade: 10
+4. id: 20 salary: 12 grade: 6
+5. id: 24 salary: 12 grade: 5
+6. id: 35 salary: 9 grade: 6
+7. id: 43 salary: 12 grade: 8
+8. id: 46 salary: 12 grade: 4
+9. id: 47 salary: 12 grade: 6
+10. id: 59 salary: 9 grade: 3
+11. id: 69 salary: 11 grade: 2
+12. id: 71 salary: 5 grade: 8
+13. id: 72 salary: 4 grade: 9
+14. id: 80 salary: 9 grade: 9
+15. id: 81 salary: 11 grade: 4
+16. id: 84 salary: 4 grade: 5
+17. id: 85 salary: 9 grade: 9
+18. id: 89 salary: 3 grade: 2
+19. id: 93 salary: 4 grade: 6
+20. id: 96 salary: 6 grade: 9
+21. id: 111 salary: 7 grade: 6
+22. id: 113 salary: 5 grade: 5
+23. id: 116 salary: 9 grade: 6
+24. id: 118 salary: 7 grade: 3
+25. id: 120 salary: 11 grade: 8
+26. id: 129 salary: 7 grade: 1
+27. id: 143 salary: 9 grade: 8
+28. id: 148 salary: 6 grade: 5
+29. id: 154 salary: 3 grade: 0
+30. id: 159 salary: 9 grade: 8
+31. id: 166 salary: 11 grade: 9
+32. id: 169 salary: 6 grade: 3
+33. id: 171 salary: 10 grade: 7
+34. id: 178 salary: 7 grade: 7
+35. id: 184 salary: 7 grade: 9
+36. id: 187 salary: 8 grade: 6
+37. id: 189 salary: 6 grade: 7
+38. id: 201 salary: 7 grade: 0
+39. id: 202 salary: 10 grade: 4
+40. id: 214 salary: 6 grade: 3
+41. id: 222 salary: 8 grade: 4
+42. id: 229 salary: 9 grade: 2
+43. id: 233 salary: 4 grade: 1
+44. id: 238 salary: 12 grade: 0
+45. id: 244 salary: 11 grade: 1
+46. id: 252 salary: 8 grade: 0
+47. id: 253 salary: 9 grade: 2
+48. id: 258 salary: 8 grade: 1
+49. id: 270 salary: 7 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 7 12:
+Actual company id: 6
+num of employees in range: 4 with sum of 8
+1. id: 105 salary: 12 grade: 3
+2. id: 253 salary: 9 grade: 2
+3. id: 270 salary: 7 grade: 3
+4. id: 238 salary: 12 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  3 4:
+Actual company id: 19
+1. id: 36 salary: 60 grade: 4
+2. id: 174 salary: 48 grade: 7
+3. id: 186 salary: 30 grade: 9
+4. id: 181 salary: 27 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 3:
+Actual company id: 16
+1. id: 12 salary: 33 grade: 6
+2. id: 30 salary: 27 grade: 8
+3. id: 182 salary: 25 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 6:
+Actual company id: 16
+1. id: 12 salary: 33 grade: 6
+2. id: 30 salary: 27 grade: 8
+3. id: 182 salary: 25 grade: 2
+4. id: 265 salary: 17 grade: 1
+5. id: 97 salary: 16 grade: 6
+6. id: 130 salary: 13 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  17 9:
+Actual company id: 17
+1. id: 173 salary: 34 grade: 7
+2. id: 168 salary: 27 grade: 2
+3. id: 191 salary: 23 grade: 3
+4. id: 3 salary: 21 grade: 9
+5. id: 245 salary: 20 grade: 0
+6. id: 150 salary: 19 grade: 7
+7. id: 94 salary: 19 grade: 7
+8. id: 239 salary: 9 grade: 2
+9. id: 187 salary: 8 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 7:
+Actual company id: 14
+1. id: 203 salary: 55 grade: 0
+2. id: 44 salary: 29 grade: 7
+3. id: 115 salary: 26 grade: 4
+4. id: 162 salary: 25 grade: 4
+5. id: 74 salary: 24 grade: 0
+6. id: 56 salary: 21 grade: 8
+7. id: 152 salary: 19 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  12 2 8:
+Actual company id: 19
+num of employees in range: 4 with sum of 11
+1. id: 76 salary: 6 grade: 5
+2. id: 219 salary: 2 grade: 3
+3. id: 169 salary: 6 grade: 3
+4. id: 252 salary: 8 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  19 26:
+Actual company id: 19
+1. id: 36 salary: 60 grade: 4
+2. id: 174 salary: 48 grade: 7
+3. id: 186 salary: 30 grade: 9
+4. id: 181 salary: 27 grade: 3
+5. id: 78 salary: 24 grade: 8
+6. id: 7 salary: 24 grade: 6
+7. id: 98 salary: 23 grade: 0
+8. id: 79 salary: 23 grade: 7
+9. id: 59 salary: 23 grade: 3
+10. id: 261 salary: 22 grade: 1
+11. id: 204 salary: 21 grade: 0
+12. id: 247 salary: 20 grade: 2
+13. id: 41 salary: 20 grade: 3
+14. id: 228 salary: 18 grade: 2
+15. id: 126 salary: 18 grade: 9
+16. id: 145 salary: 17 grade: 1
+17. id: 249 salary: 16 grade: 7
+18. id: 132 salary: 15 grade: 3
+19. id: 256 salary: 14 grade: 3
+20. id: 15 salary: 14 grade: 8
+21. id: 81 salary: 11 grade: 4
+22. id: 229 salary: 9 grade: 2
+23. id: 159 salary: 9 grade: 8
+24. id: 85 salary: 9 grade: 12
+25. id: 252 salary: 8 grade: 0
+26. id: 169 salary: 6 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  17 11:
+Actual company id: 17
+1. id: 173 salary: 34 grade: 7
+2. id: 168 salary: 27 grade: 2
+3. id: 191 salary: 23 grade: 3
+4. id: 3 salary: 21 grade: 9
+5. id: 245 salary: 20 grade: 0
+6. id: 150 salary: 19 grade: 7
+7. id: 94 salary: 19 grade: 7
+8. id: 239 salary: 9 grade: 2
+9. id: 187 salary: 8 grade: 6
+10. id: 184 salary: 7 grade: 9
+11. id: 139 salary: 3 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  19 2:
+Actual company id: 19
+1. id: 36 salary: 60 grade: 4
+2. id: 174 salary: 48 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 8 28:
+
+num of employees in range: 121 with sum of 541
+1. id: 3 salary: 21 grade: 9
+2. id: 5 salary: 28 grade: 1
+3. id: 7 salary: 24 grade: 6
+4. id: 13 salary: 10 grade: 2
+5. id: 14 salary: 25 grade: 6
+6. id: 15 salary: 14 grade: 8
+7. id: 16 salary: 26 grade: 9
+8. id: 19 salary: 12 grade: 10
+9. id: 20 salary: 12 grade: 6
+10. id: 23 salary: 16 grade: 4
+11. id: 24 salary: 12 grade: 5
+12. id: 25 salary: 27 grade: 9
+13. id: 28 salary: 21 grade: 10
+14. id: 30 salary: 27 grade: 8
+15. id: 32 salary: 18 grade: 3
+16. id: 35 salary: 9 grade: 6
+17. id: 41 salary: 20 grade: 3
+18. id: 43 salary: 12 grade: 8
+19. id: 45 salary: 26 grade: 4
+20. id: 46 salary: 12 grade: 4
+21. id: 47 salary: 12 grade: 6
+22. id: 50 salary: 15 grade: 9
+23. id: 56 salary: 21 grade: 8
+24. id: 59 salary: 23 grade: 3
+25. id: 60 salary: 18 grade: 2
+26. id: 62 salary: 28 grade: 3
+27. id: 65 salary: 18 grade: 4
+28. id: 66 salary: 19 grade: 0
+29. id: 69 salary: 11 grade: 2
+30. id: 74 salary: 24 grade: 0
+31. id: 78 salary: 24 grade: 8
+32. id: 79 salary: 23 grade: 7
+33. id: 80 salary: 9 grade: 9
+34. id: 81 salary: 11 grade: 4
+35. id: 85 salary: 9 grade: 12
+36. id: 86 salary: 19 grade: 7
+37. id: 87 salary: 22 grade: 6
+38. id: 91 salary: 27 grade: 6
+39. id: 92 salary: 18 grade: 7
+40. id: 94 salary: 19 grade: 7
+41. id: 95 salary: 24 grade: 7
+42. id: 97 salary: 16 grade: 6
+43. id: 98 salary: 23 grade: 0
+44. id: 102 salary: 26 grade: 1
+45. id: 103 salary: 19 grade: 7
+46. id: 104 salary: 13 grade: 4
+47. id: 105 salary: 12 grade: 3
+48. id: 108 salary: 24 grade: 6
+49. id: 112 salary: 27 grade: 3
+50. id: 115 salary: 26 grade: 4
+51. id: 116 salary: 9 grade: 6
+52. id: 120 salary: 11 grade: 8
+53. id: 124 salary: 15 grade: 6
+54. id: 125 salary: 16 grade: 1
+55. id: 126 salary: 18 grade: 9
+56. id: 127 salary: 27 grade: 5
+57. id: 130 salary: 13 grade: 7
+58. id: 132 salary: 15 grade: 3
+59. id: 135 salary: 16 grade: 3
+60. id: 136 salary: 20 grade: 0
+61. id: 141 salary: 16 grade: 7
+62. id: 143 salary: 9 grade: 8
+63. id: 145 salary: 17 grade: 1
+64. id: 149 salary: 28 grade: 6
+65. id: 150 salary: 19 grade: 7
+66. id: 151 salary: 23 grade: 0
+67. id: 152 salary: 19 grade: 9
+68. id: 157 salary: 23 grade: 8
+69. id: 158 salary: 18 grade: 2
+70. id: 159 salary: 9 grade: 8
+71. id: 160 salary: 17 grade: 3
+72. id: 161 salary: 15 grade: 9
+73. id: 162 salary: 25 grade: 4
+74. id: 164 salary: 16 grade: 3
+75. id: 166 salary: 11 grade: 9
+76. id: 168 salary: 27 grade: 2
+77. id: 171 salary: 10 grade: 7
+78. id: 175 salary: 27 grade: 2
+79. id: 176 salary: 22 grade: 7
+80. id: 181 salary: 27 grade: 3
+81. id: 182 salary: 25 grade: 2
+82. id: 185 salary: 18 grade: 10
+83. id: 187 salary: 8 grade: 6
+84. id: 191 salary: 23 grade: 3
+85. id: 192 salary: 25 grade: 7
+86. id: 198 salary: 25 grade: 8
+87. id: 199 salary: 23 grade: 2
+88. id: 200 salary: 28 grade: 9
+89. id: 202 salary: 10 grade: 4
+90. id: 204 salary: 21 grade: 0
+91. id: 208 salary: 9 grade: 2
+92. id: 212 salary: 27 grade: 1
+93. id: 215 salary: 22 grade: 3
+94. id: 217 salary: 22 grade: 1
+95. id: 218 salary: 23 grade: 4
+96. id: 222 salary: 8 grade: 4
+97. id: 227 salary: 13 grade: 4
+98. id: 228 salary: 18 grade: 2
+99. id: 229 salary: 9 grade: 2
+100. id: 232 salary: 14 grade: 2
+101. id: 235 salary: 14 grade: 4
+102. id: 236 salary: 20 grade: 1
+103. id: 238 salary: 12 grade: 0
+104. id: 239 salary: 9 grade: 2
+105. id: 240 salary: 27 grade: 0
+106. id: 242 salary: 25 grade: 3
+107. id: 244 salary: 11 grade: 1
+108. id: 245 salary: 20 grade: 0
+109. id: 246 salary: 28 grade: 3
+110. id: 247 salary: 20 grade: 2
+111. id: 249 salary: 16 grade: 7
+112. id: 252 salary: 8 grade: 0
+113. id: 253 salary: 9 grade: 2
+114. id: 256 salary: 14 grade: 3
+115. id: 257 salary: 25 grade: 2
+116. id: 258 salary: 8 grade: 1
+117. id: 261 salary: 22 grade: 1
+118. id: 262 salary: 11 grade: 1
+119. id: 265 salary: 17 grade: 1
+120. id: 286 salary: 15 grade: 2
+121. id: 288 salary: 16 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 7:
+Actual company id: 10
+1. id: 225 salary: 30 grade: 3
+2. id: 25 salary: 27 grade: 9
+3. id: 176 salary: 22 grade: 7
+4. id: 92 salary: 18 grade: 7
+5. id: 141 salary: 16 grade: 7
+6. id: 202 salary: 10 grade: 4
+7. id: 214 salary: 6 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 24 26:
+
+num of employees in range: 17 with sum of 81
+1. id: 7 salary: 24 grade: 6
+2. id: 14 salary: 25 grade: 6
+3. id: 16 salary: 26 grade: 9
+4. id: 45 salary: 26 grade: 4
+5. id: 73 salary: 24 grade: 4
+6. id: 74 salary: 24 grade: 0
+7. id: 78 salary: 24 grade: 8
+8. id: 95 salary: 24 grade: 7
+9. id: 102 salary: 26 grade: 1
+10. id: 108 salary: 24 grade: 6
+11. id: 115 salary: 26 grade: 4
+12. id: 162 salary: 25 grade: 4
+13. id: 182 salary: 25 grade: 2
+14. id: 192 salary: 25 grade: 7
+15. id: 198 salary: 25 grade: 8
+16. id: 242 salary: 25 grade: 3
+17. id: 257 salary: 25 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 6 55:
+Actual company id: 8
+num of employees in range: 8 with sum of 35
+1. id: 129 salary: 7 grade: 1
+2. id: 34 salary: 31 grade: 4
+3. id: 163 salary: 39 grade: 8
+4. id: 212 salary: 27 grade: 1
+5. id: 5 salary: 28 grade: 1
+6. id: 246 salary: 28 grade: 3
+7. id: 185 salary: 18 grade: 10
+8. id: 189 salary: 6 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 18 22:
+Actual company id: 11
+num of employees in range: 2 with sum of 5
+1. id: 215 salary: 22 grade: 3
+2. id: 158 salary: 18 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  14 9 25:
+Actual company id: 14
+num of employees in range: 24 with sum of 84
+1. id: 65 salary: 18 grade: 4
+2. id: 257 salary: 25 grade: 2
+3. id: 136 salary: 20 grade: 0
+4. id: 73 salary: 24 grade: 4
+5. id: 74 salary: 24 grade: 0
+6. id: 80 salary: 9 grade: 9
+7. id: 208 salary: 9 grade: 2
+8. id: 276 salary: 21 grade: 2
+9. id: 24 salary: 12 grade: 5
+10. id: 152 salary: 19 grade: 9
+11. id: 162 salary: 25 grade: 4
+12. id: 227 salary: 13 grade: 4
+13. id: 104 salary: 13 grade: 4
+14. id: 232 salary: 14 grade: 2
+15. id: 105 salary: 12 grade: 3
+16. id: 234 salary: 14 grade: 1
+17. id: 235 salary: 14 grade: 4
+18. id: 171 salary: 10 grade: 10
+19. id: 236 salary: 20 grade: 1
+20. id: 238 salary: 12 grade: 0
+21. id: 242 salary: 25 grade: 3
+22. id: 56 salary: 21 grade: 8
+23. id: 125 salary: 16 grade: 1
+24. id: 253 salary: 9 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 5 8:
+
+num of employees in range: 23 with sum of 93
+1. id: 8 salary: 5 grade: 2
+2. id: 29 salary: 7 grade: 0
+3. id: 71 salary: 5 grade: 8
+4. id: 76 salary: 6 grade: 5
+5. id: 96 salary: 6 grade: 12
+6. id: 111 salary: 7 grade: 6
+7. id: 113 salary: 5 grade: 5
+8. id: 118 salary: 7 grade: 3
+9. id: 129 salary: 7 grade: 1
+10. id: 138 salary: 5 grade: 7
+11. id: 148 salary: 6 grade: 5
+12. id: 169 salary: 6 grade: 3
+13. id: 178 salary: 7 grade: 7
+14. id: 184 salary: 7 grade: 9
+15. id: 187 salary: 8 grade: 6
+16. id: 189 salary: 6 grade: 7
+17. id: 201 salary: 7 grade: 0
+18. id: 214 salary: 6 grade: 3
+19. id: 252 salary: 8 grade: 0
+20. id: 258 salary: 8 grade: 1
+21. id: 259 salary: 6 grade: 0
+22. id: 260 salary: 6 grade: 0
+23. id: 270 salary: 7 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 8:
+Actual company id: 11
+1. id: 22 salary: 40 grade: 9
+2. id: 196 salary: 35 grade: 6
+3. id: 91 salary: 27 grade: 6
+4. id: 255 salary: 25 grade: 3
+5. id: 215 salary: 22 grade: 3
+6. id: 158 salary: 18 grade: 2
+7. id: 286 salary: 15 grade: 2
+8. id: 124 salary: 15 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  9 20:
+Actual company id: 14
+1. id: 203 salary: 55 grade: 0
+2. id: 109 salary: 41 grade: 9
+3. id: 37 salary: 30 grade: 6
+4. id: 44 salary: 29 grade: 7
+5. id: 21 salary: 29 grade: 6
+6. id: 216 salary: 26 grade: 4
+7. id: 115 salary: 26 grade: 4
+8. id: 45 salary: 26 grade: 4
+9. id: 257 salary: 25 grade: 2
+10. id: 242 salary: 25 grade: 3
+11. id: 162 salary: 25 grade: 4
+12. id: 74 salary: 24 grade: 0
+13. id: 73 salary: 24 grade: 4
+14. id: 276 salary: 21 grade: 2
+15. id: 56 salary: 21 grade: 8
+16. id: 236 salary: 20 grade: 1
+17. id: 136 salary: 20 grade: 0
+18. id: 152 salary: 19 grade: 9
+19. id: 65 salary: 18 grade: 4
+20. id: 125 salary: 16 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 6:
+Actual company id: 10
+1. id: 225 salary: 30 grade: 3
+2. id: 25 salary: 27 grade: 9
+3. id: 176 salary: 22 grade: 7
+4. id: 92 salary: 18 grade: 7
+5. id: 141 salary: 16 grade: 7
+6. id: 202 salary: 10 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  13 2 19:
+Actual company id: 13
+num of employees in range: 3 with sum of 18
+1. id: 49 salary: 2 grade: 12
+2. id: 211 salary: 13 grade: 3
+3. id: 135 salary: 16 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  5 3:
+Actual company id: 5
+1. id: 251 salary: 30 grade: 2
+2. id: 123 salary: 30 grade: 5
+3. id: 62 salary: 28 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  9 35:
+Actual company id: 14
+1. id: 203 salary: 55 grade: 0
+2. id: 109 salary: 41 grade: 9
+3. id: 37 salary: 30 grade: 6
+4. id: 44 salary: 29 grade: 7
+5. id: 21 salary: 29 grade: 6
+6. id: 269 salary: 28 grade: 2
+7. id: 216 salary: 26 grade: 4
+8. id: 115 salary: 26 grade: 4
+9. id: 45 salary: 26 grade: 4
+10. id: 257 salary: 25 grade: 2
+11. id: 242 salary: 25 grade: 3
+12. id: 162 salary: 25 grade: 4
+13. id: 74 salary: 24 grade: 0
+14. id: 73 salary: 24 grade: 4
+15. id: 276 salary: 21 grade: 2
+16. id: 56 salary: 21 grade: 8
+17. id: 236 salary: 20 grade: 1
+18. id: 136 salary: 20 grade: 0
+19. id: 152 salary: 19 grade: 10
+20. id: 65 salary: 18 grade: 4
+21. id: 125 salary: 16 grade: 1
+22. id: 235 salary: 14 grade: 4
+23. id: 234 salary: 14 grade: 1
+24. id: 232 salary: 14 grade: 2
+25. id: 227 salary: 13 grade: 4
+26. id: 104 salary: 13 grade: 4
+27. id: 238 salary: 12 grade: 0
+28. id: 105 salary: 12 grade: 3
+29. id: 24 salary: 12 grade: 5
+30. id: 253 salary: 9 grade: 2
+31. id: 208 salary: 9 grade: 2
+32. id: 80 salary: 9 grade: 9
+33. id: 270 salary: 7 grade: 3
+34. id: 118 salary: 7 grade: 3
+35. id: 111 salary: 7 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  4 5:
+Actual company id: 4
+1. id: 293 salary: 28 grade: 4
+2. id: 175 salary: 27 grade: 3
+3. id: 167 salary: 27 grade: 5
+4. id: 127 salary: 27 grade: 5
+5. id: 161 salary: 15 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 3:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+3. id: 196 salary: 35 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 10:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+3. id: 196 salary: 35 grade: 6
+4. id: 91 salary: 27 grade: 6
+5. id: 110 salary: 26 grade: 7
+6. id: 215 salary: 22 grade: 3
+7. id: 158 salary: 18 grade: 2
+8. id: 286 salary: 15 grade: 2
+9. id: 124 salary: 15 grade: 6
+10. id: 172 salary: 13 grade: 8
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 3:
+Actual company id: 2
+1. id: 222 salary: 30 grade: 4
+2. id: 144 salary: 30 grade: 10
+3. id: 38 salary: 29 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 2:
+Actual company id: 16
+1. id: 182 salary: 33 grade: 2
+2. id: 12 salary: 33 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 3 19:
+Actual company id: 17
+num of employees in range: 7 with sum of 41
+1. id: 139 salary: 3 grade: 6
+2. id: 239 salary: 9 grade: 2
+3. id: 275 salary: 19 grade: 4
+4. id: 150 salary: 19 grade: 7
+5. id: 184 salary: 7 grade: 9
+6. id: 187 salary: 8 grade: 6
+7. id: 94 salary: 19 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  2 0 25:
+Actual company id: 2 with 1 interns, interns total grade sum: 9
+1. id: 40 grade: 9
+
+num of employees in range: 7 with sum of 29
+1. id: 160 salary: 17 grade: 3
+2. id: 120 salary: 11 grade: 8
+3. id: 201 salary: 7 grade: 0
+4. id: 89 salary: 3 grade: 2
+5. id: 157 salary: 23 grade: 8
+6. id: 13 salary: 10 grade: 2
+7. id: 14 salary: 25 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 8:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+3. id: 196 salary: 35 grade: 6
+4. id: 91 salary: 27 grade: 6
+5. id: 110 salary: 26 grade: 7
+6. id: 215 salary: 22 grade: 3
+7. id: 158 salary: 18 grade: 2
+8. id: 286 salary: 15 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  7 5 12:
+Actual company id: 7
+num of employees in range: 4 with sum of 18
+1. id: 8 salary: 5 grade: 2
+2. id: 43 salary: 12 grade: 8
+3. id: 301 salary: 12 grade: 2
+4. id: 47 salary: 12 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 3:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+3. id: 196 salary: 35 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 3 8:
+Actual company id: 17
+num of employees in range: 3 with sum of 21
+1. id: 139 salary: 3 grade: 6
+2. id: 184 salary: 7 grade: 9
+3. id: 187 salary: 8 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  2 23 28:
+Actual company id: 2
+num of employees in range: 3 with sum of 19
+1. id: 17 salary: 28 grade: 5
+2. id: 157 salary: 23 grade: 8
+3. id: 14 salary: 25 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  12 30:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 170 salary: 38 grade: 9
+4. id: 186 salary: 30 grade: 9
+5. id: 180 salary: 30 grade: 5
+6. id: 153 salary: 30 grade: 9
+7. id: 27 salary: 30 grade: 9
+8. id: 106 salary: 29 grade: 0
+9. id: 2 salary: 29 grade: 3
+10. id: 181 salary: 27 grade: 3
+11. id: 266 salary: 26 grade: 5
+12. id: 198 salary: 25 grade: 8
+13. id: 78 salary: 24 grade: 8
+14. id: 7 salary: 24 grade: 6
+15. id: 151 salary: 23 grade: 0
+16. id: 98 salary: 23 grade: 0
+17. id: 79 salary: 23 grade: 7
+18. id: 59 salary: 23 grade: 3
+19. id: 261 salary: 22 grade: 1
+20. id: 217 salary: 22 grade: 1
+21. id: 121 salary: 22 grade: 4
+22. id: 273 salary: 21 grade: 3
+23. id: 247 salary: 20 grade: 2
+24. id: 41 salary: 20 grade: 3
+25. id: 86 salary: 19 grade: 7
+26. id: 4 salary: 19 grade: 2
+27. id: 228 salary: 18 grade: 2
+28. id: 126 salary: 18 grade: 9
+29. id: 145 salary: 17 grade: 1
+30. id: 249 salary: 16 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  9 31:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 109 salary: 41 grade: 9
+4. id: 225 salary: 30 grade: 3
+5. id: 37 salary: 30 grade: 6
+6. id: 44 salary: 29 grade: 7
+7. id: 21 salary: 29 grade: 6
+8. id: 269 salary: 28 grade: 2
+9. id: 315 salary: 27 grade: 1
+10. id: 25 salary: 27 grade: 9
+11. id: 216 salary: 26 grade: 4
+12. id: 115 salary: 26 grade: 4
+13. id: 45 salary: 26 grade: 4
+14. id: 298 salary: 25 grade: 4
+15. id: 257 salary: 25 grade: 2
+16. id: 242 salary: 25 grade: 3
+17. id: 88 salary: 25 grade: 0
+18. id: 152 salary: 24 grade: 11
+19. id: 74 salary: 24 grade: 0
+20. id: 73 salary: 24 grade: 4
+21. id: 176 salary: 22 grade: 7
+22. id: 276 salary: 21 grade: 2
+23. id: 56 salary: 21 grade: 8
+24. id: 236 salary: 20 grade: 1
+25. id: 136 salary: 20 grade: 0
+26. id: 92 salary: 18 grade: 7
+27. id: 65 salary: 18 grade: 4
+28. id: 125 salary: 16 grade: 1
+29. id: 311 salary: 15 grade: 3
+30. id: 232 salary: 15 grade: 2
+31. id: 235 salary: 14 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 43:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 109 salary: 41 grade: 9
+4. id: 225 salary: 30 grade: 3
+5. id: 37 salary: 30 grade: 6
+6. id: 44 salary: 29 grade: 7
+7. id: 21 salary: 29 grade: 6
+8. id: 269 salary: 28 grade: 2
+9. id: 315 salary: 27 grade: 1
+10. id: 25 salary: 27 grade: 9
+11. id: 216 salary: 26 grade: 4
+12. id: 115 salary: 26 grade: 4
+13. id: 45 salary: 26 grade: 4
+14. id: 298 salary: 25 grade: 4
+15. id: 257 salary: 25 grade: 2
+16. id: 242 salary: 25 grade: 3
+17. id: 114 salary: 25 grade: 10
+18. id: 88 salary: 25 grade: 0
+19. id: 330 salary: 24 grade: 2
+20. id: 152 salary: 24 grade: 11
+21. id: 74 salary: 24 grade: 0
+22. id: 73 salary: 24 grade: 4
+23. id: 176 salary: 22 grade: 7
+24. id: 276 salary: 21 grade: 2
+25. id: 56 salary: 21 grade: 8
+26. id: 236 salary: 20 grade: 1
+27. id: 136 salary: 20 grade: 0
+28. id: 92 salary: 18 grade: 7
+29. id: 65 salary: 18 grade: 4
+30. id: 125 salary: 16 grade: 1
+31. id: 311 salary: 15 grade: 3
+32. id: 232 salary: 15 grade: 2
+33. id: 235 salary: 14 grade: 4
+34. id: 234 salary: 14 grade: 1
+35. id: 324 salary: 13 grade: 1
+36. id: 227 salary: 13 grade: 4
+37. id: 104 salary: 13 grade: 4
+38. id: 317 salary: 12 grade: 4
+39. id: 297 salary: 12 grade: 4
+40. id: 238 salary: 12 grade: 0
+41. id: 105 salary: 12 grade: 3
+42. id: 24 salary: 12 grade: 5
+43. id: 312 salary: 11 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  18 5:
+Actual company id: 18
+1. id: 28 salary: 21 grade: 10
+2. id: 103 salary: 19 grade: 7
+3. id: 54 salary: 18 grade: 2
+4. id: 302 salary: 9 grade: 2
+5. id: 116 salary: 9 grade: 6
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 18 22:
+
+num of employees in range: 37 with sum of 140
+1. id: 3 salary: 21 grade: 9
+2. id: 4 salary: 19 grade: 2
+3. id: 28 salary: 21 grade: 10
+4. id: 32 salary: 18 grade: 3
+5. id: 41 salary: 20 grade: 3
+6. id: 54 salary: 18 grade: 2
+7. id: 56 salary: 21 grade: 8
+8. id: 60 salary: 18 grade: 2
+9. id: 65 salary: 18 grade: 4
+10. id: 86 salary: 19 grade: 7
+11. id: 87 salary: 22 grade: 6
+12. id: 92 salary: 18 grade: 7
+13. id: 94 salary: 19 grade: 8
+14. id: 103 salary: 19 grade: 7
+15. id: 107 salary: 22 grade: 5
+16. id: 121 salary: 22 grade: 4
+17. id: 126 salary: 18 grade: 9
+18. id: 134 salary: 22 grade: 4
+19. id: 136 salary: 20 grade: 0
+20. id: 150 salary: 19 grade: 7
+21. id: 158 salary: 18 grade: 2
+22. id: 176 salary: 22 grade: 7
+23. id: 215 salary: 22 grade: 3
+24. id: 217 salary: 22 grade: 1
+25. id: 228 salary: 18 grade: 2
+26. id: 236 salary: 20 grade: 1
+27. id: 245 salary: 20 grade: 1
+28. id: 247 salary: 20 grade: 2
+29. id: 261 salary: 22 grade: 1
+30. id: 264 salary: 21 grade: 2
+31. id: 271 salary: 22 grade: 0
+32. id: 273 salary: 21 grade: 3
+33. id: 275 salary: 19 grade: 4
+34. id: 276 salary: 21 grade: 2
+35. id: 277 salary: 20 grade: 1
+36. id: 307 salary: 18 grade: 1
+37. id: 336 salary: 22 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  14 20:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 109 salary: 41 grade: 9
+4. id: 337 salary: 30 grade: 0
+5. id: 225 salary: 30 grade: 3
+6. id: 37 salary: 30 grade: 6
+7. id: 44 salary: 29 grade: 7
+8. id: 21 salary: 29 grade: 6
+9. id: 328 salary: 28 grade: 1
+10. id: 269 salary: 28 grade: 2
+11. id: 315 salary: 27 grade: 1
+12. id: 25 salary: 27 grade: 9
+13. id: 216 salary: 26 grade: 4
+14. id: 115 salary: 26 grade: 4
+15. id: 45 salary: 26 grade: 4
+16. id: 298 salary: 25 grade: 4
+17. id: 257 salary: 25 grade: 2
+18. id: 242 salary: 25 grade: 3
+19. id: 114 salary: 25 grade: 10
+20. id: 88 salary: 25 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  4 4:
+Actual company id: 4
+1. id: 278 salary: 29 grade: 0
+2. id: 293 salary: 28 grade: 4
+3. id: 175 salary: 27 grade: 3
+4. id: 167 salary: 27 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 8:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 170 salary: 38 grade: 9
+4. id: 313 salary: 30 grade: 2
+5. id: 296 salary: 30 grade: 3
+6. id: 186 salary: 30 grade: 9
+7. id: 180 salary: 30 grade: 7
+8. id: 153 salary: 30 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  19 6:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 170 salary: 38 grade: 9
+4. id: 313 salary: 30 grade: 2
+5. id: 296 salary: 30 grade: 3
+6. id: 186 salary: 30 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 20 40:
+Actual company id: 10
+num of employees in range: 25 with sum of 100
+1. id: 257 salary: 25 grade: 2
+2. id: 136 salary: 20 grade: 0
+3. id: 269 salary: 28 grade: 2
+4. id: 276 salary: 21 grade: 2
+5. id: 21 salary: 29 grade: 6
+6. id: 152 salary: 24 grade: 11
+7. id: 25 salary: 27 grade: 9
+8. id: 37 salary: 30 grade: 6
+9. id: 298 salary: 25 grade: 4
+10. id: 44 salary: 29 grade: 7
+11. id: 45 salary: 26 grade: 4
+12. id: 176 salary: 22 grade: 7
+13. id: 56 salary: 21 grade: 8
+14. id: 315 salary: 27 grade: 1
+15. id: 321 salary: 27 grade: 1
+16. id: 328 salary: 28 grade: 1
+17. id: 73 salary: 24 grade: 4
+18. id: 330 salary: 24 grade: 2
+19. id: 74 salary: 36 grade: 0
+20. id: 216 salary: 26 grade: 4
+21. id: 88 salary: 25 grade: 0
+22. id: 225 salary: 30 grade: 5
+23. id: 236 salary: 20 grade: 1
+24. id: 242 salary: 25 grade: 3
+25. id: 114 salary: 25 grade: 10
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 11 24:
+Actual company id: 10
+num of employees in range: 28 with sum of 110
+1. id: 136 salary: 20 grade: 0
+2. id: 270 salary: 13 grade: 3
+3. id: 276 salary: 21 grade: 2
+4. id: 24 salary: 12 grade: 5
+5. id: 152 salary: 24 grade: 11
+6. id: 297 salary: 12 grade: 4
+7. id: 176 salary: 22 grade: 7
+8. id: 311 salary: 15 grade: 3
+9. id: 56 salary: 21 grade: 8
+10. id: 312 salary: 11 grade: 1
+11. id: 317 salary: 12 grade: 4
+12. id: 65 salary: 18 grade: 4
+13. id: 324 salary: 13 grade: 1
+14. id: 73 salary: 24 grade: 4
+15. id: 330 salary: 24 grade: 2
+16. id: 333 salary: 11 grade: 4
+17. id: 92 salary: 18 grade: 7
+18. id: 96 salary: 17 grade: 12
+19. id: 227 salary: 13 grade: 4
+20. id: 99 salary: 14 grade: 8
+21. id: 104 salary: 13 grade: 4
+22. id: 232 salary: 15 grade: 2
+23. id: 105 salary: 12 grade: 3
+24. id: 234 salary: 14 grade: 1
+25. id: 235 salary: 14 grade: 4
+26. id: 236 salary: 20 grade: 1
+27. id: 238 salary: 12 grade: 0
+28. id: 125 salary: 16 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  5 9:
+Actual company id: 5
+1. id: 251 salary: 30 grade: 2
+2. id: 123 salary: 30 grade: 5
+3. id: 362 salary: 29 grade: 4
+4. id: 146 salary: 28 grade: 10
+5. id: 16 salary: 26 grade: 9
+6. id: 331 salary: 25 grade: 4
+7. id: 316 salary: 23 grade: 1
+8. id: 271 salary: 22 grade: 0
+9. id: 134 salary: 22 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 18 28:
+Actual company id: 10
+num of employees in range: 23 with sum of 90
+1. id: 257 salary: 25 grade: 2
+2. id: 136 salary: 20 grade: 0
+3. id: 269 salary: 28 grade: 2
+4. id: 276 salary: 21 grade: 2
+5. id: 152 salary: 24 grade: 11
+6. id: 25 salary: 27 grade: 9
+7. id: 298 salary: 25 grade: 4
+8. id: 45 salary: 26 grade: 4
+9. id: 176 salary: 22 grade: 7
+10. id: 56 salary: 21 grade: 8
+11. id: 315 salary: 27 grade: 1
+12. id: 321 salary: 27 grade: 1
+13. id: 328 salary: 28 grade: 1
+14. id: 73 salary: 24 grade: 4
+15. id: 330 salary: 24 grade: 2
+16. id: 216 salary: 26 grade: 4
+17. id: 88 salary: 25 grade: 0
+18. id: 92 salary: 18 grade: 7
+19. id: 355 salary: 25 grade: 6
+20. id: 360 salary: 27 grade: 1
+21. id: 236 salary: 20 grade: 1
+22. id: 242 salary: 25 grade: 3
+23. id: 114 salary: 25 grade: 10
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  13 13:
+Actual company id: 13
+1. id: 75 salary: 47 grade: 8
+2. id: 341 salary: 28 grade: 0
+3. id: 200 salary: 28 grade: 9
+4. id: 149 salary: 28 grade: 6
+5. id: 101 salary: 27 grade: 9
+6. id: 102 salary: 26 grade: 1
+7. id: 192 salary: 25 grade: 7
+8. id: 218 salary: 23 grade: 4
+9. id: 205 salary: 16 grade: 7
+10. id: 135 salary: 16 grade: 3
+11. id: 51 salary: 15 grade: 8
+12. id: 211 salary: 13 grade: 3
+13. id: 350 salary: 11 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  12 10 16:
+Actual company id: 15
+num of employees in range: 7 with sum of 46
+1. id: 256 salary: 14 grade: 3
+2. id: 15 salary: 14 grade: 12
+3. id: 281 salary: 11 grade: 3
+4. id: 289 salary: 10 grade: 8
+5. id: 50 salary: 15 grade: 9
+6. id: 81 salary: 11 grade: 4
+7. id: 249 salary: 16 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 2:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  14 52:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 109 salary: 41 grade: 9
+4. id: 65 salary: 39 grade: 4
+5. id: 74 salary: 36 grade: 0
+6. id: 225 salary: 30 grade: 5
+7. id: 37 salary: 30 grade: 6
+8. id: 44 salary: 29 grade: 7
+9. id: 21 salary: 29 grade: 6
+10. id: 328 salary: 28 grade: 1
+11. id: 269 salary: 28 grade: 2
+12. id: 360 salary: 27 grade: 1
+13. id: 321 salary: 27 grade: 1
+14. id: 315 salary: 27 grade: 1
+15. id: 25 salary: 27 grade: 9
+16. id: 216 salary: 26 grade: 4
+17. id: 45 salary: 26 grade: 4
+18. id: 355 salary: 25 grade: 6
+19. id: 298 salary: 25 grade: 4
+20. id: 257 salary: 25 grade: 2
+21. id: 242 salary: 25 grade: 3
+22. id: 114 salary: 25 grade: 10
+23. id: 88 salary: 25 grade: 0
+24. id: 330 salary: 24 grade: 2
+25. id: 152 salary: 24 grade: 11
+26. id: 73 salary: 24 grade: 4
+27. id: 176 salary: 22 grade: 7
+28. id: 276 salary: 21 grade: 2
+29. id: 56 salary: 21 grade: 8
+30. id: 236 salary: 20 grade: 1
+31. id: 136 salary: 20 grade: 0
+32. id: 92 salary: 18 grade: 7
+33. id: 96 salary: 17 grade: 12
+34. id: 125 salary: 16 grade: 1
+35. id: 311 salary: 15 grade: 3
+36. id: 232 salary: 15 grade: 2
+37. id: 235 salary: 14 grade: 4
+38. id: 234 salary: 14 grade: 1
+39. id: 99 salary: 14 grade: 8
+40. id: 352 salary: 13 grade: 2
+41. id: 324 salary: 13 grade: 1
+42. id: 270 salary: 13 grade: 3
+43. id: 227 salary: 13 grade: 4
+44. id: 104 salary: 13 grade: 4
+45. id: 317 salary: 12 grade: 4
+46. id: 297 salary: 12 grade: 4
+47. id: 238 salary: 12 grade: 0
+48. id: 105 salary: 12 grade: 3
+49. id: 24 salary: 12 grade: 5
+50. id: 333 salary: 11 grade: 4
+51. id: 312 salary: 11 grade: 1
+52. id: 202 salary: 10 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 9 9:
+Actual company id: 10
+num of employees in range: 3 with sum of 13
+1. id: 80 salary: 9 grade: 9
+2. id: 208 salary: 9 grade: 2
+3. id: 253 salary: 9 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 43:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 170 salary: 38 grade: 9
+4. id: 313 salary: 30 grade: 2
+5. id: 296 salary: 30 grade: 3
+6. id: 186 salary: 30 grade: 9
+7. id: 180 salary: 30 grade: 7
+8. id: 153 salary: 30 grade: 9
+9. id: 27 salary: 30 grade: 9
+10. id: 285 salary: 29 grade: 1
+11. id: 106 salary: 29 grade: 0
+12. id: 2 salary: 29 grade: 3
+13. id: 181 salary: 27 grade: 3
+14. id: 365 salary: 26 grade: 4
+15. id: 340 salary: 26 grade: 3
+16. id: 266 salary: 26 grade: 5
+17. id: 322 salary: 25 grade: 1
+18. id: 198 salary: 25 grade: 8
+19. id: 48 salary: 25 grade: 13
+20. id: 132 salary: 24 grade: 3
+21. id: 78 salary: 24 grade: 8
+22. id: 7 salary: 24 grade: 6
+23. id: 267 salary: 23 grade: 1
+24. id: 151 salary: 23 grade: 0
+25. id: 98 salary: 23 grade: 0
+26. id: 79 salary: 23 grade: 7
+27. id: 59 salary: 23 grade: 3
+28. id: 336 salary: 22 grade: 0
+29. id: 261 salary: 22 grade: 1
+30. id: 217 salary: 22 grade: 1
+31. id: 121 salary: 22 grade: 4
+32. id: 318 salary: 21 grade: 4
+33. id: 273 salary: 21 grade: 3
+34. id: 247 salary: 20 grade: 2
+35. id: 41 salary: 20 grade: 3
+36. id: 86 salary: 19 grade: 7
+37. id: 4 salary: 19 grade: 2
+38. id: 364 salary: 18 grade: 4
+39. id: 228 salary: 18 grade: 2
+40. id: 126 salary: 18 grade: 11
+41. id: 145 salary: 17 grade: 1
+42. id: 249 salary: 16 grade: 7
+43. id: 50 salary: 15 grade: 9
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 8:
+Actual company id: 16
+1. id: 265 salary: 47 grade: 1
+2. id: 182 salary: 33 grade: 2
+3. id: 12 salary: 33 grade: 6
+4. id: 30 salary: 27 grade: 8
+5. id: 19 salary: 27 grade: 10
+6. id: 97 salary: 16 grade: 6
+7. id: 130 salary: 13 grade: 7
+8. id: 358 salary: 12 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  15 3 72:
+Actual company id: 15
+num of employees in range: 62 with sum of 292
+1. id: 256 salary: 14 grade: 3
+2. id: 2 salary: 29 grade: 3
+3. id: 4 salary: 19 grade: 2
+4. id: 132 salary: 24 grade: 3
+5. id: 261 salary: 22 grade: 1
+6. id: 7 salary: 24 grade: 6
+7. id: 266 salary: 26 grade: 5
+8. id: 267 salary: 23 grade: 1
+9. id: 15 salary: 14 grade: 12
+10. id: 273 salary: 21 grade: 3
+11. id: 145 salary: 17 grade: 1
+12. id: 151 salary: 23 grade: 0
+13. id: 153 salary: 30 grade: 9
+14. id: 281 salary: 11 grade: 3
+15. id: 27 salary: 30 grade: 9
+16. id: 155 salary: 5 grade: 5
+17. id: 285 salary: 29 grade: 1
+18. id: 159 salary: 9 grade: 8
+19. id: 289 salary: 10 grade: 8
+20. id: 291 salary: 5 grade: 2
+21. id: 36 salary: 60 grade: 4
+22. id: 294 salary: 5 grade: 4
+23. id: 296 salary: 30 grade: 3
+24. id: 41 salary: 20 grade: 3
+25. id: 169 salary: 6 grade: 6
+26. id: 170 salary: 38 grade: 9
+27. id: 42 salary: 9 grade: 5
+28. id: 48 salary: 25 grade: 13
+29. id: 50 salary: 15 grade: 9
+30. id: 52 salary: 4 grade: 9
+31. id: 180 salary: 30 grade: 7
+32. id: 181 salary: 27 grade: 3
+33. id: 309 salary: 3 grade: 3
+34. id: 313 salary: 30 grade: 2
+35. id: 186 salary: 30 grade: 9
+36. id: 59 salary: 23 grade: 3
+37. id: 188 salary: 3 grade: 12
+38. id: 318 salary: 21 grade: 4
+39. id: 322 salary: 25 grade: 1
+40. id: 198 salary: 25 grade: 8
+41. id: 329 salary: 5 grade: 0
+42. id: 76 salary: 6 grade: 5
+43. id: 78 salary: 24 grade: 8
+44. id: 79 salary: 23 grade: 7
+45. id: 336 salary: 22 grade: 0
+46. id: 81 salary: 11 grade: 4
+47. id: 340 salary: 26 grade: 3
+48. id: 85 salary: 9 grade: 12
+49. id: 86 salary: 19 grade: 7
+50. id: 217 salary: 22 grade: 1
+51. id: 98 salary: 23 grade: 0
+52. id: 228 salary: 18 grade: 2
+53. id: 229 salary: 9 grade: 2
+54. id: 106 salary: 29 grade: 0
+55. id: 364 salary: 18 grade: 4
+56. id: 365 salary: 26 grade: 4
+57. id: 366 salary: 6 grade: 7
+58. id: 247 salary: 20 grade: 2
+59. id: 249 salary: 16 grade: 7
+60. id: 121 salary: 22 grade: 4
+61. id: 252 salary: 8 grade: 0
+62. id: 126 salary: 18 grade: 11
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 11 13:
+Actual company id: 10
+num of employees in range: 13 with sum of 39
+1. id: 270 salary: 13 grade: 3
+2. id: 24 salary: 12 grade: 5
+3. id: 297 salary: 12 grade: 4
+4. id: 312 salary: 11 grade: 1
+5. id: 317 salary: 12 grade: 4
+6. id: 324 salary: 13 grade: 1
+7. id: 333 salary: 11 grade: 4
+8. id: 352 salary: 13 grade: 2
+9. id: 227 salary: 13 grade: 4
+10. id: 104 salary: 13 grade: 4
+11. id: 105 salary: 12 grade: 3
+12. id: 238 salary: 12 grade: 0
+13. id: 369 salary: 13 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  3 56:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 170 salary: 38 grade: 9
+4. id: 313 salary: 30 grade: 2
+5. id: 296 salary: 30 grade: 3
+6. id: 186 salary: 30 grade: 9
+7. id: 180 salary: 30 grade: 7
+8. id: 153 salary: 30 grade: 9
+9. id: 27 salary: 30 grade: 9
+10. id: 285 salary: 29 grade: 1
+11. id: 106 salary: 29 grade: 0
+12. id: 2 salary: 29 grade: 3
+13. id: 181 salary: 27 grade: 3
+14. id: 365 salary: 26 grade: 4
+15. id: 340 salary: 26 grade: 3
+16. id: 266 salary: 26 grade: 5
+17. id: 322 salary: 25 grade: 1
+18. id: 198 salary: 25 grade: 8
+19. id: 48 salary: 25 grade: 13
+20. id: 132 salary: 24 grade: 3
+21. id: 78 salary: 24 grade: 8
+22. id: 7 salary: 24 grade: 6
+23. id: 267 salary: 23 grade: 1
+24. id: 151 salary: 23 grade: 0
+25. id: 98 salary: 23 grade: 0
+26. id: 79 salary: 23 grade: 7
+27. id: 59 salary: 23 grade: 3
+28. id: 336 salary: 22 grade: 0
+29. id: 261 salary: 22 grade: 1
+30. id: 217 salary: 22 grade: 1
+31. id: 121 salary: 22 grade: 4
+32. id: 318 salary: 21 grade: 4
+33. id: 273 salary: 21 grade: 3
+34. id: 247 salary: 20 grade: 2
+35. id: 41 salary: 20 grade: 3
+36. id: 86 salary: 19 grade: 7
+37. id: 4 salary: 19 grade: 2
+38. id: 364 salary: 18 grade: 4
+39. id: 228 salary: 18 grade: 2
+40. id: 126 salary: 18 grade: 11
+41. id: 145 salary: 17 grade: 1
+42. id: 249 salary: 16 grade: 7
+43. id: 50 salary: 15 grade: 9
+44. id: 256 salary: 14 grade: 3
+45. id: 15 salary: 14 grade: 12
+46. id: 281 salary: 11 grade: 3
+47. id: 81 salary: 11 grade: 4
+48. id: 289 salary: 10 grade: 8
+49. id: 229 salary: 9 grade: 2
+50. id: 159 salary: 9 grade: 8
+51. id: 85 salary: 9 grade: 12
+52. id: 42 salary: 9 grade: 5
+53. id: 252 salary: 8 grade: 0
+54. id: 366 salary: 6 grade: 7
+55. id: 169 salary: 6 grade: 6
+56. id: 76 salary: 6 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  6 1:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 9:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 40 grade: 9
+3. id: 196 salary: 35 grade: 6
+4. id: 335 salary: 27 grade: 3
+5. id: 91 salary: 27 grade: 6
+6. id: 110 salary: 26 grade: 7
+7. id: 215 salary: 22 grade: 3
+8. id: 353 salary: 19 grade: 3
+9. id: 158 salary: 18 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  18 0 21:
+Actual company id: 18 with 1 interns, interns total grade sum: 1
+1. id: 378 grade: 1
+
+num of employees in range: 8 with sum of 42
+1. id: 194 salary: 5 grade: 4
+2. id: 116 salary: 9 grade: 6
+3. id: 54 salary: 18 grade: 2
+4. id: 103 salary: 19 grade: 7
+5. id: 28 salary: 21 grade: 10
+6. id: 302 salary: 9 grade: 2
+7. id: 31 salary: 3 grade: 8
+8. id: 351 salary: 18 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  10 7 25:
+Actual company id: 10
+num of employees in range: 43 with sum of 176
+1. id: 257 salary: 25 grade: 2
+2. id: 136 salary: 20 grade: 0
+3. id: 270 salary: 13 grade: 3
+4. id: 276 salary: 21 grade: 2
+5. id: 24 salary: 12 grade: 5
+6. id: 152 salary: 24 grade: 11
+7. id: 297 salary: 12 grade: 4
+8. id: 298 salary: 25 grade: 4
+9. id: 176 salary: 22 grade: 7
+10. id: 311 salary: 15 grade: 3
+11. id: 56 salary: 21 grade: 8
+12. id: 312 salary: 11 grade: 1
+13. id: 317 salary: 12 grade: 4
+14. id: 320 salary: 7 grade: 4
+15. id: 324 salary: 13 grade: 5
+16. id: 73 salary: 24 grade: 4
+17. id: 202 salary: 10 grade: 4
+18. id: 330 salary: 24 grade: 2
+19. id: 333 salary: 11 grade: 4
+20. id: 80 salary: 9 grade: 9
+21. id: 208 salary: 9 grade: 2
+22. id: 88 salary: 25 grade: 0
+23. id: 92 salary: 18 grade: 7
+24. id: 96 salary: 17 grade: 12
+25. id: 352 salary: 13 grade: 2
+26. id: 227 salary: 13 grade: 4
+27. id: 99 salary: 14 grade: 8
+28. id: 355 salary: 25 grade: 6
+29. id: 104 salary: 13 grade: 4
+30. id: 232 salary: 15 grade: 2
+31. id: 105 salary: 12 grade: 3
+32. id: 234 salary: 14 grade: 1
+33. id: 235 salary: 14 grade: 4
+34. id: 236 salary: 20 grade: 1
+35. id: 238 salary: 12 grade: 0
+36. id: 111 salary: 7 grade: 6
+37. id: 369 salary: 13 grade: 4
+38. id: 242 salary: 25 grade: 3
+39. id: 114 salary: 25 grade: 10
+40. id: 118 salary: 7 grade: 6
+41. id: 374 salary: 7 grade: 2
+42. id: 125 salary: 16 grade: 1
+43. id: 253 salary: 9 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  16 11 47:
+Actual company id: 16
+num of employees in range: 20 with sum of 94
+1. id: 130 salary: 13 grade: 7
+2. id: 69 salary: 11 grade: 2
+3. id: 265 salary: 47 grade: 1
+4. id: 12 salary: 33 grade: 6
+5. id: 19 salary: 27 grade: 14
+6. id: 339 salary: 27 grade: 3
+7. id: 278 salary: 44 grade: 0
+8. id: 345 salary: 17 grade: 1
+9. id: 282 salary: 17 grade: 2
+10. id: 284 salary: 11 grade: 3
+11. id: 30 salary: 27 grade: 8
+12. id: 97 salary: 16 grade: 6
+13. id: 161 salary: 15 grade: 9
+14. id: 293 salary: 28 grade: 4
+15. id: 358 salary: 12 grade: 4
+16. id: 167 salary: 27 grade: 5
+17. id: 175 salary: 27 grade: 3
+18. id: 177 salary: 14 grade: 5
+19. id: 182 salary: 33 grade: 2
+20. id: 127 salary: 27 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  0 7 25:
+
+num of employees in range: 179 with sum of 754
+1. id: 3 salary: 21 grade: 9
+2. id: 4 salary: 19 grade: 2
+3. id: 7 salary: 24 grade: 6
+4. id: 13 salary: 10 grade: 2
+5. id: 15 salary: 14 grade: 12
+6. id: 20 salary: 12 grade: 6
+7. id: 23 salary: 16 grade: 8
+8. id: 24 salary: 12 grade: 5
+9. id: 28 salary: 21 grade: 10
+10. id: 29 salary: 7 grade: 2
+11. id: 32 salary: 18 grade: 3
+12. id: 40 salary: 15 grade: 9
+13. id: 41 salary: 20 grade: 3
+14. id: 42 salary: 9 grade: 5
+15. id: 43 salary: 12 grade: 8
+16. id: 46 salary: 12 grade: 4
+17. id: 47 salary: 12 grade: 6
+18. id: 48 salary: 25 grade: 13
+19. id: 50 salary: 15 grade: 9
+20. id: 51 salary: 15 grade: 8
+21. id: 54 salary: 18 grade: 2
+22. id: 56 salary: 21 grade: 8
+23. id: 59 salary: 23 grade: 3
+24. id: 60 salary: 18 grade: 2
+25. id: 63 salary: 9 grade: 0
+26. id: 69 salary: 11 grade: 2
+27. id: 73 salary: 24 grade: 4
+28. id: 77 salary: 17 grade: 3
+29. id: 78 salary: 24 grade: 8
+30. id: 79 salary: 23 grade: 7
+31. id: 80 salary: 9 grade: 9
+32. id: 81 salary: 11 grade: 4
+33. id: 83 salary: 7 grade: 4
+34. id: 85 salary: 9 grade: 12
+35. id: 86 salary: 19 grade: 7
+36. id: 87 salary: 22 grade: 6
+37. id: 88 salary: 25 grade: 0
+38. id: 92 salary: 18 grade: 7
+39. id: 94 salary: 19 grade: 8
+40. id: 96 salary: 17 grade: 12
+41. id: 97 salary: 16 grade: 6
+42. id: 98 salary: 23 grade: 0
+43. id: 99 salary: 14 grade: 8
+44. id: 103 salary: 19 grade: 7
+45. id: 104 salary: 13 grade: 4
+46. id: 105 salary: 12 grade: 3
+47. id: 107 salary: 22 grade: 5
+48. id: 108 salary: 24 grade: 6
+49. id: 111 salary: 7 grade: 6
+50. id: 114 salary: 25 grade: 10
+51. id: 116 salary: 9 grade: 6
+52. id: 118 salary: 7 grade: 6
+53. id: 120 salary: 11 grade: 8
+54. id: 124 salary: 15 grade: 6
+55. id: 125 salary: 16 grade: 1
+56. id: 126 salary: 18 grade: 11
+57. id: 129 salary: 7 grade: 1
+58. id: 130 salary: 13 grade: 7
+59. id: 132 salary: 24 grade: 3
+60. id: 133 salary: 24 grade: 7
+61. id: 134 salary: 22 grade: 4
+62. id: 135 salary: 16 grade: 3
+63. id: 136 salary: 20 grade: 0
+64. id: 143 salary: 9 grade: 8
+65. id: 145 salary: 17 grade: 1
+66. id: 150 salary: 19 grade: 7
+67. id: 151 salary: 23 grade: 0
+68. id: 152 salary: 24 grade: 11
+69. id: 157 salary: 23 grade: 8
+70. id: 158 salary: 18 grade: 2
+71. id: 159 salary: 9 grade: 8
+72. id: 160 salary: 17 grade: 3
+73. id: 161 salary: 15 grade: 9
+74. id: 164 salary: 16 grade: 3
+75. id: 166 salary: 11 grade: 9
+76. id: 172 salary: 13 grade: 8
+77. id: 176 salary: 22 grade: 7
+78. id: 177 salary: 14 grade: 5
+79. id: 178 salary: 7 grade: 10
+80. id: 184 salary: 7 grade: 9
+81. id: 187 salary: 8 grade: 6
+82. id: 189 salary: 25 grade: 7
+83. id: 192 salary: 25 grade: 7
+84. id: 195 salary: 9 grade: 3
+85. id: 198 salary: 25 grade: 8
+86. id: 199 salary: 23 grade: 2
+87. id: 201 salary: 7 grade: 4
+88. id: 202 salary: 10 grade: 4
+89. id: 205 salary: 16 grade: 7
+90. id: 208 salary: 9 grade: 2
+91. id: 211 salary: 13 grade: 3
+92. id: 214 salary: 23 grade: 3
+93. id: 215 salary: 22 grade: 3
+94. id: 217 salary: 22 grade: 1
+95. id: 218 salary: 23 grade: 4
+96. id: 226 salary: 13 grade: 0
+97. id: 227 salary: 13 grade: 4
+98. id: 228 salary: 18 grade: 2
+99. id: 229 salary: 9 grade: 2
+100. id: 232 salary: 15 grade: 2
+101. id: 234 salary: 14 grade: 1
+102. id: 235 salary: 14 grade: 4
+103. id: 236 salary: 20 grade: 1
+104. id: 237 salary: 13 grade: 4
+105. id: 238 salary: 12 grade: 0
+106. id: 239 salary: 9 grade: 2
+107. id: 242 salary: 25 grade: 3
+108. id: 244 salary: 11 grade: 1
+109. id: 247 salary: 20 grade: 2
+110. id: 248 salary: 23 grade: 2
+111. id: 249 salary: 16 grade: 7
+112. id: 252 salary: 8 grade: 0
+113. id: 253 salary: 9 grade: 2
+114. id: 256 salary: 14 grade: 3
+115. id: 257 salary: 25 grade: 2
+116. id: 258 salary: 8 grade: 1
+117. id: 261 salary: 22 grade: 1
+118. id: 262 salary: 11 grade: 1
+119. id: 267 salary: 23 grade: 1
+120. id: 268 salary: 15 grade: 7
+121. id: 270 salary: 13 grade: 3
+122. id: 271 salary: 22 grade: 0
+123. id: 272 salary: 10 grade: 1
+124. id: 273 salary: 21 grade: 3
+125. id: 275 salary: 19 grade: 7
+126. id: 276 salary: 21 grade: 2
+127. id: 277 salary: 20 grade: 1
+128. id: 281 salary: 11 grade: 3
+129. id: 282 salary: 17 grade: 2
+130. id: 283 salary: 17 grade: 0
+131. id: 284 salary: 11 grade: 3
+132. id: 288 salary: 16 grade: 4
+133. id: 289 salary: 10 grade: 8
+134. id: 290 salary: 19 grade: 5
+135. id: 297 salary: 12 grade: 4
+136. id: 298 salary: 25 grade: 4
+137. id: 301 salary: 12 grade: 2
+138. id: 302 salary: 9 grade: 2
+139. id: 304 salary: 9 grade: 2
+140. id: 305 salary: 10 grade: 3
+141. id: 307 salary: 18 grade: 1
+142. id: 310 salary: 19 grade: 2
+143. id: 311 salary: 15 grade: 3
+144. id: 312 salary: 11 grade: 1
+145. id: 314 salary: 9 grade: 5
+146. id: 316 salary: 23 grade: 1
+147. id: 317 salary: 12 grade: 4
+148. id: 318 salary: 21 grade: 4
+149. id: 320 salary: 7 grade: 4
+150. id: 322 salary: 25 grade: 1
+151. id: 323 salary: 25 grade: 4
+152. id: 324 salary: 13 grade: 5
+153. id: 327 salary: 24 grade: 7
+154. id: 330 salary: 24 grade: 2
+155. id: 331 salary: 25 grade: 4
+156. id: 333 salary: 11 grade: 4
+157. id: 334 salary: 9 grade: 1
+158. id: 336 salary: 22 grade: 0
+159. id: 338 salary: 11 grade: 1
+160. id: 345 salary: 17 grade: 1
+161. id: 346 salary: 21 grade: 4
+162. id: 349 salary: 15 grade: 11
+163. id: 350 salary: 11 grade: 1
+164. id: 351 salary: 18 grade: 3
+165. id: 352 salary: 13 grade: 2
+166. id: 353 salary: 19 grade: 3
+167. id: 354 salary: 16 grade: 1
+168. id: 355 salary: 25 grade: 6
+169. id: 358 salary: 12 grade: 4
+170. id: 361 salary: 7 grade: 0
+171. id: 364 salary: 18 grade: 4
+172. id: 369 salary: 13 grade: 4
+173. id: 374 salary: 7 grade: 2
+174. id: 375 salary: 9 grade: 3
+175. id: 376 salary: 17 grade: 2
+176. id: 378 salary: 7 grade: 1
+177. id: 379 salary: 18 grade: 2
+178. id: 380 salary: 19 grade: 0
+179. id: 381 salary: 23 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  8 19:
+Actual company id: 8
+1. id: 119 salary: 64 grade: 2
+2. id: 185 salary: 48 grade: 10
+3. id: 264 salary: 42 grade: 2
+4. id: 163 salary: 39 grade: 8
+5. id: 34 salary: 31 grade: 4
+6. id: 368 salary: 30 grade: 3
+7. id: 246 salary: 28 grade: 3
+8. id: 5 salary: 28 grade: 1
+9. id: 212 salary: 27 grade: 1
+10. id: 189 salary: 25 grade: 7
+11. id: 133 salary: 24 grade: 7
+12. id: 248 salary: 23 grade: 2
+13. id: 346 salary: 21 grade: 4
+14. id: 376 salary: 17 grade: 2
+15. id: 283 salary: 17 grade: 0
+16. id: 77 salary: 17 grade: 3
+17. id: 237 salary: 13 grade: 4
+18. id: 226 salary: 13 grade: 0
+19. id: 195 salary: 9 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  6 9 16:
+Actual company id: 10
+num of employees in range: 23 with sum of 79
+1. id: 270 salary: 13 grade: 3
+2. id: 24 salary: 12 grade: 5
+3. id: 297 salary: 12 grade: 4
+4. id: 311 salary: 15 grade: 3
+5. id: 312 salary: 11 grade: 1
+6. id: 317 salary: 12 grade: 4
+7. id: 324 salary: 13 grade: 5
+8. id: 202 salary: 10 grade: 4
+9. id: 333 salary: 11 grade: 4
+10. id: 80 salary: 9 grade: 9
+11. id: 208 salary: 9 grade: 2
+12. id: 352 salary: 13 grade: 2
+13. id: 227 salary: 13 grade: 4
+14. id: 99 salary: 14 grade: 8
+15. id: 104 salary: 13 grade: 4
+16. id: 232 salary: 15 grade: 2
+17. id: 105 salary: 12 grade: 3
+18. id: 234 salary: 14 grade: 1
+19. id: 235 salary: 14 grade: 4
+20. id: 238 salary: 12 grade: 0
+21. id: 369 salary: 13 grade: 4
+22. id: 125 salary: 16 grade: 1
+23. id: 253 salary: 9 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  5 16 28:
+Actual company id: 5
+num of employees in range: 11 with sum of 44
+1. id: 32 salary: 18 grade: 3
+2. id: 288 salary: 16 grade: 4
+3. id: 290 salary: 19 grade: 5
+4. id: 354 salary: 16 grade: 1
+5. id: 164 salary: 16 grade: 3
+6. id: 134 salary: 22 grade: 4
+7. id: 331 salary: 25 grade: 4
+8. id: 271 salary: 22 grade: 0
+9. id: 16 salary: 26 grade: 9
+10. id: 146 salary: 28 grade: 10
+11. id: 316 salary: 23 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  18 7:
+Actual company id: 18
+1. id: 28 salary: 21 grade: 10
+2. id: 103 salary: 19 grade: 7
+3. id: 351 salary: 18 grade: 3
+4. id: 54 salary: 18 grade: 2
+5. id: 302 salary: 9 grade: 2
+6. id: 116 salary: 9 grade: 6
+7. id: 378 salary: 7 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 1 24:
+Actual company id: 10
+num of employees in range: 53 with sum of 202
+1. id: 136 salary: 20 grade: 0
+2. id: 138 salary: 5 grade: 7
+3. id: 11 salary: 2 grade: 6
+4. id: 270 salary: 13 grade: 3
+5. id: 276 salary: 21 grade: 2
+6. id: 148 salary: 7 grade: 7
+7. id: 24 salary: 12 grade: 5
+8. id: 152 salary: 24 grade: 11
+9. id: 154 salary: 3 grade: 0
+10. id: 297 salary: 12 grade: 4
+11. id: 176 salary: 22 grade: 7
+12. id: 53 salary: 3 grade: 4
+13. id: 311 salary: 15 grade: 3
+14. id: 56 salary: 21 grade: 8
+15. id: 312 salary: 11 grade: 1
+16. id: 317 salary: 12 grade: 4
+17. id: 320 salary: 7 grade: 4
+18. id: 324 salary: 13 grade: 5
+19. id: 73 salary: 24 grade: 4
+20. id: 202 salary: 10 grade: 4
+21. id: 330 salary: 24 grade: 2
+22. id: 332 salary: 3 grade: 3
+23. id: 333 salary: 11 grade: 4
+24. id: 80 salary: 9 grade: 9
+25. id: 208 salary: 9 grade: 2
+26. id: 214 salary: 23 grade: 3
+27. id: 343 salary: 5 grade: 4
+28. id: 92 salary: 18 grade: 7
+29. id: 348 salary: 4 grade: 3
+30. id: 93 salary: 4 grade: 6
+31. id: 224 salary: 5 grade: 0
+32. id: 96 salary: 17 grade: 12
+33. id: 352 salary: 13 grade: 2
+34. id: 227 salary: 13 grade: 4
+35. id: 99 salary: 14 grade: 8
+36. id: 356 salary: 4 grade: 0
+37. id: 104 salary: 13 grade: 4
+38. id: 232 salary: 15 grade: 2
+39. id: 105 salary: 12 grade: 3
+40. id: 234 salary: 14 grade: 1
+41. id: 235 salary: 14 grade: 4
+42. id: 236 salary: 20 grade: 1
+43. id: 238 salary: 12 grade: 0
+44. id: 111 salary: 7 grade: 6
+45. id: 369 salary: 13 grade: 4
+46. id: 370 salary: 1 grade: 2
+47. id: 243 salary: 6 grade: 2
+48. id: 118 salary: 7 grade: 6
+49. id: 374 salary: 7 grade: 2
+50. id: 250 salary: 1 grade: 0
+51. id: 125 salary: 16 grade: 1
+52. id: 253 salary: 9 grade: 2
+53. id: 381 salary: 23 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 13 33:
+Actual company id: 11
+num of employees in range: 11 with sum of 49
+1. id: 353 salary: 19 grade: 3
+2. id: 386 salary: 23 grade: 0
+3. id: 172 salary: 13 grade: 8
+4. id: 110 salary: 26 grade: 7
+5. id: 335 salary: 27 grade: 3
+6. id: 215 salary: 22 grade: 3
+7. id: 91 salary: 27 grade: 6
+8. id: 124 salary: 15 grade: 6
+9. id: 380 salary: 19 grade: 0
+10. id: 349 salary: 15 grade: 11
+11. id: 158 salary: 18 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 8:
+Actual company id: 7
+1. id: 325 salary: 29 grade: 4
+2. id: 299 salary: 29 grade: 3
+3. id: 357 salary: 27 grade: 6
+4. id: 274 salary: 27 grade: 1
+5. id: 323 salary: 25 grade: 4
+6. id: 60 salary: 18 grade: 2
+7. id: 23 salary: 16 grade: 8
+8. id: 301 salary: 12 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  3 2:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 9:
+Actual company id: 7
+1. id: 325 salary: 29 grade: 4
+2. id: 299 salary: 29 grade: 3
+3. id: 357 salary: 27 grade: 6
+4. id: 274 salary: 27 grade: 1
+5. id: 323 salary: 25 grade: 4
+6. id: 60 salary: 18 grade: 2
+7. id: 23 salary: 16 grade: 8
+8. id: 301 salary: 12 grade: 2
+9. id: 47 salary: 12 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 15:
+Actual company id: 16
+1. id: 265 salary: 47 grade: 1
+2. id: 278 salary: 44 grade: 0
+3. id: 177 salary: 38 grade: 5
+4. id: 182 salary: 33 grade: 2
+5. id: 12 salary: 33 grade: 6
+6. id: 293 salary: 28 grade: 4
+7. id: 339 salary: 27 grade: 3
+8. id: 175 salary: 27 grade: 3
+9. id: 167 salary: 27 grade: 5
+10. id: 30 salary: 27 grade: 8
+11. id: 19 salary: 27 grade: 14
+12. id: 345 salary: 17 grade: 1
+13. id: 282 salary: 17 grade: 2
+14. id: 97 salary: 16 grade: 6
+15. id: 161 salary: 15 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  13 0 15:
+Actual company id: 13 with 0 interns, interns total grade sum: 0
+
+num of employees in range: 6 with sum of 30
+1. id: 193 salary: 1 grade: 2
+2. id: 49 salary: 2 grade: 12
+3. id: 211 salary: 13 grade: 3
+4. id: 83 salary: 7 grade: 4
+5. id: 51 salary: 15 grade: 8
+6. id: 350 salary: 11 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  12 29:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 318 salary: 42 grade: 4
+4. id: 170 salary: 38 grade: 9
+5. id: 313 salary: 30 grade: 4
+6. id: 296 salary: 30 grade: 3
+7. id: 291 salary: 30 grade: 2
+8. id: 186 salary: 30 grade: 9
+9. id: 180 salary: 30 grade: 11
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 106 salary: 29 grade: 0
+14. id: 2 salary: 29 grade: 5
+15. id: 181 salary: 27 grade: 3
+16. id: 365 salary: 26 grade: 4
+17. id: 340 salary: 26 grade: 3
+18. id: 266 salary: 26 grade: 5
+19. id: 322 salary: 25 grade: 1
+20. id: 198 salary: 25 grade: 8
+21. id: 48 salary: 25 grade: 13
+22. id: 401 salary: 24 grade: 3
+23. id: 132 salary: 24 grade: 3
+24. id: 78 salary: 24 grade: 8
+25. id: 7 salary: 24 grade: 6
+26. id: 411 salary: 23 grade: 3
+27. id: 267 salary: 23 grade: 1
+28. id: 151 salary: 23 grade: 1
+29. id: 98 salary: 23 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 55:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 318 salary: 42 grade: 4
+4. id: 170 salary: 38 grade: 9
+5. id: 313 salary: 30 grade: 4
+6. id: 296 salary: 30 grade: 3
+7. id: 291 salary: 30 grade: 2
+8. id: 186 salary: 30 grade: 9
+9. id: 180 salary: 30 grade: 11
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 106 salary: 29 grade: 0
+14. id: 2 salary: 29 grade: 5
+15. id: 181 salary: 27 grade: 3
+16. id: 365 salary: 26 grade: 4
+17. id: 340 salary: 26 grade: 3
+18. id: 266 salary: 26 grade: 5
+19. id: 322 salary: 25 grade: 1
+20. id: 198 salary: 25 grade: 8
+21. id: 48 salary: 25 grade: 13
+22. id: 401 salary: 24 grade: 3
+23. id: 132 salary: 24 grade: 3
+24. id: 78 salary: 24 grade: 8
+25. id: 7 salary: 24 grade: 6
+26. id: 411 salary: 23 grade: 3
+27. id: 267 salary: 23 grade: 1
+28. id: 151 salary: 23 grade: 1
+29. id: 98 salary: 23 grade: 0
+30. id: 79 salary: 23 grade: 7
+31. id: 336 salary: 22 grade: 0
+32. id: 261 salary: 22 grade: 1
+33. id: 217 salary: 22 grade: 1
+34. id: 273 salary: 21 grade: 3
+35. id: 247 salary: 20 grade: 2
+36. id: 41 salary: 20 grade: 3
+37. id: 86 salary: 19 grade: 7
+38. id: 4 salary: 19 grade: 2
+39. id: 379 salary: 18 grade: 2
+40. id: 364 salary: 18 grade: 4
+41. id: 228 salary: 18 grade: 2
+42. id: 126 salary: 18 grade: 15
+43. id: 384 salary: 17 grade: 1
+44. id: 145 salary: 17 grade: 1
+45. id: 249 salary: 16 grade: 7
+46. id: 50 salary: 15 grade: 9
+47. id: 256 salary: 14 grade: 3
+48. id: 15 salary: 14 grade: 12
+49. id: 382 salary: 12 grade: 0
+50. id: 281 salary: 11 grade: 3
+51. id: 81 salary: 11 grade: 4
+52. id: 289 salary: 10 grade: 8
+53. id: 229 salary: 9 grade: 2
+54. id: 159 salary: 9 grade: 8
+55. id: 85 salary: 9 grade: 12
+
+Input line AverageBumpGradeBetweenSalaryByGroup  3 11 37:
+Actual company id: 15
+num of employees in range: 47 with sum of 206
+1. id: 256 salary: 14 grade: 3
+2. id: 384 salary: 17 grade: 1
+3. id: 2 salary: 29 grade: 5
+4. id: 4 salary: 19 grade: 2
+5. id: 132 salary: 24 grade: 3
+6. id: 261 salary: 22 grade: 1
+7. id: 7 salary: 24 grade: 6
+8. id: 266 salary: 26 grade: 5
+9. id: 267 salary: 23 grade: 1
+10. id: 15 salary: 14 grade: 12
+11. id: 273 salary: 21 grade: 3
+12. id: 145 salary: 17 grade: 1
+13. id: 401 salary: 24 grade: 3
+14. id: 151 salary: 23 grade: 1
+15. id: 153 salary: 30 grade: 9
+16. id: 281 salary: 11 grade: 3
+17. id: 27 salary: 30 grade: 11
+18. id: 411 salary: 23 grade: 3
+19. id: 285 salary: 29 grade: 1
+20. id: 291 salary: 30 grade: 2
+21. id: 296 salary: 30 grade: 3
+22. id: 41 salary: 20 grade: 3
+23. id: 48 salary: 25 grade: 13
+24. id: 50 salary: 15 grade: 9
+25. id: 180 salary: 30 grade: 11
+26. id: 181 salary: 27 grade: 3
+27. id: 313 salary: 30 grade: 4
+28. id: 186 salary: 30 grade: 9
+29. id: 322 salary: 25 grade: 1
+30. id: 198 salary: 25 grade: 8
+31. id: 78 salary: 24 grade: 8
+32. id: 79 salary: 23 grade: 7
+33. id: 336 salary: 22 grade: 0
+34. id: 81 salary: 11 grade: 4
+35. id: 340 salary: 26 grade: 3
+36. id: 86 salary: 19 grade: 7
+37. id: 217 salary: 22 grade: 1
+38. id: 98 salary: 23 grade: 0
+39. id: 228 salary: 18 grade: 2
+40. id: 106 salary: 29 grade: 0
+41. id: 364 salary: 18 grade: 4
+42. id: 365 salary: 26 grade: 4
+43. id: 247 salary: 20 grade: 2
+44. id: 249 salary: 16 grade: 7
+45. id: 379 salary: 18 grade: 2
+46. id: 382 salary: 12 grade: 0
+47. id: 126 salary: 18 grade: 15
+
+Input line AverageBumpGradeBetweenSalaryByGroup  3 8 17:
+Actual company id: 15
+num of employees in range: 16 with sum of 75
+1. id: 256 salary: 14 grade: 3
+2. id: 384 salary: 17 grade: 1
+3. id: 395 salary: 8 grade: 0
+4. id: 15 salary: 14 grade: 12
+5. id: 145 salary: 17 grade: 1
+6. id: 281 salary: 11 grade: 3
+7. id: 159 salary: 9 grade: 8
+8. id: 289 salary: 10 grade: 8
+9. id: 42 salary: 9 grade: 5
+10. id: 50 salary: 15 grade: 9
+11. id: 81 salary: 11 grade: 4
+12. id: 85 salary: 9 grade: 12
+13. id: 229 salary: 9 grade: 2
+14. id: 249 salary: 16 grade: 7
+15. id: 252 salary: 8 grade: 0
+16. id: 382 salary: 12 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 26:
+Actual company id: 16
+1. id: 339 salary: 57 grade: 3
+2. id: 265 salary: 47 grade: 1
+3. id: 278 salary: 44 grade: 0
+4. id: 177 salary: 38 grade: 5
+5. id: 182 salary: 33 grade: 2
+6. id: 12 salary: 33 grade: 6
+7. id: 293 salary: 28 grade: 4
+8. id: 175 salary: 27 grade: 3
+9. id: 167 salary: 27 grade: 5
+10. id: 30 salary: 27 grade: 8
+11. id: 19 salary: 27 grade: 14
+12. id: 345 salary: 17 grade: 1
+13. id: 282 salary: 17 grade: 2
+14. id: 97 salary: 16 grade: 6
+15. id: 161 salary: 15 grade: 9
+16. id: 130 salary: 13 grade: 7
+17. id: 358 salary: 12 grade: 4
+18. id: 284 salary: 11 grade: 3
+19. id: 69 salary: 11 grade: 2
+20. id: 272 salary: 10 grade: 1
+21. id: 314 salary: 9 grade: 5
+22. id: 304 salary: 9 grade: 2
+23. id: 29 salary: 7 grade: 2
+24. id: 259 salary: 6 grade: 0
+25. id: 373 salary: 5 grade: 3
+26. id: 279 salary: 5 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  7 9:
+Actual company id: 7
+1. id: 394 salary: 30 grade: 3
+2. id: 325 salary: 29 grade: 4
+3. id: 299 salary: 29 grade: 3
+4. id: 357 salary: 27 grade: 6
+5. id: 274 salary: 27 grade: 1
+6. id: 323 salary: 25 grade: 4
+7. id: 8 salary: 20 grade: 2
+8. id: 359 salary: 19 grade: 0
+9. id: 60 salary: 18 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 7 29:
+Actual company id: 17
+num of employees in range: 12 with sum of 69
+1. id: 3 salary: 21 grade: 9
+2. id: 387 salary: 28 grade: 4
+3. id: 70 salary: 28 grade: 5
+4. id: 168 salary: 27 grade: 2
+5. id: 107 salary: 22 grade: 5
+6. id: 239 salary: 9 grade: 2
+7. id: 275 salary: 19 grade: 7
+8. id: 150 salary: 19 grade: 7
+9. id: 375 salary: 9 grade: 3
+10. id: 184 salary: 7 grade: 9
+11. id: 187 salary: 8 grade: 8
+12. id: 94 salary: 19 grade: 8
+
+Input line AverageBumpGradeBetweenSalaryByGroup  10 2 23:
+Actual company id: 10
+num of employees in range: 51 with sum of 194
+1. id: 136 salary: 20 grade: 0
+2. id: 138 salary: 5 grade: 7
+3. id: 11 salary: 2 grade: 6
+4. id: 270 salary: 13 grade: 3
+5. id: 399 salary: 12 grade: 7
+6. id: 276 salary: 21 grade: 2
+7. id: 148 salary: 7 grade: 7
+8. id: 406 salary: 5 grade: 0
+9. id: 24 salary: 12 grade: 5
+10. id: 154 salary: 3 grade: 0
+11. id: 413 salary: 9 grade: 2
+12. id: 297 salary: 12 grade: 4
+13. id: 176 salary: 22 grade: 7
+14. id: 53 salary: 3 grade: 4
+15. id: 311 salary: 15 grade: 3
+16. id: 56 salary: 21 grade: 8
+17. id: 312 salary: 11 grade: 1
+18. id: 317 salary: 12 grade: 4
+19. id: 320 salary: 7 grade: 4
+20. id: 324 salary: 13 grade: 5
+21. id: 202 salary: 10 grade: 4
+22. id: 332 salary: 3 grade: 3
+23. id: 333 salary: 18 grade: 4
+24. id: 80 salary: 9 grade: 9
+25. id: 208 salary: 9 grade: 2
+26. id: 214 salary: 23 grade: 3
+27. id: 343 salary: 5 grade: 4
+28. id: 92 salary: 18 grade: 7
+29. id: 348 salary: 4 grade: 3
+30. id: 93 salary: 4 grade: 6
+31. id: 96 salary: 17 grade: 12
+32. id: 352 salary: 13 grade: 2
+33. id: 224 salary: 5 grade: 2
+34. id: 227 salary: 13 grade: 4
+35. id: 99 salary: 14 grade: 8
+36. id: 356 salary: 4 grade: 0
+37. id: 104 salary: 13 grade: 4
+38. id: 232 salary: 15 grade: 2
+39. id: 105 salary: 12 grade: 3
+40. id: 234 salary: 14 grade: 1
+41. id: 235 salary: 14 grade: 4
+42. id: 236 salary: 20 grade: 1
+43. id: 238 salary: 12 grade: 0
+44. id: 111 salary: 7 grade: 6
+45. id: 369 salary: 13 grade: 4
+46. id: 243 salary: 6 grade: 2
+47. id: 118 salary: 7 grade: 6
+48. id: 374 salary: 7 grade: 2
+49. id: 125 salary: 16 grade: 1
+50. id: 253 salary: 9 grade: 2
+51. id: 381 salary: 23 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  3 20 38:
+Actual company id: 15
+num of employees in range: 34 with sum of 152
+1. id: 2 salary: 29 grade: 5
+2. id: 132 salary: 24 grade: 3
+3. id: 261 salary: 22 grade: 1
+4. id: 7 salary: 24 grade: 6
+5. id: 266 salary: 26 grade: 5
+6. id: 267 salary: 23 grade: 1
+7. id: 273 salary: 21 grade: 3
+8. id: 401 salary: 24 grade: 3
+9. id: 151 salary: 23 grade: 1
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 411 salary: 23 grade: 3
+13. id: 285 salary: 29 grade: 1
+14. id: 291 salary: 30 grade: 2
+15. id: 296 salary: 30 grade: 3
+16. id: 41 salary: 20 grade: 3
+17. id: 170 salary: 38 grade: 9
+18. id: 48 salary: 25 grade: 13
+19. id: 180 salary: 30 grade: 11
+20. id: 52 salary: 24 grade: 9
+21. id: 181 salary: 27 grade: 3
+22. id: 313 salary: 30 grade: 4
+23. id: 186 salary: 30 grade: 9
+24. id: 322 salary: 25 grade: 1
+25. id: 198 salary: 25 grade: 8
+26. id: 78 salary: 24 grade: 8
+27. id: 79 salary: 23 grade: 7
+28. id: 336 salary: 22 grade: 0
+29. id: 340 salary: 26 grade: 3
+30. id: 217 salary: 22 grade: 1
+31. id: 98 salary: 23 grade: 0
+32. id: 106 salary: 29 grade: 0
+33. id: 365 salary: 26 grade: 4
+34. id: 247 salary: 20 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 83:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 355 salary: 43 grade: 6
+4. id: 109 salary: 41 grade: 9
+5. id: 65 salary: 39 grade: 4
+6. id: 74 salary: 36 grade: 0
+7. id: 225 salary: 30 grade: 5
+8. id: 37 salary: 30 grade: 6
+9. id: 405 salary: 29 grade: 0
+10. id: 44 salary: 29 grade: 7
+11. id: 21 salary: 29 grade: 6
+12. id: 328 salary: 28 grade: 1
+13. id: 269 salary: 28 grade: 2
+14. id: 360 salary: 27 grade: 1
+15. id: 321 salary: 27 grade: 1
+16. id: 315 salary: 27 grade: 1
+17. id: 25 salary: 27 grade: 9
+18. id: 216 salary: 26 grade: 4
+19. id: 45 salary: 26 grade: 4
+20. id: 391 salary: 25 grade: 0
+21. id: 298 salary: 25 grade: 4
+22. id: 257 salary: 25 grade: 2
+23. id: 242 salary: 25 grade: 3
+24. id: 114 salary: 25 grade: 10
+25. id: 88 salary: 25 grade: 4
+26. id: 409 salary: 24 grade: 2
+27. id: 404 salary: 24 grade: 2
+28. id: 330 salary: 24 grade: 2
+29. id: 152 salary: 24 grade: 11
+30. id: 73 salary: 24 grade: 4
+31. id: 381 salary: 23 grade: 4
+32. id: 214 salary: 23 grade: 3
+33. id: 176 salary: 22 grade: 7
+34. id: 276 salary: 21 grade: 2
+35. id: 56 salary: 21 grade: 8
+36. id: 236 salary: 20 grade: 1
+37. id: 136 salary: 20 grade: 0
+38. id: 66 salary: 20 grade: 4
+39. id: 420 salary: 18 grade: 0
+40. id: 333 salary: 18 grade: 4
+41. id: 92 salary: 18 grade: 7
+42. id: 96 salary: 17 grade: 12
+43. id: 125 salary: 16 grade: 1
+44. id: 311 salary: 15 grade: 3
+45. id: 232 salary: 15 grade: 2
+46. id: 235 salary: 14 grade: 4
+47. id: 234 salary: 14 grade: 1
+48. id: 99 salary: 14 grade: 8
+49. id: 369 salary: 13 grade: 4
+50. id: 352 salary: 13 grade: 2
+51. id: 324 salary: 13 grade: 5
+52. id: 270 salary: 13 grade: 3
+53. id: 227 salary: 13 grade: 4
+54. id: 104 salary: 13 grade: 4
+55. id: 399 salary: 12 grade: 7
+56. id: 317 salary: 12 grade: 4
+57. id: 297 salary: 12 grade: 4
+58. id: 238 salary: 12 grade: 0
+59. id: 105 salary: 12 grade: 3
+60. id: 24 salary: 12 grade: 5
+61. id: 312 salary: 11 grade: 1
+62. id: 202 salary: 10 grade: 4
+63. id: 413 salary: 9 grade: 2
+64. id: 253 salary: 9 grade: 2
+65. id: 208 salary: 9 grade: 2
+66. id: 80 salary: 9 grade: 9
+67. id: 374 salary: 7 grade: 2
+68. id: 320 salary: 7 grade: 4
+69. id: 148 salary: 7 grade: 7
+70. id: 118 salary: 7 grade: 6
+71. id: 111 salary: 7 grade: 6
+72. id: 243 salary: 6 grade: 2
+73. id: 406 salary: 5 grade: 0
+74. id: 343 salary: 5 grade: 4
+75. id: 224 salary: 5 grade: 2
+76. id: 138 salary: 5 grade: 7
+77. id: 356 salary: 4 grade: 0
+78. id: 348 salary: 4 grade: 3
+79. id: 93 salary: 4 grade: 6
+80. id: 332 salary: 3 grade: 3
+81. id: 154 salary: 3 grade: 0
+82. id: 53 salary: 3 grade: 4
+83. id: 11 salary: 2 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  13 4:
+Actual company id: 13
+1. id: 75 salary: 47 grade: 8
+2. id: 135 salary: 40 grade: 3
+3. id: 403 salary: 29 grade: 2
+4. id: 341 salary: 28 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 12:
+Actual company id: 2
+1. id: 14 salary: 44 grade: 6
+2. id: 38 salary: 34 grade: 6
+3. id: 157 salary: 33 grade: 8
+4. id: 222 salary: 30 grade: 4
+5. id: 160 salary: 17 grade: 3
+6. id: 383 salary: 15 grade: 0
+7. id: 40 salary: 15 grade: 9
+8. id: 120 salary: 11 grade: 8
+9. id: 13 salary: 10 grade: 2
+10. id: 407 salary: 8 grade: 4
+11. id: 201 salary: 7 grade: 4
+12. id: 89 salary: 3 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 22 30:
+Actual company id: 17
+num of employees in range: 5 with sum of 23
+1. id: 387 salary: 28 grade: 4
+2. id: 70 salary: 28 grade: 5
+3. id: 168 salary: 27 grade: 2
+4. id: 107 salary: 22 grade: 5
+5. id: 117 salary: 30 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  15 70:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 318 salary: 42 grade: 4
+4. id: 170 salary: 38 grade: 9
+5. id: 313 salary: 30 grade: 4
+6. id: 296 salary: 30 grade: 3
+7. id: 291 salary: 30 grade: 2
+8. id: 186 salary: 30 grade: 9
+9. id: 180 salary: 30 grade: 11
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 106 salary: 29 grade: 0
+14. id: 2 salary: 29 grade: 5
+15. id: 181 salary: 27 grade: 3
+16. id: 365 salary: 26 grade: 4
+17. id: 340 salary: 26 grade: 3
+18. id: 266 salary: 26 grade: 5
+19. id: 322 salary: 25 grade: 1
+20. id: 198 salary: 25 grade: 8
+21. id: 48 salary: 25 grade: 13
+22. id: 401 salary: 24 grade: 3
+23. id: 132 salary: 24 grade: 3
+24. id: 78 salary: 24 grade: 8
+25. id: 52 salary: 24 grade: 9
+26. id: 7 salary: 24 grade: 6
+27. id: 411 salary: 23 grade: 3
+28. id: 267 salary: 23 grade: 1
+29. id: 151 salary: 23 grade: 1
+30. id: 98 salary: 23 grade: 0
+31. id: 79 salary: 23 grade: 7
+32. id: 336 salary: 22 grade: 0
+33. id: 261 salary: 22 grade: 5
+34. id: 217 salary: 22 grade: 1
+35. id: 273 salary: 21 grade: 3
+36. id: 247 salary: 20 grade: 2
+37. id: 41 salary: 20 grade: 3
+38. id: 86 salary: 19 grade: 7
+39. id: 4 salary: 19 grade: 2
+40. id: 379 salary: 18 grade: 2
+41. id: 364 salary: 18 grade: 4
+42. id: 228 salary: 18 grade: 2
+43. id: 126 salary: 18 grade: 15
+44. id: 384 salary: 17 grade: 1
+45. id: 145 salary: 17 grade: 1
+46. id: 249 salary: 16 grade: 7
+47. id: 50 salary: 15 grade: 9
+48. id: 419 salary: 14 grade: 4
+49. id: 256 salary: 14 grade: 5
+50. id: 15 salary: 14 grade: 12
+51. id: 382 salary: 12 grade: 0
+52. id: 347 salary: 12 grade: 4
+53. id: 281 salary: 11 grade: 3
+54. id: 81 salary: 11 grade: 4
+55. id: 289 salary: 10 grade: 8
+56. id: 229 salary: 9 grade: 2
+57. id: 159 salary: 9 grade: 8
+58. id: 85 salary: 9 grade: 12
+59. id: 42 salary: 9 grade: 5
+60. id: 395 salary: 8 grade: 0
+61. id: 252 salary: 8 grade: 0
+62. id: 428 salary: 7 grade: 0
+63. id: 366 salary: 6 grade: 7
+64. id: 169 salary: 6 grade: 6
+65. id: 76 salary: 6 grade: 5
+66. id: 400 salary: 5 grade: 1
+67. id: 329 salary: 5 grade: 0
+68. id: 294 salary: 5 grade: 4
+69. id: 155 salary: 5 grade: 5
+70. id: 388 salary: 3 grade: 0
+
+Input line AverageBumpGradeBetweenSalaryByGroup  12 11 22:
+Actual company id: 15
+num of employees in range: 23 with sum of 96
+1. id: 384 salary: 17 grade: 1
+2. id: 256 salary: 14 grade: 5
+3. id: 4 salary: 19 grade: 2
+4. id: 261 salary: 22 grade: 5
+5. id: 15 salary: 14 grade: 12
+6. id: 273 salary: 21 grade: 3
+7. id: 145 salary: 17 grade: 1
+8. id: 281 salary: 11 grade: 3
+9. id: 419 salary: 14 grade: 4
+10. id: 41 salary: 20 grade: 3
+11. id: 50 salary: 15 grade: 9
+12. id: 336 salary: 22 grade: 0
+13. id: 81 salary: 11 grade: 4
+14. id: 86 salary: 19 grade: 7
+15. id: 217 salary: 22 grade: 1
+16. id: 347 salary: 12 grade: 4
+17. id: 228 salary: 18 grade: 2
+18. id: 364 salary: 18 grade: 4
+19. id: 247 salary: 20 grade: 2
+20. id: 249 salary: 16 grade: 7
+21. id: 379 salary: 18 grade: 2
+22. id: 382 salary: 12 grade: 0
+23. id: 126 salary: 18 grade: 15
+
+Input line AverageBumpGradeBetweenSalaryByGroup  19 11 14:
+Actual company id: 15
+num of employees in range: 7 with sum of 32
+1. id: 256 salary: 14 grade: 5
+2. id: 15 salary: 14 grade: 12
+3. id: 281 salary: 11 grade: 3
+4. id: 419 salary: 14 grade: 4
+5. id: 81 salary: 11 grade: 4
+6. id: 347 salary: 12 grade: 4
+7. id: 382 salary: 12 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 6:
+Actual company id: 2
+1. id: 14 salary: 44 grade: 6
+2. id: 38 salary: 34 grade: 6
+3. id: 157 salary: 33 grade: 8
+4. id: 222 salary: 30 grade: 4
+5. id: 160 salary: 17 grade: 3
+6. id: 383 salary: 15 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 89:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 355 salary: 43 grade: 6
+4. id: 109 salary: 41 grade: 9
+5. id: 37 salary: 41 grade: 6
+6. id: 65 salary: 39 grade: 4
+7. id: 74 salary: 36 grade: 0
+8. id: 225 salary: 30 grade: 5
+9. id: 426 salary: 29 grade: 0
+10. id: 405 salary: 29 grade: 0
+11. id: 44 salary: 29 grade: 7
+12. id: 21 salary: 29 grade: 6
+13. id: 328 salary: 28 grade: 1
+14. id: 269 salary: 28 grade: 2
+15. id: 360 salary: 27 grade: 1
+16. id: 321 salary: 27 grade: 1
+17. id: 315 salary: 27 grade: 1
+18. id: 25 salary: 27 grade: 9
+19. id: 216 salary: 26 grade: 4
+20. id: 45 salary: 26 grade: 4
+21. id: 391 salary: 25 grade: 0
+22. id: 298 salary: 25 grade: 4
+23. id: 257 salary: 25 grade: 2
+24. id: 242 salary: 25 grade: 3
+25. id: 114 salary: 25 grade: 10
+26. id: 88 salary: 25 grade: 4
+27. id: 409 salary: 24 grade: 2
+28. id: 404 salary: 24 grade: 2
+29. id: 330 salary: 24 grade: 2
+30. id: 152 salary: 24 grade: 11
+31. id: 73 salary: 24 grade: 4
+32. id: 425 salary: 23 grade: 1
+33. id: 381 salary: 23 grade: 4
+34. id: 214 salary: 23 grade: 3
+35. id: 176 salary: 22 grade: 7
+36. id: 276 salary: 21 grade: 2
+37. id: 56 salary: 21 grade: 8
+38. id: 236 salary: 20 grade: 1
+39. id: 136 salary: 20 grade: 0
+40. id: 66 salary: 20 grade: 4
+41. id: 424 salary: 18 grade: 2
+42. id: 420 salary: 18 grade: 0
+43. id: 333 salary: 18 grade: 4
+44. id: 92 salary: 18 grade: 7
+45. id: 96 salary: 17 grade: 12
+46. id: 125 salary: 16 grade: 1
+47. id: 422 salary: 15 grade: 2
+48. id: 311 salary: 15 grade: 3
+49. id: 232 salary: 15 grade: 2
+50. id: 235 salary: 14 grade: 4
+51. id: 234 salary: 14 grade: 1
+52. id: 99 salary: 14 grade: 8
+53. id: 369 salary: 13 grade: 4
+54. id: 352 salary: 13 grade: 2
+55. id: 324 salary: 13 grade: 6
+56. id: 270 salary: 13 grade: 3
+57. id: 227 salary: 13 grade: 4
+58. id: 104 salary: 13 grade: 4
+59. id: 399 salary: 12 grade: 7
+60. id: 317 salary: 12 grade: 4
+61. id: 297 salary: 12 grade: 4
+62. id: 238 salary: 12 grade: 0
+63. id: 105 salary: 12 grade: 3
+64. id: 24 salary: 12 grade: 5
+65. id: 432 salary: 11 grade: 3
+66. id: 312 salary: 11 grade: 1
+67. id: 429 salary: 10 grade: 1
+68. id: 202 salary: 10 grade: 4
+69. id: 413 salary: 9 grade: 2
+70. id: 253 salary: 9 grade: 2
+71. id: 208 salary: 9 grade: 2
+72. id: 80 salary: 9 grade: 9
+73. id: 374 salary: 7 grade: 2
+74. id: 320 salary: 7 grade: 4
+75. id: 148 salary: 7 grade: 7
+76. id: 118 salary: 7 grade: 6
+77. id: 111 salary: 7 grade: 6
+78. id: 243 salary: 6 grade: 2
+79. id: 433 salary: 5 grade: 0
+80. id: 406 salary: 5 grade: 0
+81. id: 343 salary: 5 grade: 4
+82. id: 224 salary: 5 grade: 2
+83. id: 138 salary: 5 grade: 7
+84. id: 356 salary: 4 grade: 0
+85. id: 348 salary: 4 grade: 3
+86. id: 93 salary: 4 grade: 6
+87. id: 332 salary: 3 grade: 3
+88. id: 154 salary: 3 grade: 0
+89. id: 53 salary: 3 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  6 91:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 355 salary: 43 grade: 6
+4. id: 109 salary: 41 grade: 9
+5. id: 37 salary: 41 grade: 6
+6. id: 65 salary: 39 grade: 4
+7. id: 74 salary: 36 grade: 0
+8. id: 225 salary: 30 grade: 5
+9. id: 426 salary: 29 grade: 0
+10. id: 405 salary: 29 grade: 0
+11. id: 44 salary: 29 grade: 7
+12. id: 21 salary: 29 grade: 6
+13. id: 328 salary: 28 grade: 1
+14. id: 269 salary: 28 grade: 2
+15. id: 360 salary: 27 grade: 1
+16. id: 321 salary: 27 grade: 1
+17. id: 315 salary: 27 grade: 1
+18. id: 25 salary: 27 grade: 9
+19. id: 216 salary: 26 grade: 4
+20. id: 45 salary: 26 grade: 4
+21. id: 391 salary: 25 grade: 0
+22. id: 298 salary: 25 grade: 4
+23. id: 257 salary: 25 grade: 2
+24. id: 242 salary: 25 grade: 3
+25. id: 114 salary: 25 grade: 10
+26. id: 88 salary: 25 grade: 4
+27. id: 409 salary: 24 grade: 2
+28. id: 404 salary: 24 grade: 2
+29. id: 330 salary: 24 grade: 2
+30. id: 152 salary: 24 grade: 11
+31. id: 73 salary: 24 grade: 4
+32. id: 425 salary: 23 grade: 1
+33. id: 381 salary: 23 grade: 4
+34. id: 214 salary: 23 grade: 3
+35. id: 176 salary: 22 grade: 7
+36. id: 276 salary: 21 grade: 2
+37. id: 56 salary: 21 grade: 8
+38. id: 236 salary: 20 grade: 1
+39. id: 136 salary: 20 grade: 0
+40. id: 66 salary: 20 grade: 4
+41. id: 424 salary: 18 grade: 2
+42. id: 420 salary: 18 grade: 0
+43. id: 333 salary: 18 grade: 4
+44. id: 92 salary: 18 grade: 7
+45. id: 96 salary: 17 grade: 12
+46. id: 125 salary: 16 grade: 1
+47. id: 422 salary: 15 grade: 2
+48. id: 311 salary: 15 grade: 3
+49. id: 232 salary: 15 grade: 2
+50. id: 235 salary: 14 grade: 4
+51. id: 234 salary: 14 grade: 1
+52. id: 99 salary: 14 grade: 8
+53. id: 369 salary: 13 grade: 4
+54. id: 352 salary: 13 grade: 2
+55. id: 324 salary: 13 grade: 6
+56. id: 270 salary: 13 grade: 3
+57. id: 227 salary: 13 grade: 4
+58. id: 104 salary: 13 grade: 4
+59. id: 399 salary: 12 grade: 7
+60. id: 317 salary: 12 grade: 4
+61. id: 297 salary: 12 grade: 4
+62. id: 238 salary: 12 grade: 0
+63. id: 105 salary: 12 grade: 3
+64. id: 24 salary: 12 grade: 5
+65. id: 432 salary: 11 grade: 3
+66. id: 312 salary: 11 grade: 1
+67. id: 429 salary: 10 grade: 1
+68. id: 202 salary: 10 grade: 4
+69. id: 413 salary: 9 grade: 2
+70. id: 253 salary: 9 grade: 2
+71. id: 208 salary: 9 grade: 2
+72. id: 80 salary: 9 grade: 9
+73. id: 374 salary: 7 grade: 2
+74. id: 320 salary: 7 grade: 4
+75. id: 148 salary: 7 grade: 7
+76. id: 118 salary: 7 grade: 6
+77. id: 111 salary: 7 grade: 6
+78. id: 243 salary: 6 grade: 2
+79. id: 433 salary: 5 grade: 0
+80. id: 406 salary: 5 grade: 0
+81. id: 343 salary: 5 grade: 4
+82. id: 224 salary: 5 grade: 2
+83. id: 138 salary: 5 grade: 7
+84. id: 356 salary: 4 grade: 0
+85. id: 348 salary: 4 grade: 3
+86. id: 93 salary: 4 grade: 6
+87. id: 332 salary: 3 grade: 3
+88. id: 154 salary: 3 grade: 0
+89. id: 53 salary: 3 grade: 6
+90. id: 11 salary: 2 grade: 6
+91. id: 430 salary: 1 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 1 42:
+Actual company id: 13
+num of employees in range: 38 with sum of 165
+1. id: 192 salary: 25 grade: 7
+2. id: 193 salary: 1 grade: 2
+3. id: 129 salary: 7 grade: 5
+4. id: 195 salary: 22 grade: 3
+5. id: 133 salary: 24 grade: 7
+6. id: 5 salary: 28 grade: 5
+7. id: 135 salary: 40 grade: 3
+8. id: 200 salary: 28 grade: 9
+9. id: 72 salary: 4 grade: 9
+10. id: 264 salary: 42 grade: 2
+11. id: 205 salary: 16 grade: 7
+12. id: 77 salary: 17 grade: 3
+13. id: 211 salary: 13 grade: 3
+14. id: 83 salary: 7 grade: 4
+15. id: 403 salary: 29 grade: 2
+16. id: 212 salary: 27 grade: 3
+17. id: 149 salary: 28 grade: 6
+18. id: 341 salary: 28 grade: 3
+19. id: 218 salary: 23 grade: 4
+20. id: 346 salary: 21 grade: 4
+21. id: 283 salary: 17 grade: 0
+22. id: 350 salary: 31 grade: 1
+23. id: 34 salary: 31 grade: 4
+24. id: 226 salary: 13 grade: 1
+25. id: 163 salary: 39 grade: 8
+26. id: 101 salary: 27 grade: 9
+27. id: 102 salary: 26 grade: 1
+28. id: 237 salary: 13 grade: 4
+29. id: 431 salary: 30 grade: 4
+30. id: 368 salary: 30 grade: 3
+31. id: 49 salary: 2 grade: 12
+32. id: 51 salary: 15 grade: 8
+33. id: 437 salary: 7 grade: 1
+34. id: 246 salary: 28 grade: 3
+35. id: 438 salary: 18 grade: 4
+36. id: 248 salary: 23 grade: 2
+37. id: 376 salary: 17 grade: 2
+38. id: 189 salary: 25 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  1 0 15:
+Actual company id: 1 with 0 interns, interns total grade sum: 0
+
+num of employees in range: 9 with sum of 40
+1. id: 260 salary: 6 grade: 0
+2. id: 292 salary: 4 grade: 2
+3. id: 166 salary: 11 grade: 9
+4. id: 71 salary: 5 grade: 8
+5. id: 231 salary: 3 grade: 4
+6. id: 268 salary: 15 grade: 7
+7. id: 46 salary: 12 grade: 4
+8. id: 305 salary: 10 grade: 3
+9. id: 435 salary: 14 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  3 70:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 318 salary: 42 grade: 4
+4. id: 170 salary: 38 grade: 9
+5. id: 313 salary: 30 grade: 4
+6. id: 296 salary: 30 grade: 3
+7. id: 291 salary: 30 grade: 2
+8. id: 186 salary: 30 grade: 9
+9. id: 180 salary: 30 grade: 11
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 106 salary: 29 grade: 0
+14. id: 2 salary: 29 grade: 5
+15. id: 181 salary: 27 grade: 3
+16. id: 365 salary: 26 grade: 7
+17. id: 340 salary: 26 grade: 3
+18. id: 266 salary: 26 grade: 5
+19. id: 322 salary: 25 grade: 1
+20. id: 198 salary: 25 grade: 8
+21. id: 48 salary: 25 grade: 13
+22. id: 401 salary: 24 grade: 3
+23. id: 132 salary: 24 grade: 3
+24. id: 78 salary: 24 grade: 8
+25. id: 52 salary: 24 grade: 9
+26. id: 7 salary: 24 grade: 6
+27. id: 411 salary: 23 grade: 3
+28. id: 267 salary: 23 grade: 1
+29. id: 151 salary: 23 grade: 1
+30. id: 98 salary: 23 grade: 0
+31. id: 79 salary: 23 grade: 7
+32. id: 336 salary: 22 grade: 0
+33. id: 261 salary: 22 grade: 5
+34. id: 217 salary: 22 grade: 1
+35. id: 273 salary: 21 grade: 3
+36. id: 247 salary: 20 grade: 2
+37. id: 41 salary: 20 grade: 7
+38. id: 86 salary: 19 grade: 7
+39. id: 4 salary: 19 grade: 2
+40. id: 379 salary: 18 grade: 2
+41. id: 364 salary: 18 grade: 4
+42. id: 228 salary: 18 grade: 2
+43. id: 126 salary: 18 grade: 15
+44. id: 384 salary: 17 grade: 1
+45. id: 145 salary: 17 grade: 1
+46. id: 249 salary: 16 grade: 7
+47. id: 50 salary: 15 grade: 9
+48. id: 419 salary: 14 grade: 4
+49. id: 256 salary: 14 grade: 5
+50. id: 15 salary: 14 grade: 12
+51. id: 382 salary: 12 grade: 0
+52. id: 347 salary: 12 grade: 4
+53. id: 281 salary: 11 grade: 3
+54. id: 81 salary: 11 grade: 4
+55. id: 289 salary: 10 grade: 8
+56. id: 229 salary: 9 grade: 2
+57. id: 159 salary: 9 grade: 8
+58. id: 85 salary: 9 grade: 12
+59. id: 42 salary: 9 grade: 5
+60. id: 395 salary: 8 grade: 0
+61. id: 252 salary: 8 grade: 0
+62. id: 428 salary: 7 grade: 0
+63. id: 366 salary: 6 grade: 7
+64. id: 169 salary: 6 grade: 6
+65. id: 76 salary: 6 grade: 5
+66. id: 400 salary: 5 grade: 1
+67. id: 329 salary: 5 grade: 0
+68. id: 294 salary: 5 grade: 4
+69. id: 155 salary: 5 grade: 5
+70. id: 388 salary: 3 grade: 0
+
+Input line AverageBumpGradeBetweenSalaryByGroup  1 5 24:
+Actual company id: 1
+num of employees in range: 14 with sum of 64
+1. id: 260 salary: 6 grade: 0
+2. id: 166 salary: 11 grade: 9
+3. id: 71 salary: 5 grade: 8
+4. id: 327 salary: 24 grade: 7
+5. id: 199 salary: 23 grade: 5
+6. id: 108 salary: 24 grade: 6
+7. id: 268 salary: 15 grade: 7
+8. id: 46 salary: 12 grade: 4
+9. id: 305 salary: 10 grade: 3
+10. id: 307 salary: 18 grade: 1
+11. id: 435 salary: 14 grade: 3
+12. id: 436 salary: 23 grade: 0
+13. id: 310 salary: 19 grade: 2
+14. id: 87 salary: 22 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  12 38 66:
+Actual company id: 15
+num of employees in range: 3 with sum of 17
+1. id: 36 salary: 60 grade: 4
+2. id: 170 salary: 38 grade: 9
+3. id: 318 salary: 42 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  20 28 34:
+Actual company id: 10
+num of employees in range: 7 with sum of 21
+1. id: 269 salary: 28 grade: 2
+2. id: 21 salary: 29 grade: 6
+3. id: 405 salary: 29 grade: 0
+4. id: 426 salary: 29 grade: 0
+5. id: 44 salary: 29 grade: 7
+6. id: 328 salary: 28 grade: 1
+7. id: 225 salary: 30 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 32:
+Actual company id: 10
+1. id: 203 salary: 55 grade: 0
+2. id: 141 salary: 46 grade: 10
+3. id: 355 salary: 43 grade: 6
+4. id: 109 salary: 41 grade: 9
+5. id: 37 salary: 41 grade: 6
+6. id: 65 salary: 39 grade: 4
+7. id: 74 salary: 36 grade: 0
+8. id: 297 salary: 35 grade: 4
+9. id: 225 salary: 30 grade: 5
+10. id: 426 salary: 29 grade: 0
+11. id: 405 salary: 29 grade: 0
+12. id: 44 salary: 29 grade: 7
+13. id: 21 salary: 29 grade: 6
+14. id: 328 salary: 28 grade: 1
+15. id: 269 salary: 28 grade: 2
+16. id: 360 salary: 27 grade: 1
+17. id: 321 salary: 27 grade: 1
+18. id: 315 salary: 27 grade: 1
+19. id: 25 salary: 27 grade: 9
+20. id: 216 salary: 26 grade: 4
+21. id: 45 salary: 26 grade: 4
+22. id: 391 salary: 25 grade: 0
+23. id: 298 salary: 25 grade: 4
+24. id: 257 salary: 25 grade: 2
+25. id: 242 salary: 25 grade: 3
+26. id: 114 salary: 25 grade: 10
+27. id: 88 salary: 25 grade: 4
+28. id: 409 salary: 24 grade: 2
+29. id: 404 salary: 24 grade: 2
+30. id: 330 salary: 24 grade: 2
+31. id: 152 salary: 24 grade: 11
+32. id: 73 salary: 24 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  12 51:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 318 salary: 42 grade: 4
+4. id: 170 salary: 38 grade: 9
+5. id: 313 salary: 30 grade: 4
+6. id: 296 salary: 30 grade: 3
+7. id: 291 salary: 30 grade: 2
+8. id: 186 salary: 30 grade: 9
+9. id: 180 salary: 30 grade: 11
+10. id: 153 salary: 30 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 106 salary: 29 grade: 0
+14. id: 2 salary: 29 grade: 5
+15. id: 439 salary: 27 grade: 5
+16. id: 181 salary: 27 grade: 3
+17. id: 365 salary: 26 grade: 7
+18. id: 340 salary: 26 grade: 3
+19. id: 266 salary: 26 grade: 5
+20. id: 322 salary: 25 grade: 1
+21. id: 198 salary: 25 grade: 8
+22. id: 48 salary: 25 grade: 13
+23. id: 401 salary: 24 grade: 3
+24. id: 132 salary: 24 grade: 3
+25. id: 78 salary: 24 grade: 8
+26. id: 52 salary: 24 grade: 9
+27. id: 7 salary: 24 grade: 6
+28. id: 411 salary: 23 grade: 3
+29. id: 267 salary: 23 grade: 1
+30. id: 151 salary: 23 grade: 1
+31. id: 98 salary: 23 grade: 0
+32. id: 79 salary: 23 grade: 7
+33. id: 336 salary: 22 grade: 0
+34. id: 261 salary: 22 grade: 5
+35. id: 217 salary: 22 grade: 1
+36. id: 247 salary: 20 grade: 2
+37. id: 41 salary: 20 grade: 7
+38. id: 86 salary: 19 grade: 7
+39. id: 4 salary: 19 grade: 2
+40. id: 379 salary: 18 grade: 2
+41. id: 364 salary: 18 grade: 4
+42. id: 281 salary: 18 grade: 3
+43. id: 228 salary: 18 grade: 2
+44. id: 126 salary: 18 grade: 15
+45. id: 384 salary: 17 grade: 1
+46. id: 145 salary: 17 grade: 1
+47. id: 249 salary: 16 grade: 7
+48. id: 50 salary: 15 grade: 9
+49. id: 419 salary: 14 grade: 4
+50. id: 256 salary: 14 grade: 5
+51. id: 15 salary: 14 grade: 12
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 8 11:
+Actual company id: 17
+num of employees in range: 4 with sum of 27
+1. id: 239 salary: 9 grade: 2
+2. id: 375 salary: 9 grade: 3
+3. id: 184 salary: 11 grade: 11
+4. id: 187 salary: 8 grade: 11
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 16 39:
+Actual company id: 15
+num of employees in range: 87 with sum of 365
+1. id: 257 salary: 25 grade: 2
+2. id: 2 salary: 29 grade: 5
+3. id: 4 salary: 19 grade: 2
+4. id: 261 salary: 22 grade: 5
+5. id: 7 salary: 24 grade: 6
+6. id: 266 salary: 26 grade: 5
+7. id: 267 salary: 23 grade: 1
+8. id: 269 salary: 28 grade: 2
+9. id: 276 salary: 21 grade: 5
+10. id: 21 salary: 29 grade: 6
+11. id: 281 salary: 18 grade: 3
+12. id: 25 salary: 27 grade: 9
+13. id: 27 salary: 30 grade: 11
+14. id: 285 salary: 29 grade: 1
+15. id: 291 salary: 30 grade: 2
+16. id: 296 salary: 30 grade: 3
+17. id: 41 salary: 20 grade: 7
+18. id: 297 salary: 35 grade: 4
+19. id: 298 salary: 25 grade: 4
+20. id: 44 salary: 29 grade: 7
+21. id: 45 salary: 26 grade: 4
+22. id: 48 salary: 25 grade: 13
+23. id: 52 salary: 24 grade: 9
+24. id: 56 salary: 21 grade: 8
+25. id: 313 salary: 30 grade: 4
+26. id: 315 salary: 27 grade: 1
+27. id: 321 salary: 27 grade: 1
+28. id: 65 salary: 39 grade: 4
+29. id: 322 salary: 25 grade: 1
+30. id: 66 salary: 20 grade: 4
+31. id: 328 salary: 28 grade: 1
+32. id: 73 salary: 24 grade: 4
+33. id: 330 salary: 24 grade: 2
+34. id: 74 salary: 36 grade: 0
+35. id: 333 salary: 18 grade: 4
+36. id: 78 salary: 24 grade: 8
+37. id: 79 salary: 23 grade: 7
+38. id: 336 salary: 22 grade: 0
+39. id: 340 salary: 26 grade: 3
+40. id: 86 salary: 19 grade: 7
+41. id: 88 salary: 25 grade: 4
+42. id: 92 salary: 18 grade: 7
+43. id: 96 salary: 17 grade: 12
+44. id: 98 salary: 23 grade: 0
+45. id: 360 salary: 27 grade: 1
+46. id: 106 salary: 29 grade: 0
+47. id: 364 salary: 18 grade: 4
+48. id: 365 salary: 26 grade: 7
+49. id: 114 salary: 25 grade: 10
+50. id: 379 salary: 18 grade: 2
+51. id: 125 salary: 16 grade: 1
+52. id: 381 salary: 23 grade: 4
+53. id: 126 salary: 18 grade: 15
+54. id: 384 salary: 17 grade: 1
+55. id: 132 salary: 24 grade: 3
+56. id: 391 salary: 25 grade: 0
+57. id: 136 salary: 20 grade: 0
+58. id: 145 salary: 17 grade: 1
+59. id: 401 salary: 24 grade: 3
+60. id: 404 salary: 24 grade: 2
+61. id: 405 salary: 29 grade: 0
+62. id: 151 salary: 23 grade: 1
+63. id: 152 salary: 24 grade: 11
+64. id: 153 salary: 30 grade: 9
+65. id: 409 salary: 24 grade: 2
+66. id: 411 salary: 23 grade: 3
+67. id: 420 salary: 18 grade: 0
+68. id: 424 salary: 18 grade: 2
+69. id: 425 salary: 23 grade: 1
+70. id: 170 salary: 38 grade: 9
+71. id: 426 salary: 29 grade: 0
+72. id: 176 salary: 22 grade: 7
+73. id: 180 salary: 30 grade: 11
+74. id: 181 salary: 27 grade: 3
+75. id: 439 salary: 27 grade: 5
+76. id: 186 salary: 30 grade: 9
+77. id: 446 salary: 19 grade: 4
+78. id: 198 salary: 25 grade: 8
+79. id: 214 salary: 23 grade: 3
+80. id: 216 salary: 26 grade: 4
+81. id: 217 salary: 22 grade: 1
+82. id: 225 salary: 30 grade: 5
+83. id: 228 salary: 18 grade: 2
+84. id: 236 salary: 20 grade: 1
+85. id: 242 salary: 25 grade: 3
+86. id: 247 salary: 20 grade: 2
+87. id: 249 salary: 16 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 20 61:
+Actual company id: 15
+num of employees in range: 77 with sum of 330
+1. id: 257 salary: 25 grade: 2
+2. id: 2 salary: 29 grade: 5
+3. id: 261 salary: 22 grade: 5
+4. id: 7 salary: 24 grade: 6
+5. id: 266 salary: 26 grade: 5
+6. id: 267 salary: 23 grade: 1
+7. id: 269 salary: 28 grade: 2
+8. id: 276 salary: 21 grade: 5
+9. id: 21 salary: 29 grade: 6
+10. id: 25 salary: 27 grade: 9
+11. id: 27 salary: 30 grade: 11
+12. id: 285 salary: 29 grade: 1
+13. id: 291 salary: 30 grade: 2
+14. id: 36 salary: 60 grade: 4
+15. id: 37 salary: 41 grade: 6
+16. id: 296 salary: 30 grade: 3
+17. id: 41 salary: 20 grade: 7
+18. id: 297 salary: 35 grade: 4
+19. id: 298 salary: 25 grade: 4
+20. id: 44 salary: 29 grade: 7
+21. id: 45 salary: 26 grade: 4
+22. id: 48 salary: 25 grade: 13
+23. id: 52 salary: 24 grade: 9
+24. id: 56 salary: 21 grade: 8
+25. id: 313 salary: 30 grade: 4
+26. id: 315 salary: 27 grade: 1
+27. id: 318 salary: 42 grade: 4
+28. id: 321 salary: 27 grade: 1
+29. id: 65 salary: 39 grade: 4
+30. id: 322 salary: 25 grade: 1
+31. id: 66 salary: 20 grade: 4
+32. id: 328 salary: 28 grade: 1
+33. id: 73 salary: 24 grade: 4
+34. id: 330 salary: 24 grade: 2
+35. id: 74 salary: 36 grade: 0
+36. id: 78 salary: 24 grade: 8
+37. id: 79 salary: 23 grade: 7
+38. id: 336 salary: 22 grade: 0
+39. id: 340 salary: 26 grade: 3
+40. id: 88 salary: 25 grade: 4
+41. id: 98 salary: 23 grade: 0
+42. id: 355 salary: 43 grade: 6
+43. id: 360 salary: 27 grade: 1
+44. id: 106 salary: 29 grade: 0
+45. id: 365 salary: 26 grade: 7
+46. id: 109 salary: 41 grade: 9
+47. id: 114 salary: 25 grade: 10
+48. id: 381 salary: 23 grade: 4
+49. id: 132 salary: 24 grade: 3
+50. id: 391 salary: 25 grade: 0
+51. id: 136 salary: 20 grade: 0
+52. id: 141 salary: 46 grade: 10
+53. id: 401 salary: 24 grade: 3
+54. id: 404 salary: 24 grade: 2
+55. id: 405 salary: 29 grade: 0
+56. id: 151 salary: 23 grade: 1
+57. id: 152 salary: 24 grade: 11
+58. id: 153 salary: 30 grade: 9
+59. id: 409 salary: 24 grade: 2
+60. id: 411 salary: 23 grade: 3
+61. id: 425 salary: 23 grade: 1
+62. id: 170 salary: 38 grade: 9
+63. id: 426 salary: 29 grade: 0
+64. id: 176 salary: 22 grade: 7
+65. id: 180 salary: 30 grade: 11
+66. id: 181 salary: 27 grade: 3
+67. id: 439 salary: 27 grade: 5
+68. id: 186 salary: 30 grade: 9
+69. id: 198 salary: 25 grade: 8
+70. id: 203 salary: 55 grade: 0
+71. id: 214 salary: 23 grade: 3
+72. id: 216 salary: 26 grade: 4
+73. id: 217 salary: 22 grade: 1
+74. id: 225 salary: 30 grade: 5
+75. id: 236 salary: 20 grade: 1
+76. id: 242 salary: 25 grade: 3
+77. id: 247 salary: 20 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  13 31:
+Actual company id: 13
+1. id: 119 salary: 64 grade: 2
+2. id: 185 salary: 48 grade: 10
+3. id: 75 salary: 47 grade: 8
+4. id: 264 salary: 42 grade: 2
+5. id: 200 salary: 41 grade: 9
+6. id: 135 salary: 40 grade: 3
+7. id: 163 salary: 39 grade: 8
+8. id: 350 salary: 31 grade: 1
+9. id: 34 salary: 31 grade: 4
+10. id: 431 salary: 30 grade: 4
+11. id: 368 salary: 30 grade: 3
+12. id: 403 salary: 29 grade: 2
+13. id: 341 salary: 28 grade: 3
+14. id: 246 salary: 28 grade: 3
+15. id: 149 salary: 28 grade: 6
+16. id: 5 salary: 28 grade: 5
+17. id: 212 salary: 27 grade: 3
+18. id: 101 salary: 27 grade: 9
+19. id: 102 salary: 26 grade: 1
+20. id: 192 salary: 25 grade: 7
+21. id: 189 salary: 25 grade: 7
+22. id: 133 salary: 24 grade: 8
+23. id: 248 salary: 23 grade: 2
+24. id: 218 salary: 23 grade: 4
+25. id: 195 salary: 22 grade: 3
+26. id: 346 salary: 21 grade: 4
+27. id: 438 salary: 18 grade: 4
+28. id: 376 salary: 17 grade: 2
+29. id: 283 salary: 17 grade: 0
+30. id: 77 salary: 17 grade: 3
+31. id: 205 salary: 16 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 29 42:
+Actual company id: 11
+num of employees in range: 2 with sum of 9
+1. id: 196 salary: 35 grade: 6
+2. id: 408 salary: 29 grade: 3
+
+Input line AverageBumpGradeBetweenSalaryByGroup  10 11 20:
+Actual company id: 15
+num of employees in range: 50 with sum of 203
+1. id: 256 salary: 14 grade: 5
+2. id: 4 salary: 19 grade: 2
+3. id: 270 salary: 13 grade: 3
+4. id: 15 salary: 14 grade: 12
+5. id: 24 salary: 12 grade: 5
+6. id: 281 salary: 18 grade: 3
+7. id: 41 salary: 20 grade: 7
+8. id: 50 salary: 15 grade: 9
+9. id: 311 salary: 15 grade: 3
+10. id: 312 salary: 11 grade: 1
+11. id: 317 salary: 12 grade: 4
+12. id: 66 salary: 20 grade: 4
+13. id: 324 salary: 13 grade: 6
+14. id: 333 salary: 18 grade: 4
+15. id: 81 salary: 11 grade: 4
+16. id: 86 salary: 19 grade: 7
+17. id: 347 salary: 12 grade: 4
+18. id: 92 salary: 18 grade: 7
+19. id: 96 salary: 17 grade: 12
+20. id: 352 salary: 13 grade: 2
+21. id: 99 salary: 14 grade: 8
+22. id: 104 salary: 13 grade: 4
+23. id: 105 salary: 12 grade: 3
+24. id: 364 salary: 18 grade: 4
+25. id: 369 salary: 13 grade: 4
+26. id: 379 salary: 18 grade: 2
+27. id: 125 salary: 16 grade: 1
+28. id: 382 salary: 12 grade: 0
+29. id: 126 salary: 18 grade: 15
+30. id: 384 salary: 17 grade: 1
+31. id: 136 salary: 20 grade: 0
+32. id: 399 salary: 12 grade: 7
+33. id: 145 salary: 17 grade: 1
+34. id: 159 salary: 12 grade: 8
+35. id: 419 salary: 14 grade: 4
+36. id: 420 salary: 18 grade: 0
+37. id: 422 salary: 15 grade: 2
+38. id: 424 salary: 18 grade: 2
+39. id: 432 salary: 11 grade: 3
+40. id: 440 salary: 11 grade: 3
+41. id: 446 salary: 19 grade: 4
+42. id: 227 salary: 13 grade: 4
+43. id: 228 salary: 18 grade: 2
+44. id: 232 salary: 15 grade: 2
+45. id: 234 salary: 14 grade: 1
+46. id: 235 salary: 14 grade: 4
+47. id: 236 salary: 20 grade: 1
+48. id: 238 salary: 12 grade: 0
+49. id: 247 salary: 20 grade: 2
+50. id: 249 salary: 16 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  4 6 56:
+Actual company id: 16
+num of employees in range: 25 with sum of 98
+1. id: 130 salary: 13 grade: 7
+2. id: 259 salary: 6 grade: 0
+3. id: 69 salary: 11 grade: 2
+4. id: 455 salary: 19 grade: 3
+5. id: 265 salary: 47 grade: 1
+6. id: 12 salary: 33 grade: 6
+7. id: 272 salary: 10 grade: 1
+8. id: 19 salary: 27 grade: 14
+9. id: 345 salary: 17 grade: 1
+10. id: 282 salary: 17 grade: 2
+11. id: 284 salary: 11 grade: 3
+12. id: 29 salary: 7 grade: 2
+13. id: 30 salary: 37 grade: 8
+14. id: 161 salary: 15 grade: 9
+15. id: 97 salary: 40 grade: 6
+16. id: 293 salary: 28 grade: 4
+17. id: 358 salary: 12 grade: 4
+18. id: 167 salary: 27 grade: 5
+19. id: 423 salary: 13 grade: 0
+20. id: 175 salary: 27 grade: 3
+21. id: 304 salary: 9 grade: 2
+22. id: 177 salary: 38 grade: 5
+23. id: 182 salary: 33 grade: 2
+24. id: 441 salary: 8 grade: 3
+25. id: 314 salary: 9 grade: 5
+
+Input line AverageBumpGradeBetweenSalaryByGroup  5 2 9:
+Actual company id: 5
+num of employees in range: 6 with sum of 25
+1. id: 9 salary: 6 grade: 2
+2. id: 207 salary: 4 grade: 4
+3. id: 178 salary: 7 grade: 10
+4. id: 308 salary: 2 grade: 7
+5. id: 372 salary: 3 grade: 2
+6. id: 63 salary: 9 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 11:
+Actual company id: 2
+1. id: 14 salary: 44 grade: 6
+2. id: 38 salary: 34 grade: 6
+3. id: 157 salary: 33 grade: 8
+4. id: 222 salary: 30 grade: 4
+5. id: 160 salary: 17 grade: 3
+6. id: 383 salary: 15 grade: 0
+7. id: 40 salary: 15 grade: 9
+8. id: 120 salary: 11 grade: 10
+9. id: 13 salary: 10 grade: 2
+10. id: 407 salary: 8 grade: 4
+11. id: 201 salary: 7 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 21:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 48 grade: 9
+3. id: 286 salary: 45 grade: 2
+4. id: 414 salary: 44 grade: 2
+5. id: 196 salary: 35 grade: 6
+6. id: 408 salary: 29 grade: 3
+7. id: 386 salary: 28 grade: 0
+8. id: 335 salary: 27 grade: 3
+9. id: 91 salary: 27 grade: 6
+10. id: 110 salary: 26 grade: 7
+11. id: 20 salary: 25 grade: 6
+12. id: 215 salary: 22 grade: 3
+13. id: 417 salary: 21 grade: 0
+14. id: 416 salary: 21 grade: 0
+15. id: 380 salary: 19 grade: 0
+16. id: 353 salary: 19 grade: 3
+17. id: 158 salary: 18 grade: 2
+18. id: 137 salary: 18 grade: 9
+19. id: 349 salary: 15 grade: 11
+20. id: 124 salary: 15 grade: 6
+21. id: 262 salary: 11 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  17 28 30:
+Actual company id: 17
+num of employees in range: 3 with sum of 16
+1. id: 387 salary: 28 grade: 4
+2. id: 70 salary: 28 grade: 5
+3. id: 117 salary: 30 grade: 7
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  18 10:
+Actual company id: 18
+1. id: 390 salary: 33 grade: 0
+2. id: 28 salary: 21 grade: 10
+3. id: 103 salary: 19 grade: 7
+4. id: 351 salary: 18 grade: 3
+5. id: 54 salary: 18 grade: 2
+6. id: 116 salary: 9 grade: 6
+7. id: 378 salary: 7 grade: 1
+8. id: 194 salary: 5 grade: 4
+9. id: 454 salary: 4 grade: 4
+10. id: 31 salary: 3 grade: 8
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  13 24:
+Actual company id: 13
+1. id: 75 salary: 69 grade: 8
+2. id: 119 salary: 64 grade: 2
+3. id: 185 salary: 48 grade: 10
+4. id: 264 salary: 42 grade: 2
+5. id: 200 salary: 41 grade: 9
+6. id: 135 salary: 40 grade: 3
+7. id: 163 salary: 39 grade: 8
+8. id: 350 salary: 31 grade: 1
+9. id: 34 salary: 31 grade: 4
+10. id: 451 salary: 30 grade: 3
+11. id: 431 salary: 30 grade: 4
+12. id: 368 salary: 30 grade: 3
+13. id: 403 salary: 29 grade: 2
+14. id: 341 salary: 28 grade: 3
+15. id: 246 salary: 28 grade: 3
+16. id: 149 salary: 28 grade: 6
+17. id: 5 salary: 28 grade: 5
+18. id: 212 salary: 27 grade: 3
+19. id: 101 salary: 27 grade: 9
+20. id: 102 salary: 26 grade: 1
+21. id: 192 salary: 25 grade: 7
+22. id: 189 salary: 25 grade: 7
+23. id: 133 salary: 24 grade: 8
+24. id: 83 salary: 24 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  2 10 10:
+Actual company id: 2
+num of employees in range: 1 with sum of 2
+1. id: 13 salary: 10 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 16:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 48 grade: 9
+3. id: 286 salary: 45 grade: 2
+4. id: 414 salary: 44 grade: 2
+5. id: 196 salary: 35 grade: 6
+6. id: 408 salary: 29 grade: 3
+7. id: 386 salary: 28 grade: 0
+8. id: 335 salary: 27 grade: 3
+9. id: 91 salary: 27 grade: 6
+10. id: 110 salary: 26 grade: 7
+11. id: 20 salary: 25 grade: 6
+12. id: 215 salary: 22 grade: 3
+13. id: 417 salary: 21 grade: 0
+14. id: 416 salary: 21 grade: 0
+15. id: 380 salary: 19 grade: 0
+16. id: 353 salary: 19 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 2:
+Actual company id: 11
+1. id: 255 salary: 53 grade: 3
+2. id: 22 salary: 48 grade: 9
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 7 25:
+Actual company id: 13
+num of employees in range: 19 with sum of 76
+1. id: 129 salary: 7 grade: 5
+2. id: 195 salary: 22 grade: 3
+3. id: 133 salary: 24 grade: 8
+4. id: 205 salary: 16 grade: 7
+5. id: 77 salary: 17 grade: 3
+6. id: 462 salary: 19 grade: 6
+7. id: 211 salary: 13 grade: 3
+8. id: 83 salary: 24 grade: 4
+9. id: 218 salary: 23 grade: 4
+10. id: 346 salary: 21 grade: 4
+11. id: 283 salary: 17 grade: 0
+12. id: 226 salary: 13 grade: 1
+13. id: 237 salary: 13 grade: 4
+14. id: 51 salary: 15 grade: 8
+15. id: 437 salary: 7 grade: 1
+16. id: 438 salary: 18 grade: 4
+17. id: 248 salary: 23 grade: 2
+18. id: 376 salary: 17 grade: 2
+19. id: 189 salary: 25 grade: 7
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 9 12:
+Actual company id: 15
+num of employees in range: 23 with sum of 90
+1. id: 24 salary: 12 grade: 5
+2. id: 289 salary: 10 grade: 8
+3. id: 42 salary: 9 grade: 5
+4. id: 312 salary: 11 grade: 1
+5. id: 317 salary: 12 grade: 4
+6. id: 80 salary: 9 grade: 9
+7. id: 81 salary: 11 grade: 4
+8. id: 85 salary: 9 grade: 12
+9. id: 347 salary: 12 grade: 4
+10. id: 105 salary: 12 grade: 3
+11. id: 382 salary: 12 grade: 0
+12. id: 413 salary: 9 grade: 2
+13. id: 159 salary: 12 grade: 8
+14. id: 432 salary: 11 grade: 3
+15. id: 440 salary: 11 grade: 3
+16. id: 447 salary: 9 grade: 4
+17. id: 453 salary: 11 grade: 0
+18. id: 202 salary: 10 grade: 4
+19. id: 459 salary: 10 grade: 4
+20. id: 208 salary: 9 grade: 3
+21. id: 229 salary: 9 grade: 2
+22. id: 238 salary: 12 grade: 0
+23. id: 253 salary: 9 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  18 0 3:
+Actual company id: 18 with 0 interns, interns total grade sum: 0
+
+num of employees in range: 2 with sum of 12
+1. id: 450 salary: 2 grade: 4
+2. id: 31 salary: 3 grade: 8
+
+Input line AverageBumpGradeBetweenSalaryByGroup  4 27 27:
+Actual company id: 16
+num of employees in range: 3 with sum of 22
+1. id: 19 salary: 27 grade: 14
+2. id: 167 salary: 27 grade: 5
+3. id: 175 salary: 27 grade: 3
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  9 111:
+Actual company id: 15
+1. id: 174 salary: 73 grade: 7
+2. id: 36 salary: 60 grade: 4
+3. id: 203 salary: 55 grade: 0
+4. id: 216 salary: 54 grade: 4
+5. id: 141 salary: 46 grade: 10
+6. id: 355 salary: 43 grade: 6
+7. id: 318 salary: 42 grade: 4
+8. id: 44 salary: 42 grade: 7
+9. id: 247 salary: 41 grade: 2
+10. id: 109 salary: 41 grade: 9
+11. id: 65 salary: 39 grade: 4
+12. id: 170 salary: 38 grade: 9
+13. id: 74 salary: 36 grade: 0
+14. id: 439 salary: 35 grade: 5
+15. id: 297 salary: 35 grade: 4
+16. id: 460 salary: 30 grade: 8
+17. id: 313 salary: 30 grade: 4
+18. id: 296 salary: 30 grade: 3
+19. id: 291 salary: 30 grade: 2
+20. id: 225 salary: 30 grade: 5
+21. id: 186 salary: 30 grade: 9
+22. id: 180 salary: 30 grade: 11
+23. id: 153 salary: 30 grade: 9
+24. id: 132 salary: 30 grade: 3
+25. id: 27 salary: 30 grade: 11
+26. id: 426 salary: 29 grade: 0
+27. id: 405 salary: 29 grade: 0
+28. id: 285 salary: 29 grade: 1
+29. id: 217 salary: 29 grade: 1
+30. id: 106 salary: 29 grade: 0
+31. id: 21 salary: 29 grade: 6
+32. id: 2 salary: 29 grade: 5
+33. id: 464 salary: 28 grade: 3
+34. id: 364 salary: 28 grade: 4
+35. id: 328 salary: 28 grade: 1
+36. id: 269 salary: 28 grade: 2
+37. id: 256 salary: 28 grade: 5
+38. id: 399 salary: 27 grade: 7
+39. id: 360 salary: 27 grade: 1
+40. id: 321 salary: 27 grade: 1
+41. id: 315 salary: 27 grade: 1
+42. id: 181 salary: 27 grade: 3
+43. id: 25 salary: 27 grade: 9
+44. id: 467 salary: 26 grade: 6
+45. id: 461 salary: 26 grade: 2
+46. id: 365 salary: 26 grade: 7
+47. id: 340 salary: 26 grade: 3
+48. id: 266 salary: 26 grade: 5
+49. id: 45 salary: 26 grade: 4
+50. id: 449 salary: 25 grade: 1
+51. id: 391 salary: 25 grade: 0
+52. id: 322 salary: 25 grade: 1
+53. id: 298 salary: 25 grade: 4
+54. id: 257 salary: 25 grade: 2
+55. id: 242 salary: 25 grade: 3
+56. id: 198 salary: 25 grade: 8
+57. id: 114 salary: 25 grade: 10
+58. id: 88 salary: 25 grade: 4
+59. id: 48 salary: 25 grade: 13
+60. id: 456 salary: 24 grade: 3
+61. id: 409 salary: 24 grade: 2
+62. id: 404 salary: 24 grade: 2
+63. id: 401 salary: 24 grade: 3
+64. id: 330 salary: 24 grade: 2
+65. id: 152 salary: 24 grade: 11
+66. id: 78 salary: 24 grade: 8
+67. id: 73 salary: 24 grade: 4
+68. id: 52 salary: 24 grade: 12
+69. id: 7 salary: 24 grade: 6
+70. id: 425 salary: 23 grade: 1
+71. id: 411 salary: 23 grade: 3
+72. id: 381 salary: 23 grade: 4
+73. id: 267 salary: 23 grade: 1
+74. id: 214 salary: 23 grade: 3
+75. id: 151 salary: 23 grade: 1
+76. id: 98 salary: 23 grade: 0
+77. id: 79 salary: 23 grade: 7
+78. id: 336 salary: 22 grade: 0
+79. id: 261 salary: 22 grade: 5
+80. id: 176 salary: 22 grade: 7
+81. id: 276 salary: 21 grade: 5
+82. id: 56 salary: 21 grade: 8
+83. id: 236 salary: 20 grade: 1
+84. id: 136 salary: 20 grade: 0
+85. id: 66 salary: 20 grade: 4
+86. id: 41 salary: 20 grade: 7
+87. id: 446 salary: 19 grade: 4
+88. id: 86 salary: 19 grade: 7
+89. id: 4 salary: 19 grade: 2
+90. id: 424 salary: 18 grade: 2
+91. id: 420 salary: 18 grade: 0
+92. id: 379 salary: 18 grade: 2
+93. id: 333 salary: 18 grade: 4
+94. id: 281 salary: 18 grade: 6
+95. id: 228 salary: 18 grade: 2
+96. id: 126 salary: 18 grade: 15
+97. id: 92 salary: 18 grade: 7
+98. id: 384 salary: 17 grade: 1
+99. id: 145 salary: 17 grade: 1
+100. id: 96 salary: 17 grade: 12
+101. id: 249 salary: 16 grade: 7
+102. id: 125 salary: 16 grade: 1
+103. id: 422 salary: 15 grade: 2
+104. id: 388 salary: 15 grade: 0
+105. id: 332 salary: 15 grade: 3
+106. id: 311 salary: 15 grade: 3
+107. id: 232 salary: 15 grade: 2
+108. id: 50 salary: 15 grade: 9
+109. id: 419 salary: 14 grade: 4
+110. id: 235 salary: 14 grade: 4
+111. id: 234 salary: 14 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  17 6:
+Actual company id: 17
+1. id: 306 salary: 72 grade: 4
+2. id: 117 salary: 51 grade: 7
+3. id: 168 salary: 39 grade: 2
+4. id: 191 salary: 34 grade: 3
+5. id: 173 salary: 34 grade: 7
+6. id: 387 salary: 28 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  18 11:
+Actual company id: 18
+1. id: 390 salary: 33 grade: 0
+2. id: 28 salary: 21 grade: 10
+3. id: 103 salary: 19 grade: 7
+4. id: 351 salary: 18 grade: 3
+5. id: 54 salary: 18 grade: 2
+6. id: 116 salary: 9 grade: 6
+7. id: 378 salary: 7 grade: 1
+8. id: 194 salary: 5 grade: 4
+9. id: 454 salary: 4 grade: 4
+10. id: 31 salary: 3 grade: 8
+11. id: 450 salary: 2 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  20 15 25:
+Actual company id: 16
+num of employees in range: 62 with sum of 258
+1. id: 4 salary: 19 grade: 2
+2. id: 7 salary: 24 grade: 6
+3. id: 41 salary: 20 grade: 7
+4. id: 48 salary: 25 grade: 13
+5. id: 50 salary: 15 grade: 9
+6. id: 52 salary: 24 grade: 12
+7. id: 56 salary: 21 grade: 8
+8. id: 66 salary: 20 grade: 4
+9. id: 73 salary: 24 grade: 4
+10. id: 78 salary: 24 grade: 8
+11. id: 79 salary: 23 grade: 7
+12. id: 86 salary: 19 grade: 7
+13. id: 88 salary: 25 grade: 4
+14. id: 92 salary: 18 grade: 7
+15. id: 96 salary: 17 grade: 12
+16. id: 98 salary: 23 grade: 0
+17. id: 114 salary: 25 grade: 10
+18. id: 125 salary: 16 grade: 1
+19. id: 126 salary: 18 grade: 15
+20. id: 136 salary: 20 grade: 0
+21. id: 145 salary: 17 grade: 1
+22. id: 151 salary: 23 grade: 1
+23. id: 152 salary: 24 grade: 11
+24. id: 161 salary: 15 grade: 9
+25. id: 198 salary: 25 grade: 8
+26. id: 214 salary: 23 grade: 3
+27. id: 228 salary: 18 grade: 2
+28. id: 232 salary: 15 grade: 2
+29. id: 236 salary: 20 grade: 1
+30. id: 242 salary: 25 grade: 3
+31. id: 249 salary: 16 grade: 7
+32. id: 257 salary: 25 grade: 2
+33. id: 261 salary: 22 grade: 5
+34. id: 267 salary: 23 grade: 1
+35. id: 276 salary: 21 grade: 5
+36. id: 281 salary: 18 grade: 6
+37. id: 282 salary: 17 grade: 2
+38. id: 298 salary: 25 grade: 4
+39. id: 311 salary: 15 grade: 3
+40. id: 322 salary: 25 grade: 1
+41. id: 330 salary: 24 grade: 2
+42. id: 332 salary: 15 grade: 3
+43. id: 333 salary: 18 grade: 4
+44. id: 336 salary: 22 grade: 0
+45. id: 345 salary: 17 grade: 1
+46. id: 379 salary: 18 grade: 2
+47. id: 381 salary: 23 grade: 4
+48. id: 384 salary: 17 grade: 1
+49. id: 388 salary: 15 grade: 0
+50. id: 391 salary: 25 grade: 0
+51. id: 401 salary: 24 grade: 3
+52. id: 404 salary: 24 grade: 2
+53. id: 409 salary: 24 grade: 2
+54. id: 411 salary: 23 grade: 3
+55. id: 420 salary: 18 grade: 0
+56. id: 424 salary: 18 grade: 2
+57. id: 425 salary: 23 grade: 1
+58. id: 446 salary: 19 grade: 4
+59. id: 449 salary: 25 grade: 1
+60. id: 455 salary: 19 grade: 3
+61. id: 456 salary: 24 grade: 3
+62. id: 468 salary: 22 grade: 4
+
+Input line AverageBumpGradeBetweenSalaryByGroup  13 0 4:
+Actual company id: 13 with 0 interns, interns total grade sum: 0
+
+num of employees in range: 3 with sum of 23
+1. id: 193 salary: 1 grade: 2
+2. id: 72 salary: 4 grade: 9
+3. id: 49 salary: 2 grade: 12
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  2 15:
+Actual company id: 2
+1. id: 38 salary: 51 grade: 6
+2. id: 14 salary: 44 grade: 6
+3. id: 157 salary: 33 grade: 8
+4. id: 222 salary: 30 grade: 4
+5. id: 471 salary: 25 grade: 4
+6. id: 466 salary: 20 grade: 0
+7. id: 160 salary: 17 grade: 3
+8. id: 383 salary: 15 grade: 0
+9. id: 40 salary: 15 grade: 9
+10. id: 120 salary: 11 grade: 10
+11. id: 13 salary: 10 grade: 2
+12. id: 407 salary: 8 grade: 4
+13. id: 201 salary: 7 grade: 4
+14. id: 458 salary: 5 grade: 3
+15. id: 89 salary: 3 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  7 25 29:
+Actual company id: 7
+num of employees in range: 6 with sum of 19
+1. id: 418 salary: 25 grade: 1
+2. id: 323 salary: 25 grade: 4
+3. id: 325 salary: 29 grade: 4
+4. id: 357 salary: 27 grade: 6
+5. id: 299 salary: 29 grade: 3
+6. id: 274 salary: 27 grade: 1
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 168:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 25 salary: 56 grade: 9
+6. id: 203 salary: 55 grade: 0
+7. id: 216 salary: 54 grade: 4
+8. id: 265 salary: 47 grade: 1
+9. id: 141 salary: 46 grade: 10
+10. id: 422 salary: 45 grade: 2
+11. id: 355 salary: 43 grade: 6
+12. id: 176 salary: 43 grade: 7
+13. id: 318 salary: 42 grade: 4
+14. id: 44 salary: 42 grade: 7
+15. id: 247 salary: 41 grade: 2
+16. id: 109 salary: 41 grade: 9
+17. id: 97 salary: 40 grade: 6
+18. id: 65 salary: 39 grade: 4
+19. id: 177 salary: 38 grade: 5
+20. id: 170 salary: 38 grade: 9
+21. id: 30 salary: 37 grade: 8
+22. id: 74 salary: 36 grade: 0
+23. id: 439 salary: 35 grade: 5
+24. id: 297 salary: 35 grade: 4
+25. id: 182 salary: 33 grade: 2
+26. id: 12 salary: 33 grade: 6
+27. id: 406 salary: 32 grade: 0
+28. id: 460 salary: 30 grade: 8
+29. id: 313 salary: 30 grade: 4
+30. id: 296 salary: 30 grade: 3
+31. id: 291 salary: 30 grade: 2
+32. id: 225 salary: 30 grade: 5
+33. id: 186 salary: 30 grade: 9
+34. id: 180 salary: 30 grade: 11
+35. id: 153 salary: 30 grade: 9
+36. id: 132 salary: 30 grade: 3
+37. id: 27 salary: 30 grade: 11
+38. id: 488 salary: 29 grade: 3
+39. id: 483 salary: 29 grade: 3
+40. id: 426 salary: 29 grade: 0
+41. id: 405 salary: 29 grade: 0
+42. id: 285 salary: 29 grade: 1
+43. id: 217 salary: 29 grade: 1
+44. id: 106 salary: 29 grade: 0
+45. id: 21 salary: 29 grade: 6
+46. id: 2 salary: 29 grade: 5
+47. id: 464 salary: 28 grade: 3
+48. id: 364 salary: 28 grade: 4
+49. id: 328 salary: 28 grade: 1
+50. id: 293 salary: 28 grade: 4
+51. id: 269 salary: 28 grade: 2
+52. id: 256 salary: 28 grade: 5
+53. id: 485 salary: 27 grade: 7
+54. id: 399 salary: 27 grade: 7
+55. id: 360 salary: 27 grade: 1
+56. id: 321 salary: 27 grade: 1
+57. id: 315 salary: 27 grade: 1
+58. id: 181 salary: 27 grade: 3
+59. id: 175 salary: 27 grade: 3
+60. id: 167 salary: 27 grade: 5
+61. id: 19 salary: 27 grade: 14
+62. id: 467 salary: 26 grade: 6
+63. id: 461 salary: 26 grade: 2
+64. id: 365 salary: 26 grade: 7
+65. id: 340 salary: 26 grade: 3
+66. id: 266 salary: 26 grade: 5
+67. id: 45 salary: 26 grade: 4
+68. id: 490 salary: 25 grade: 8
+69. id: 449 salary: 25 grade: 1
+70. id: 432 salary: 25 grade: 3
+71. id: 391 salary: 25 grade: 0
+72. id: 322 salary: 25 grade: 1
+73. id: 298 salary: 25 grade: 4
+74. id: 257 salary: 25 grade: 2
+75. id: 242 salary: 25 grade: 3
+76. id: 198 salary: 25 grade: 8
+77. id: 114 salary: 25 grade: 10
+78. id: 88 salary: 25 grade: 4
+79. id: 48 salary: 25 grade: 13
+80. id: 456 salary: 24 grade: 3
+81. id: 409 salary: 24 grade: 2
+82. id: 404 salary: 24 grade: 2
+83. id: 401 salary: 24 grade: 3
+84. id: 330 salary: 24 grade: 2
+85. id: 152 salary: 24 grade: 11
+86. id: 78 salary: 24 grade: 8
+87. id: 73 salary: 24 grade: 4
+88. id: 52 salary: 24 grade: 12
+89. id: 7 salary: 24 grade: 6
+90. id: 425 salary: 23 grade: 1
+91. id: 411 salary: 23 grade: 3
+92. id: 381 salary: 23 grade: 4
+93. id: 267 salary: 23 grade: 1
+94. id: 214 salary: 23 grade: 3
+95. id: 151 salary: 23 grade: 1
+96. id: 98 salary: 23 grade: 0
+97. id: 79 salary: 23 grade: 7
+98. id: 41 salary: 23 grade: 7
+99. id: 468 salary: 22 grade: 4
+100. id: 336 salary: 22 grade: 0
+101. id: 261 salary: 22 grade: 5
+102. id: 473 salary: 21 grade: 1
+103. id: 276 salary: 21 grade: 5
+104. id: 56 salary: 21 grade: 8
+105. id: 236 salary: 20 grade: 1
+106. id: 136 salary: 20 grade: 0
+107. id: 66 salary: 20 grade: 4
+108. id: 489 salary: 19 grade: 0
+109. id: 455 salary: 19 grade: 3
+110. id: 446 salary: 19 grade: 4
+111. id: 86 salary: 19 grade: 7
+112. id: 4 salary: 19 grade: 2
+113. id: 424 salary: 18 grade: 2
+114. id: 420 salary: 18 grade: 0
+115. id: 379 salary: 18 grade: 2
+116. id: 333 salary: 18 grade: 4
+117. id: 281 salary: 18 grade: 6
+118. id: 228 salary: 18 grade: 2
+119. id: 126 salary: 18 grade: 15
+120. id: 92 salary: 18 grade: 7
+121. id: 475 salary: 17 grade: 1
+122. id: 384 salary: 17 grade: 1
+123. id: 345 salary: 17 grade: 1
+124. id: 282 salary: 17 grade: 2
+125. id: 145 salary: 17 grade: 1
+126. id: 96 salary: 17 grade: 12
+127. id: 477 salary: 16 grade: 3
+128. id: 249 salary: 16 grade: 7
+129. id: 125 salary: 16 grade: 1
+130. id: 388 salary: 15 grade: 0
+131. id: 332 salary: 15 grade: 3
+132. id: 311 salary: 15 grade: 3
+133. id: 232 salary: 15 grade: 2
+134. id: 161 salary: 15 grade: 9
+135. id: 50 salary: 15 grade: 9
+136. id: 419 salary: 14 grade: 4
+137. id: 235 salary: 14 grade: 4
+138. id: 234 salary: 14 grade: 1
+139. id: 99 salary: 14 grade: 8
+140. id: 15 salary: 14 grade: 12
+141. id: 423 salary: 13 grade: 0
+142. id: 369 salary: 13 grade: 4
+143. id: 352 salary: 13 grade: 2
+144. id: 324 salary: 13 grade: 6
+145. id: 270 salary: 13 grade: 3
+146. id: 227 salary: 13 grade: 4
+147. id: 130 salary: 13 grade: 7
+148. id: 104 salary: 13 grade: 4
+149. id: 484 salary: 12 grade: 2
+150. id: 382 salary: 12 grade: 0
+151. id: 358 salary: 12 grade: 4
+152. id: 347 salary: 12 grade: 4
+153. id: 317 salary: 12 grade: 4
+154. id: 238 salary: 12 grade: 0
+155. id: 159 salary: 12 grade: 8
+156. id: 105 salary: 12 grade: 3
+157. id: 24 salary: 12 grade: 5
+158. id: 487 salary: 11 grade: 4
+159. id: 453 salary: 11 grade: 0
+160. id: 440 salary: 11 grade: 3
+161. id: 312 salary: 11 grade: 1
+162. id: 284 salary: 11 grade: 3
+163. id: 81 salary: 11 grade: 4
+164. id: 69 salary: 11 grade: 2
+165. id: 459 salary: 10 grade: 4
+166. id: 289 salary: 10 grade: 8
+167. id: 272 salary: 10 grade: 1
+168. id: 202 salary: 10 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  12 177:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 25 salary: 56 grade: 9
+6. id: 203 salary: 55 grade: 0
+7. id: 216 salary: 54 grade: 4
+8. id: 265 salary: 47 grade: 1
+9. id: 141 salary: 46 grade: 10
+10. id: 422 salary: 45 grade: 2
+11. id: 355 salary: 43 grade: 6
+12. id: 176 salary: 43 grade: 7
+13. id: 318 salary: 42 grade: 4
+14. id: 44 salary: 42 grade: 7
+15. id: 247 salary: 41 grade: 2
+16. id: 109 salary: 41 grade: 9
+17. id: 97 salary: 40 grade: 6
+18. id: 65 salary: 39 grade: 4
+19. id: 177 salary: 38 grade: 5
+20. id: 170 salary: 38 grade: 9
+21. id: 30 salary: 37 grade: 8
+22. id: 74 salary: 36 grade: 0
+23. id: 439 salary: 35 grade: 5
+24. id: 297 salary: 35 grade: 4
+25. id: 182 salary: 33 grade: 2
+26. id: 12 salary: 33 grade: 6
+27. id: 406 salary: 32 grade: 0
+28. id: 460 salary: 30 grade: 8
+29. id: 313 salary: 30 grade: 4
+30. id: 296 salary: 30 grade: 3
+31. id: 291 salary: 30 grade: 2
+32. id: 225 salary: 30 grade: 5
+33. id: 186 salary: 30 grade: 9
+34. id: 180 salary: 30 grade: 11
+35. id: 153 salary: 30 grade: 9
+36. id: 132 salary: 30 grade: 3
+37. id: 27 salary: 30 grade: 11
+38. id: 488 salary: 29 grade: 3
+39. id: 483 salary: 29 grade: 3
+40. id: 426 salary: 29 grade: 0
+41. id: 405 salary: 29 grade: 0
+42. id: 285 salary: 29 grade: 1
+43. id: 217 salary: 29 grade: 1
+44. id: 106 salary: 29 grade: 0
+45. id: 21 salary: 29 grade: 6
+46. id: 2 salary: 29 grade: 5
+47. id: 464 salary: 28 grade: 3
+48. id: 364 salary: 28 grade: 4
+49. id: 328 salary: 28 grade: 1
+50. id: 293 salary: 28 grade: 4
+51. id: 269 salary: 28 grade: 2
+52. id: 256 salary: 28 grade: 5
+53. id: 485 salary: 27 grade: 7
+54. id: 399 salary: 27 grade: 7
+55. id: 360 salary: 27 grade: 1
+56. id: 321 salary: 27 grade: 1
+57. id: 315 salary: 27 grade: 1
+58. id: 181 salary: 27 grade: 3
+59. id: 175 salary: 27 grade: 3
+60. id: 167 salary: 27 grade: 5
+61. id: 19 salary: 27 grade: 14
+62. id: 467 salary: 26 grade: 6
+63. id: 461 salary: 26 grade: 2
+64. id: 365 salary: 26 grade: 7
+65. id: 340 salary: 26 grade: 3
+66. id: 266 salary: 26 grade: 5
+67. id: 45 salary: 26 grade: 4
+68. id: 490 salary: 25 grade: 8
+69. id: 449 salary: 25 grade: 1
+70. id: 432 salary: 25 grade: 3
+71. id: 391 salary: 25 grade: 0
+72. id: 322 salary: 25 grade: 1
+73. id: 298 salary: 25 grade: 4
+74. id: 257 salary: 25 grade: 2
+75. id: 242 salary: 25 grade: 3
+76. id: 198 salary: 25 grade: 8
+77. id: 114 salary: 25 grade: 10
+78. id: 88 salary: 25 grade: 4
+79. id: 48 salary: 25 grade: 13
+80. id: 456 salary: 24 grade: 3
+81. id: 409 salary: 24 grade: 2
+82. id: 404 salary: 24 grade: 5
+83. id: 401 salary: 24 grade: 3
+84. id: 330 salary: 24 grade: 2
+85. id: 152 salary: 24 grade: 11
+86. id: 78 salary: 24 grade: 8
+87. id: 73 salary: 24 grade: 4
+88. id: 52 salary: 24 grade: 12
+89. id: 7 salary: 24 grade: 6
+90. id: 425 salary: 23 grade: 1
+91. id: 411 salary: 23 grade: 3
+92. id: 381 salary: 23 grade: 4
+93. id: 267 salary: 23 grade: 1
+94. id: 214 salary: 23 grade: 3
+95. id: 151 salary: 23 grade: 1
+96. id: 98 salary: 23 grade: 0
+97. id: 79 salary: 23 grade: 7
+98. id: 41 salary: 23 grade: 7
+99. id: 468 salary: 22 grade: 4
+100. id: 336 salary: 22 grade: 0
+101. id: 261 salary: 22 grade: 5
+102. id: 473 salary: 21 grade: 1
+103. id: 276 salary: 21 grade: 5
+104. id: 56 salary: 21 grade: 8
+105. id: 236 salary: 20 grade: 1
+106. id: 136 salary: 20 grade: 0
+107. id: 66 salary: 20 grade: 4
+108. id: 489 salary: 19 grade: 0
+109. id: 455 salary: 19 grade: 3
+110. id: 446 salary: 19 grade: 4
+111. id: 86 salary: 19 grade: 7
+112. id: 4 salary: 19 grade: 2
+113. id: 424 salary: 18 grade: 2
+114. id: 420 salary: 18 grade: 0
+115. id: 379 salary: 18 grade: 2
+116. id: 333 salary: 18 grade: 4
+117. id: 281 salary: 18 grade: 6
+118. id: 228 salary: 18 grade: 2
+119. id: 126 salary: 18 grade: 15
+120. id: 92 salary: 18 grade: 7
+121. id: 475 salary: 17 grade: 1
+122. id: 384 salary: 17 grade: 1
+123. id: 345 salary: 17 grade: 1
+124. id: 282 salary: 17 grade: 2
+125. id: 145 salary: 17 grade: 1
+126. id: 96 salary: 17 grade: 12
+127. id: 477 salary: 16 grade: 3
+128. id: 249 salary: 16 grade: 7
+129. id: 125 salary: 16 grade: 1
+130. id: 388 salary: 15 grade: 0
+131. id: 332 salary: 15 grade: 3
+132. id: 311 salary: 15 grade: 3
+133. id: 232 salary: 15 grade: 3
+134. id: 161 salary: 15 grade: 9
+135. id: 50 salary: 15 grade: 9
+136. id: 419 salary: 14 grade: 4
+137. id: 235 salary: 14 grade: 4
+138. id: 234 salary: 14 grade: 1
+139. id: 99 salary: 14 grade: 8
+140. id: 15 salary: 14 grade: 12
+141. id: 423 salary: 13 grade: 0
+142. id: 369 salary: 13 grade: 4
+143. id: 352 salary: 13 grade: 2
+144. id: 324 salary: 13 grade: 6
+145. id: 270 salary: 13 grade: 3
+146. id: 227 salary: 13 grade: 4
+147. id: 130 salary: 13 grade: 7
+148. id: 104 salary: 13 grade: 4
+149. id: 484 salary: 12 grade: 2
+150. id: 382 salary: 12 grade: 0
+151. id: 358 salary: 12 grade: 4
+152. id: 347 salary: 12 grade: 4
+153. id: 317 salary: 12 grade: 4
+154. id: 238 salary: 12 grade: 0
+155. id: 159 salary: 12 grade: 8
+156. id: 105 salary: 12 grade: 3
+157. id: 487 salary: 11 grade: 4
+158. id: 453 salary: 11 grade: 0
+159. id: 440 salary: 11 grade: 3
+160. id: 312 salary: 11 grade: 1
+161. id: 284 salary: 11 grade: 3
+162. id: 81 salary: 11 grade: 4
+163. id: 69 salary: 11 grade: 2
+164. id: 459 salary: 10 grade: 4
+165. id: 289 salary: 10 grade: 8
+166. id: 272 salary: 10 grade: 1
+167. id: 202 salary: 10 grade: 4
+168. id: 447 salary: 9 grade: 4
+169. id: 413 salary: 9 grade: 2
+170. id: 314 salary: 9 grade: 5
+171. id: 304 salary: 9 grade: 2
+172. id: 253 salary: 9 grade: 2
+173. id: 229 salary: 9 grade: 2
+174. id: 208 salary: 9 grade: 3
+175. id: 85 salary: 9 grade: 12
+176. id: 80 salary: 9 grade: 9
+177. id: 42 salary: 9 grade: 5
+
+Input line AverageBumpGradeBetweenSalaryByGroup  8 7 29:
+Actual company id: 13
+num of employees in range: 45 with sum of 165
+1. id: 129 salary: 7 grade: 5
+2. id: 5 salary: 28 grade: 5
+3. id: 133 salary: 24 grade: 8
+4. id: 393 salary: 26 grade: 0
+5. id: 268 salary: 16 grade: 7
+6. id: 403 salary: 29 grade: 2
+7. id: 149 salary: 28 grade: 6
+8. id: 280 salary: 28 grade: 1
+9. id: 283 salary: 17 grade: 0
+10. id: 166 salary: 11 grade: 9
+11. id: 46 salary: 12 grade: 4
+12. id: 305 salary: 10 grade: 3
+13. id: 51 salary: 15 grade: 8
+14. id: 307 salary: 18 grade: 1
+15. id: 435 salary: 14 grade: 3
+16. id: 436 salary: 23 grade: 0
+17. id: 437 salary: 7 grade: 1
+18. id: 438 salary: 18 grade: 4
+19. id: 310 salary: 19 grade: 2
+20. id: 189 salary: 25 grade: 7
+21. id: 195 salary: 22 grade: 3
+22. id: 327 salary: 24 grade: 7
+23. id: 199 salary: 23 grade: 5
+24. id: 205 salary: 16 grade: 7
+25. id: 77 salary: 17 grade: 3
+26. id: 211 salary: 13 grade: 3
+27. id: 83 salary: 24 grade: 4
+28. id: 212 salary: 27 grade: 3
+29. id: 341 salary: 28 grade: 3
+30. id: 469 salary: 11 grade: 2
+31. id: 87 salary: 22 grade: 9
+32. id: 472 salary: 18 grade: 0
+33. id: 218 salary: 23 grade: 4
+34. id: 346 salary: 21 grade: 4
+35. id: 480 salary: 20 grade: 7
+36. id: 481 salary: 14 grade: 1
+37. id: 226 salary: 13 grade: 1
+38. id: 482 salary: 18 grade: 2
+39. id: 102 salary: 26 grade: 1
+40. id: 108 salary: 24 grade: 6
+41. id: 237 salary: 13 grade: 4
+42. id: 112 salary: 27 grade: 3
+43. id: 246 salary: 28 grade: 3
+44. id: 248 salary: 23 grade: 2
+45. id: 376 salary: 22 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  19 32 56:
+Actual company id: 16
+num of employees in range: 23 with sum of 110
+1. id: 12 salary: 33 grade: 6
+2. id: 25 salary: 56 grade: 9
+3. id: 30 salary: 37 grade: 8
+4. id: 44 salary: 42 grade: 7
+5. id: 65 salary: 39 grade: 4
+6. id: 74 salary: 36 grade: 0
+7. id: 97 salary: 40 grade: 6
+8. id: 109 salary: 41 grade: 9
+9. id: 141 salary: 46 grade: 10
+10. id: 170 salary: 38 grade: 9
+11. id: 176 salary: 43 grade: 7
+12. id: 177 salary: 38 grade: 5
+13. id: 182 salary: 33 grade: 2
+14. id: 203 salary: 55 grade: 0
+15. id: 216 salary: 54 grade: 4
+16. id: 247 salary: 41 grade: 2
+17. id: 265 salary: 47 grade: 1
+18. id: 297 salary: 35 grade: 4
+19. id: 318 salary: 42 grade: 4
+20. id: 355 salary: 43 grade: 6
+21. id: 406 salary: 32 grade: 0
+22. id: 422 salary: 45 grade: 2
+23. id: 439 salary: 35 grade: 5
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  20 4:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  5 4:
+Actual company id: 5
+1. id: 143 salary: 38 grade: 8
+2. id: 251 salary: 30 grade: 2
+3. id: 123 salary: 30 grade: 5
+4. id: 362 salary: 29 grade: 4
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  10 104:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 25 salary: 56 grade: 9
+6. id: 203 salary: 55 grade: 0
+7. id: 216 salary: 54 grade: 4
+8. id: 265 salary: 47 grade: 1
+9. id: 141 salary: 46 grade: 10
+10. id: 422 salary: 45 grade: 2
+11. id: 355 salary: 43 grade: 6
+12. id: 176 salary: 43 grade: 7
+13. id: 318 salary: 42 grade: 4
+14. id: 256 salary: 42 grade: 5
+15. id: 44 salary: 42 grade: 7
+16. id: 247 salary: 41 grade: 2
+17. id: 109 salary: 41 grade: 9
+18. id: 97 salary: 40 grade: 6
+19. id: 65 salary: 39 grade: 4
+20. id: 177 salary: 38 grade: 5
+21. id: 170 salary: 38 grade: 9
+22. id: 30 salary: 37 grade: 8
+23. id: 74 salary: 36 grade: 0
+24. id: 439 salary: 35 grade: 5
+25. id: 297 salary: 35 grade: 4
+26. id: 182 salary: 33 grade: 2
+27. id: 12 salary: 33 grade: 6
+28. id: 406 salary: 32 grade: 0
+29. id: 460 salary: 30 grade: 8
+30. id: 313 salary: 30 grade: 4
+31. id: 296 salary: 30 grade: 3
+32. id: 291 salary: 30 grade: 2
+33. id: 225 salary: 30 grade: 5
+34. id: 186 salary: 30 grade: 9
+35. id: 180 salary: 30 grade: 11
+36. id: 153 salary: 30 grade: 9
+37. id: 132 salary: 30 grade: 3
+38. id: 27 salary: 30 grade: 11
+39. id: 495 salary: 29 grade: 2
+40. id: 488 salary: 29 grade: 3
+41. id: 483 salary: 29 grade: 3
+42. id: 426 salary: 29 grade: 0
+43. id: 405 salary: 29 grade: 0
+44. id: 285 salary: 29 grade: 1
+45. id: 217 salary: 29 grade: 1
+46. id: 106 salary: 29 grade: 0
+47. id: 21 salary: 29 grade: 6
+48. id: 2 salary: 29 grade: 5
+49. id: 464 salary: 28 grade: 3
+50. id: 441 salary: 28 grade: 3
+51. id: 364 salary: 28 grade: 4
+52. id: 328 salary: 28 grade: 1
+53. id: 293 salary: 28 grade: 4
+54. id: 269 salary: 28 grade: 2
+55. id: 485 salary: 27 grade: 7
+56. id: 399 salary: 27 grade: 7
+57. id: 360 salary: 27 grade: 1
+58. id: 321 salary: 27 grade: 1
+59. id: 315 salary: 27 grade: 1
+60. id: 181 salary: 27 grade: 3
+61. id: 175 salary: 27 grade: 3
+62. id: 167 salary: 27 grade: 5
+63. id: 19 salary: 27 grade: 14
+64. id: 467 salary: 26 grade: 6
+65. id: 461 salary: 26 grade: 2
+66. id: 365 salary: 26 grade: 7
+67. id: 340 salary: 26 grade: 3
+68. id: 266 salary: 26 grade: 5
+69. id: 45 salary: 26 grade: 4
+70. id: 490 salary: 25 grade: 8
+71. id: 449 salary: 25 grade: 1
+72. id: 432 salary: 25 grade: 3
+73. id: 391 salary: 25 grade: 0
+74. id: 322 salary: 25 grade: 1
+75. id: 298 salary: 25 grade: 4
+76. id: 257 salary: 25 grade: 2
+77. id: 242 salary: 25 grade: 3
+78. id: 198 salary: 25 grade: 8
+79. id: 114 salary: 25 grade: 10
+80. id: 88 salary: 25 grade: 4
+81. id: 48 salary: 25 grade: 13
+82. id: 456 salary: 24 grade: 3
+83. id: 409 salary: 24 grade: 2
+84. id: 404 salary: 24 grade: 5
+85. id: 401 salary: 24 grade: 3
+86. id: 330 salary: 24 grade: 2
+87. id: 152 salary: 24 grade: 11
+88. id: 78 salary: 24 grade: 8
+89. id: 73 salary: 24 grade: 4
+90. id: 52 salary: 24 grade: 12
+91. id: 7 salary: 24 grade: 6
+92. id: 425 salary: 23 grade: 1
+93. id: 411 salary: 23 grade: 3
+94. id: 381 salary: 23 grade: 4
+95. id: 267 salary: 23 grade: 1
+96. id: 214 salary: 23 grade: 3
+97. id: 151 salary: 23 grade: 1
+98. id: 98 salary: 23 grade: 0
+99. id: 79 salary: 23 grade: 7
+100. id: 41 salary: 23 grade: 7
+101. id: 468 salary: 22 grade: 4
+102. id: 336 salary: 22 grade: 0
+103. id: 261 salary: 22 grade: 5
+104. id: 473 salary: 21 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  13 15 42:
+Actual company id: 13
+num of employees in range: 46 with sum of 177
+1. id: 5 salary: 28 grade: 5
+2. id: 133 salary: 24 grade: 8
+3. id: 135 salary: 40 grade: 3
+4. id: 264 salary: 42 grade: 2
+5. id: 393 salary: 26 grade: 0
+6. id: 268 salary: 16 grade: 7
+7. id: 403 salary: 29 grade: 2
+8. id: 149 salary: 28 grade: 6
+9. id: 280 salary: 28 grade: 1
+10. id: 283 salary: 17 grade: 0
+11. id: 34 salary: 31 grade: 4
+12. id: 163 salary: 39 grade: 8
+13. id: 431 salary: 30 grade: 4
+14. id: 51 salary: 15 grade: 8
+15. id: 307 salary: 18 grade: 1
+16. id: 436 salary: 23 grade: 0
+17. id: 438 salary: 18 grade: 4
+18. id: 310 salary: 19 grade: 2
+19. id: 189 salary: 25 grade: 7
+20. id: 195 salary: 22 grade: 3
+21. id: 451 salary: 30 grade: 3
+22. id: 327 salary: 24 grade: 7
+23. id: 199 salary: 23 grade: 5
+24. id: 200 salary: 41 grade: 9
+25. id: 205 salary: 16 grade: 7
+26. id: 77 salary: 17 grade: 3
+27. id: 83 salary: 24 grade: 4
+28. id: 212 salary: 27 grade: 3
+29. id: 341 salary: 28 grade: 3
+30. id: 87 salary: 22 grade: 9
+31. id: 472 salary: 18 grade: 0
+32. id: 218 salary: 23 grade: 4
+33. id: 346 salary: 21 grade: 4
+34. id: 350 salary: 31 grade: 1
+35. id: 95 salary: 42 grade: 7
+36. id: 480 salary: 20 grade: 7
+37. id: 482 salary: 18 grade: 2
+38. id: 102 salary: 26 grade: 1
+39. id: 108 salary: 24 grade: 6
+40. id: 368 salary: 30 grade: 3
+41. id: 112 salary: 27 grade: 3
+42. id: 240 salary: 33 grade: 0
+43. id: 497 salary: 23 grade: 4
+44. id: 246 salary: 28 grade: 3
+45. id: 248 salary: 23 grade: 2
+46. id: 376 salary: 22 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  20 38 65:
+Actual company id: 16
+num of employees in range: 19 with sum of 94
+1. id: 25 salary: 56 grade: 9
+2. id: 36 salary: 60 grade: 4
+3. id: 44 salary: 42 grade: 7
+4. id: 65 salary: 39 grade: 4
+5. id: 97 salary: 40 grade: 6
+6. id: 109 salary: 41 grade: 9
+7. id: 141 salary: 46 grade: 10
+8. id: 170 salary: 38 grade: 9
+9. id: 176 salary: 43 grade: 7
+10. id: 177 salary: 38 grade: 5
+11. id: 203 salary: 55 grade: 0
+12. id: 216 salary: 54 grade: 4
+13. id: 247 salary: 41 grade: 2
+14. id: 256 salary: 42 grade: 5
+15. id: 265 salary: 47 grade: 1
+16. id: 278 salary: 63 grade: 0
+17. id: 318 salary: 42 grade: 4
+18. id: 355 salary: 47 grade: 6
+19. id: 422 salary: 45 grade: 2
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  14 79:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 203 salary: 57 grade: 0
+6. id: 25 salary: 56 grade: 9
+7. id: 216 salary: 54 grade: 4
+8. id: 255 salary: 53 grade: 3
+9. id: 22 salary: 48 grade: 9
+10. id: 355 salary: 47 grade: 7
+11. id: 265 salary: 47 grade: 1
+12. id: 141 salary: 46 grade: 10
+13. id: 422 salary: 45 grade: 2
+14. id: 286 salary: 45 grade: 2
+15. id: 414 salary: 44 grade: 2
+16. id: 176 salary: 43 grade: 7
+17. id: 318 salary: 42 grade: 4
+18. id: 256 salary: 42 grade: 5
+19. id: 44 salary: 42 grade: 7
+20. id: 247 salary: 41 grade: 2
+21. id: 109 salary: 41 grade: 9
+22. id: 97 salary: 40 grade: 6
+23. id: 65 salary: 39 grade: 4
+24. id: 177 salary: 38 grade: 5
+25. id: 170 salary: 38 grade: 9
+26. id: 30 salary: 37 grade: 8
+27. id: 74 salary: 36 grade: 0
+28. id: 439 salary: 35 grade: 5
+29. id: 297 salary: 35 grade: 4
+30. id: 196 salary: 35 grade: 6
+31. id: 182 salary: 33 grade: 2
+32. id: 12 salary: 33 grade: 6
+33. id: 406 salary: 32 grade: 0
+34. id: 460 salary: 30 grade: 8
+35. id: 313 salary: 30 grade: 4
+36. id: 296 salary: 30 grade: 3
+37. id: 291 salary: 30 grade: 2
+38. id: 225 salary: 30 grade: 5
+39. id: 186 salary: 30 grade: 9
+40. id: 180 salary: 30 grade: 11
+41. id: 153 salary: 30 grade: 9
+42. id: 137 salary: 30 grade: 9
+43. id: 132 salary: 30 grade: 3
+44. id: 27 salary: 30 grade: 11
+45. id: 495 salary: 29 grade: 2
+46. id: 488 salary: 29 grade: 3
+47. id: 483 salary: 29 grade: 3
+48. id: 426 salary: 29 grade: 0
+49. id: 408 salary: 29 grade: 3
+50. id: 405 salary: 29 grade: 0
+51. id: 353 salary: 29 grade: 3
+52. id: 285 salary: 29 grade: 1
+53. id: 217 salary: 29 grade: 1
+54. id: 106 salary: 29 grade: 0
+55. id: 21 salary: 29 grade: 6
+56. id: 2 salary: 29 grade: 5
+57. id: 464 salary: 28 grade: 3
+58. id: 441 salary: 28 grade: 3
+59. id: 386 salary: 28 grade: 0
+60. id: 364 salary: 28 grade: 4
+61. id: 328 salary: 28 grade: 1
+62. id: 293 salary: 28 grade: 4
+63. id: 269 salary: 28 grade: 2
+64. id: 485 salary: 27 grade: 7
+65. id: 399 salary: 27 grade: 7
+66. id: 360 salary: 27 grade: 1
+67. id: 335 salary: 27 grade: 7
+68. id: 321 salary: 27 grade: 1
+69. id: 315 salary: 27 grade: 1
+70. id: 181 salary: 27 grade: 3
+71. id: 175 salary: 27 grade: 3
+72. id: 167 salary: 27 grade: 5
+73. id: 91 salary: 27 grade: 6
+74. id: 19 salary: 27 grade: 14
+75. id: 467 salary: 26 grade: 6
+76. id: 461 salary: 26 grade: 2
+77. id: 365 salary: 26 grade: 7
+78. id: 340 salary: 26 grade: 3
+79. id: 266 salary: 26 grade: 5
+
+Input line AverageBumpGradeBetweenSalaryByGroup  9 15 56:
+Actual company id: 16
+num of employees in range: 156 with sum of 661
+1. id: 2 salary: 29 grade: 5
+2. id: 4 salary: 19 grade: 2
+3. id: 7 salary: 24 grade: 6
+4. id: 12 salary: 33 grade: 6
+5. id: 19 salary: 27 grade: 14
+6. id: 20 salary: 25 grade: 6
+7. id: 21 salary: 29 grade: 6
+8. id: 22 salary: 48 grade: 9
+9. id: 25 salary: 56 grade: 9
+10. id: 27 salary: 30 grade: 11
+11. id: 30 salary: 37 grade: 8
+12. id: 41 salary: 23 grade: 7
+13. id: 44 salary: 42 grade: 7
+14. id: 45 salary: 26 grade: 4
+15. id: 48 salary: 25 grade: 13
+16. id: 50 salary: 15 grade: 9
+17. id: 52 salary: 24 grade: 12
+18. id: 56 salary: 21 grade: 10
+19. id: 65 salary: 39 grade: 4
+20. id: 66 salary: 20 grade: 4
+21. id: 73 salary: 24 grade: 4
+22. id: 74 salary: 36 grade: 0
+23. id: 78 salary: 24 grade: 8
+24. id: 79 salary: 23 grade: 7
+25. id: 86 salary: 19 grade: 7
+26. id: 88 salary: 25 grade: 4
+27. id: 91 salary: 27 grade: 6
+28. id: 92 salary: 18 grade: 7
+29. id: 96 salary: 17 grade: 12
+30. id: 97 salary: 40 grade: 6
+31. id: 98 salary: 23 grade: 0
+32. id: 106 salary: 29 grade: 0
+33. id: 109 salary: 41 grade: 9
+34. id: 110 salary: 26 grade: 7
+35. id: 114 salary: 25 grade: 10
+36. id: 124 salary: 15 grade: 6
+37. id: 125 salary: 16 grade: 1
+38. id: 126 salary: 20 grade: 15
+39. id: 132 salary: 30 grade: 3
+40. id: 136 salary: 20 grade: 0
+41. id: 137 salary: 30 grade: 9
+42. id: 141 salary: 46 grade: 10
+43. id: 145 salary: 17 grade: 1
+44. id: 151 salary: 23 grade: 1
+45. id: 152 salary: 24 grade: 11
+46. id: 153 salary: 30 grade: 9
+47. id: 158 salary: 18 grade: 2
+48. id: 161 salary: 15 grade: 9
+49. id: 167 salary: 27 grade: 5
+50. id: 170 salary: 38 grade: 9
+51. id: 175 salary: 27 grade: 3
+52. id: 176 salary: 43 grade: 7
+53. id: 177 salary: 38 grade: 5
+54. id: 180 salary: 30 grade: 11
+55. id: 181 salary: 27 grade: 3
+56. id: 182 salary: 33 grade: 2
+57. id: 186 salary: 30 grade: 9
+58. id: 196 salary: 35 grade: 6
+59. id: 198 salary: 25 grade: 8
+60. id: 214 salary: 23 grade: 3
+61. id: 215 salary: 22 grade: 3
+62. id: 216 salary: 54 grade: 4
+63. id: 217 salary: 29 grade: 1
+64. id: 225 salary: 30 grade: 5
+65. id: 227 salary: 21 grade: 4
+66. id: 228 salary: 18 grade: 2
+67. id: 232 salary: 15 grade: 3
+68. id: 236 salary: 20 grade: 1
+69. id: 242 salary: 25 grade: 3
+70. id: 247 salary: 41 grade: 2
+71. id: 249 salary: 16 grade: 7
+72. id: 255 salary: 53 grade: 3
+73. id: 256 salary: 42 grade: 5
+74. id: 257 salary: 25 grade: 2
+75. id: 261 salary: 22 grade: 5
+76. id: 265 salary: 47 grade: 1
+77. id: 266 salary: 26 grade: 5
+78. id: 267 salary: 23 grade: 1
+79. id: 269 salary: 28 grade: 2
+80. id: 276 salary: 21 grade: 5
+81. id: 281 salary: 18 grade: 6
+82. id: 282 salary: 17 grade: 2
+83. id: 285 salary: 29 grade: 1
+84. id: 286 salary: 45 grade: 2
+85. id: 291 salary: 30 grade: 2
+86. id: 293 salary: 28 grade: 4
+87. id: 296 salary: 30 grade: 3
+88. id: 297 salary: 35 grade: 4
+89. id: 298 salary: 25 grade: 4
+90. id: 309 salary: 17 grade: 3
+91. id: 311 salary: 15 grade: 3
+92. id: 313 salary: 30 grade: 4
+93. id: 315 salary: 27 grade: 1
+94. id: 318 salary: 42 grade: 4
+95. id: 321 salary: 27 grade: 1
+96. id: 322 salary: 25 grade: 1
+97. id: 328 salary: 28 grade: 1
+98. id: 330 salary: 24 grade: 2
+99. id: 332 salary: 15 grade: 3
+100. id: 333 salary: 18 grade: 4
+101. id: 335 salary: 27 grade: 7
+102. id: 336 salary: 22 grade: 0
+103. id: 340 salary: 26 grade: 3
+104. id: 345 salary: 17 grade: 1
+105. id: 349 salary: 15 grade: 11
+106. id: 353 salary: 29 grade: 3
+107. id: 355 salary: 47 grade: 7
+108. id: 360 salary: 27 grade: 1
+109. id: 364 salary: 28 grade: 4
+110. id: 365 salary: 26 grade: 7
+111. id: 379 salary: 18 grade: 2
+112. id: 380 salary: 41 grade: 0
+113. id: 381 salary: 23 grade: 6
+114. id: 384 salary: 17 grade: 1
+115. id: 386 salary: 28 grade: 0
+116. id: 388 salary: 15 grade: 0
+117. id: 391 salary: 25 grade: 0
+118. id: 399 salary: 27 grade: 7
+119. id: 401 salary: 24 grade: 3
+120. id: 404 salary: 24 grade: 5
+121. id: 405 salary: 29 grade: 0
+122. id: 406 salary: 32 grade: 0
+123. id: 408 salary: 29 grade: 3
+124. id: 409 salary: 24 grade: 2
+125. id: 411 salary: 23 grade: 3
+126. id: 414 salary: 44 grade: 2
+127. id: 416 salary: 21 grade: 0
+128. id: 417 salary: 21 grade: 0
+129. id: 420 salary: 18 grade: 0
+130. id: 422 salary: 45 grade: 2
+131. id: 424 salary: 18 grade: 2
+132. id: 425 salary: 23 grade: 1
+133. id: 426 salary: 29 grade: 0
+134. id: 432 salary: 25 grade: 3
+135. id: 439 salary: 35 grade: 5
+136. id: 441 salary: 28 grade: 3
+137. id: 446 salary: 19 grade: 4
+138. id: 449 salary: 25 grade: 1
+139. id: 455 salary: 19 grade: 3
+140. id: 456 salary: 24 grade: 3
+141. id: 460 salary: 30 grade: 8
+142. id: 461 salary: 26 grade: 2
+143. id: 464 salary: 28 grade: 3
+144. id: 467 salary: 26 grade: 6
+145. id: 468 salary: 22 grade: 4
+146. id: 473 salary: 21 grade: 1
+147. id: 475 salary: 17 grade: 1
+148. id: 477 salary: 16 grade: 3
+149. id: 483 salary: 29 grade: 3
+150. id: 485 salary: 27 grade: 7
+151. id: 488 salary: 29 grade: 3
+152. id: 489 salary: 19 grade: 0
+153. id: 495 salary: 29 grade: 2
+154. id: 498 salary: 17 grade: 3
+155. id: 502 salary: 22 grade: 4
+156. id: 504 salary: 15 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  16 5:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 203 salary: 57 grade: 0
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  11 76:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 203 salary: 57 grade: 0
+6. id: 25 salary: 56 grade: 9
+7. id: 216 salary: 54 grade: 4
+8. id: 255 salary: 53 grade: 3
+9. id: 22 salary: 48 grade: 9
+10. id: 355 salary: 47 grade: 7
+11. id: 265 salary: 47 grade: 1
+12. id: 141 salary: 46 grade: 10
+13. id: 422 salary: 45 grade: 2
+14. id: 286 salary: 45 grade: 2
+15. id: 414 salary: 44 grade: 2
+16. id: 176 salary: 43 grade: 7
+17. id: 318 salary: 42 grade: 4
+18. id: 256 salary: 42 grade: 5
+19. id: 44 salary: 42 grade: 7
+20. id: 380 salary: 41 grade: 0
+21. id: 247 salary: 41 grade: 2
+22. id: 109 salary: 41 grade: 9
+23. id: 97 salary: 40 grade: 6
+24. id: 65 salary: 39 grade: 4
+25. id: 177 salary: 38 grade: 5
+26. id: 170 salary: 38 grade: 9
+27. id: 30 salary: 37 grade: 8
+28. id: 74 salary: 36 grade: 0
+29. id: 439 salary: 35 grade: 5
+30. id: 297 salary: 35 grade: 4
+31. id: 196 salary: 35 grade: 6
+32. id: 182 salary: 33 grade: 2
+33. id: 12 salary: 33 grade: 6
+34. id: 406 salary: 32 grade: 0
+35. id: 460 salary: 30 grade: 8
+36. id: 313 salary: 30 grade: 4
+37. id: 296 salary: 30 grade: 3
+38. id: 291 salary: 30 grade: 2
+39. id: 225 salary: 30 grade: 5
+40. id: 186 salary: 30 grade: 9
+41. id: 180 salary: 30 grade: 11
+42. id: 153 salary: 30 grade: 9
+43. id: 137 salary: 30 grade: 9
+44. id: 132 salary: 30 grade: 3
+45. id: 27 salary: 30 grade: 11
+46. id: 495 salary: 29 grade: 2
+47. id: 488 salary: 29 grade: 3
+48. id: 483 salary: 29 grade: 3
+49. id: 426 salary: 29 grade: 0
+50. id: 408 salary: 29 grade: 3
+51. id: 405 salary: 29 grade: 0
+52. id: 353 salary: 29 grade: 3
+53. id: 285 salary: 29 grade: 1
+54. id: 217 salary: 29 grade: 1
+55. id: 106 salary: 29 grade: 0
+56. id: 21 salary: 29 grade: 6
+57. id: 2 salary: 29 grade: 5
+58. id: 464 salary: 28 grade: 3
+59. id: 441 salary: 28 grade: 3
+60. id: 386 salary: 28 grade: 0
+61. id: 364 salary: 28 grade: 4
+62. id: 328 salary: 28 grade: 1
+63. id: 293 salary: 28 grade: 4
+64. id: 269 salary: 28 grade: 2
+65. id: 485 salary: 27 grade: 7
+66. id: 399 salary: 27 grade: 7
+67. id: 360 salary: 27 grade: 1
+68. id: 335 salary: 27 grade: 7
+69. id: 321 salary: 27 grade: 1
+70. id: 315 salary: 27 grade: 1
+71. id: 181 salary: 27 grade: 3
+72. id: 175 salary: 27 grade: 3
+73. id: 167 salary: 27 grade: 5
+74. id: 91 salary: 27 grade: 6
+75. id: 19 salary: 27 grade: 14
+76. id: 467 salary: 26 grade: 6
+
+Input line SumOfBumpGradeBetweenTopWorkersByGroup  19 109:
+Actual company id: 16
+1. id: 339 salary: 80 grade: 8
+2. id: 174 salary: 73 grade: 7
+3. id: 278 salary: 63 grade: 0
+4. id: 36 salary: 60 grade: 4
+5. id: 203 salary: 57 grade: 0
+6. id: 25 salary: 56 grade: 9
+7. id: 216 salary: 54 grade: 4
+8. id: 255 salary: 53 grade: 3
+9. id: 22 salary: 48 grade: 9
+10. id: 355 salary: 47 grade: 7
+11. id: 265 salary: 47 grade: 1
+12. id: 141 salary: 46 grade: 10
+13. id: 422 salary: 45 grade: 2
+14. id: 286 salary: 45 grade: 2
+15. id: 414 salary: 44 grade: 2
+16. id: 176 salary: 43 grade: 7
+17. id: 318 salary: 42 grade: 4
+18. id: 256 salary: 42 grade: 5
+19. id: 44 salary: 42 grade: 7
+20. id: 380 salary: 41 grade: 0
+21. id: 247 salary: 41 grade: 2
+22. id: 109 salary: 41 grade: 9
+23. id: 97 salary: 40 grade: 6
+24. id: 65 salary: 39 grade: 4
+25. id: 177 salary: 38 grade: 5
+26. id: 170 salary: 38 grade: 9
+27. id: 30 salary: 37 grade: 8
+28. id: 74 salary: 36 grade: 0
+29. id: 439 salary: 35 grade: 5
+30. id: 297 salary: 35 grade: 4
+31. id: 196 salary: 35 grade: 6
+32. id: 182 salary: 33 grade: 2
+33. id: 12 salary: 33 grade: 6
+34. id: 406 salary: 32 grade: 0
+35. id: 460 salary: 30 grade: 8
+36. id: 313 salary: 30 grade: 4
+37. id: 296 salary: 30 grade: 3
+38. id: 291 salary: 30 grade: 2
+39. id: 225 salary: 30 grade: 5
+40. id: 186 salary: 30 grade: 9
+41. id: 180 salary: 30 grade: 11
+42. id: 153 salary: 30 grade: 9
+43. id: 137 salary: 30 grade: 9
+44. id: 132 salary: 30 grade: 3
+45. id: 27 salary: 30 grade: 11
+46. id: 495 salary: 29 grade: 2
+47. id: 488 salary: 29 grade: 3
+48. id: 483 salary: 29 grade: 3
+49. id: 426 salary: 29 grade: 0
+50. id: 408 salary: 29 grade: 3
+51. id: 405 salary: 29 grade: 0
+52. id: 353 salary: 29 grade: 3
+53. id: 285 salary: 29 grade: 1
+54. id: 217 salary: 29 grade: 1
+55. id: 106 salary: 29 grade: 0
+56. id: 21 salary: 29 grade: 6
+57. id: 2 salary: 29 grade: 5
+58. id: 464 salary: 28 grade: 3
+59. id: 441 salary: 28 grade: 3
+60. id: 386 salary: 28 grade: 0
+61. id: 364 salary: 28 grade: 4
+62. id: 328 salary: 28 grade: 1
+63. id: 293 salary: 28 grade: 4
+64. id: 269 salary: 28 grade: 2
+65. id: 485 salary: 27 grade: 7
+66. id: 399 salary: 27 grade: 7
+67. id: 360 salary: 27 grade: 1
+68. id: 335 salary: 27 grade: 7
+69. id: 321 salary: 27 grade: 1
+70. id: 315 salary: 27 grade: 1
+71. id: 181 salary: 27 grade: 3
+72. id: 175 salary: 27 grade: 3
+73. id: 167 salary: 27 grade: 5
+74. id: 91 salary: 27 grade: 6
+75. id: 19 salary: 27 grade: 14
+76. id: 467 salary: 26 grade: 6
+77. id: 461 salary: 26 grade: 2
+78. id: 365 salary: 26 grade: 7
+79. id: 340 salary: 26 grade: 3
+80. id: 266 salary: 26 grade: 5
+81. id: 110 salary: 26 grade: 7
+82. id: 45 salary: 26 grade: 4
+83. id: 449 salary: 25 grade: 1
+84. id: 432 salary: 25 grade: 3
+85. id: 391 salary: 25 grade: 0
+86. id: 322 salary: 25 grade: 1
+87. id: 298 salary: 25 grade: 4
+88. id: 257 salary: 25 grade: 2
+89. id: 242 salary: 25 grade: 3
+90. id: 198 salary: 25 grade: 8
+91. id: 114 salary: 25 grade: 10
+92. id: 88 salary: 25 grade: 4
+93. id: 48 salary: 25 grade: 13
+94. id: 20 salary: 25 grade: 6
+95. id: 510 salary: 24 grade: 1
+96. id: 456 salary: 24 grade: 3
+97. id: 409 salary: 24 grade: 2
+98. id: 404 salary: 24 grade: 5
+99. id: 401 salary: 24 grade: 3
+100. id: 330 salary: 24 grade: 2
+101. id: 152 salary: 24 grade: 11
+102. id: 78 salary: 24 grade: 8
+103. id: 73 salary: 24 grade: 4
+104. id: 52 salary: 24 grade: 12
+105. id: 7 salary: 24 grade: 6
+106. id: 425 salary: 23 grade: 1
+107. id: 411 salary: 23 grade: 3
+108. id: 381 salary: 23 grade: 6
+109. id: 267 salary: 23 grade: 1
+
+Input line AverageBumpGradeBetweenSalaryByGroup  11 28 38:
+Actual company id: 16
+num of employees in range: 40 with sum of 163
+1. id: 2 salary: 29 grade: 5
+2. id: 12 salary: 33 grade: 6
+3. id: 21 salary: 29 grade: 6
+4. id: 27 salary: 30 grade: 11
+5. id: 30 salary: 37 grade: 8
+6. id: 74 salary: 36 grade: 0
+7. id: 106 salary: 29 grade: 0
+8. id: 132 salary: 30 grade: 3
+9. id: 137 salary: 30 grade: 9
+10. id: 153 salary: 30 grade: 9
+11. id: 170 salary: 38 grade: 9
+12. id: 177 salary: 38 grade: 5
+13. id: 180 salary: 30 grade: 11
+14. id: 182 salary: 33 grade: 2
+15. id: 186 salary: 30 grade: 9
+16. id: 196 salary: 35 grade: 6
+17. id: 217 salary: 29 grade: 1
+18. id: 225 salary: 30 grade: 5
+19. id: 269 salary: 28 grade: 2
+20. id: 285 salary: 29 grade: 1
+21. id: 291 salary: 30 grade: 2
+22. id: 293 salary: 28 grade: 4
+23. id: 296 salary: 30 grade: 3
+24. id: 297 salary: 35 grade: 4
+25. id: 313 salary: 30 grade: 4
+26. id: 328 salary: 28 grade: 1
+27. id: 353 salary: 29 grade: 3
+28. id: 364 salary: 28 grade: 4
+29. id: 386 salary: 28 grade: 0
+30. id: 405 salary: 29 grade: 0
+31. id: 406 salary: 32 grade: 0
+32. id: 408 salary: 29 grade: 3
+33. id: 426 salary: 29 grade: 0
+34. id: 439 salary: 35 grade: 5
+35. id: 441 salary: 28 grade: 3
+36. id: 460 salary: 30 grade: 8
+37. id: 464 salary: 28 grade: 3
+38. id: 483 salary: 29 grade: 3
+39. id: 488 salary: 29 grade: 3
+40. id: 495 salary: 29 grade: 2
+
+Input line AverageBumpGradeBetweenSalaryByGroup  2 3 25:
+Actual company id: 2
+num of employees in range: 11 with sum of 41
+1. id: 160 salary: 17 grade: 3
+2. id: 40 salary: 15 grade: 9
+3. id: 201 salary: 7 grade: 4
+4. id: 458 salary: 5 grade: 3
+5. id: 13 salary: 10 grade: 2
+6. id: 466 salary: 20 grade: 0
+7. id: 407 salary: 8 grade: 4
+8. id: 471 salary: 25 grade: 4
+9. id: 120 salary: 11 grade: 10
+10. id: 89 salary: 3 grade: 2
+11. id: 383 salary: 15 grade: 0
+

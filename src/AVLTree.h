@@ -30,7 +30,7 @@ public:
     int getRank(T data, int *place);
 
     T find(T object);
-    T *getInOrderArray(int amount = 0);
+    Node<T> *getInOrderArray(int amount = 0);
     T getHighest();
     int getHighestMRankSum(int m);
 
@@ -51,10 +51,10 @@ private:
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
-    void inOrderAux(T *array, int *index, Node<T> *current, int amount);
+    void inOrderAux(Node<T> *array, int *index, Node<T> *current, int amount);
     void trim(Node<T> *current, Node<T> *parent, int *amount);
-    T *mergeArrays(T *arr1, T *arr2, int size1, int size2);
-    void insertSortedArrayInOrder(Node<T> *current, T **arr, int *index, int size);
+    Node<T> *mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int size2);
+    void insertSortedArrayInOrder(Node<T> *current, Node<T> **arr, int *index, int size);
     Node<T> *buildEmptyTree(int h);
     void rotateLeft(Node<T> *current, Node<T> *parent);
     void rotateRight(Node<T> *current, Node<T> *parent);
@@ -313,6 +313,10 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
             return current;
         }
     }
+    if (prev != nullptr)
+    {
+        *prev = parent;
+    }
     return nullptr;
 }
 
@@ -329,11 +333,11 @@ template <typename T>
 void AVLTree<T>::merge(AVLTree<T> *tree)
 {
     // Merge tree with O(n) complexity
-    if (tree == nullptr)
+    if (tree == nullptr || tree->getSize() == 0)
         return;
-    T *tree1 = getInOrderArray();
-    T *tree2 = tree->getInOrderArray();
-    T *merged = mergeArrays(tree1, tree2, size, tree->size);
+    Node<T> *tree1 = getInOrderArray();
+    Node<T> *tree2 = tree->getInOrderArray();
+    Node<T> *merged = mergeArrays(tree1, tree2, size, tree->size);
     delete[] tree1;
     delete[] tree2;
     size += tree->size;
@@ -350,13 +354,13 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
 
 // helper function for merge arrays
 template <typename T>
-T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
+Node<T> *AVLTree<T>::mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int size2)
 {
-    T *merged = new T[size1 + size2];
+    Node<T> *merged = new Node<T>[size1 + size2];
     int i = 0, j = 0, k = 0;
     while (i < size1 && j < size2)
     {
-        if (compare(arr1[i], arr2[j]))
+        if (compare(arr1[i].getData(), arr2[j].getData()))
         {
             merged[k] = arr1[i];
             i++;
@@ -384,13 +388,16 @@ T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
 }
 
 template <typename T>
-void AVLTree<T>::insertSortedArrayInOrder(Node<T> *current, T **arr, int *index, int size)
+void AVLTree<T>::insertSortedArrayInOrder(Node<T> *current, Node<T> **arr, int *index, int size)
 {
     if (current == nullptr)
         return;
     insertSortedArrayInOrder(current->getLeft(), arr, index, size);
-    current->setData((*arr)[(*index)++]);
+    Node<T> temp = (*arr)[(*index)++];
+    current->setData(temp.getData());
+    current->setRank(temp.getRank());
     insertSortedArrayInOrder(current->getRight(), arr, index, size);
+    current->updateHeight();
 }
 
 // hlper function for cutting the un-necessary node for making the tree "almost full"
@@ -418,21 +425,21 @@ void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
 
 // return the array of the element in order
 template <typename T>
-T *AVLTree<T>::getInOrderArray(int amount)
+Node<T> *AVLTree<T>::getInOrderArray(int amount)
 {
     if (amount == 0 || size < amount)
     {
         amount = size;
     }
 
-    T *array = new T[amount];
+    Node<T> *array = new Node<T>[amount];
     int index = 0;
     inOrderAux(array, &index, root, amount);
     return array;
 }
 
 template <typename T>
-void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
+void AVLTree<T>::inOrderAux(Node<T> *array, int *index, Node<T> *current, int amount)
 {
     if (current == nullptr || (*index) >= amount)
     {
@@ -442,7 +449,10 @@ void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
     inOrderAux(array, index, current->getLeft(), amount);
     if ((*index) < amount)
     {
-        array[(*index)++] = current->getData();
+        int cur_index = (*index)++;
+        array[cur_index] = *current;
+        array[cur_index].setRight(nullptr);
+        array[cur_index].setLeft(nullptr);
     }
     inOrderAux(array, index, current->getRight(), amount);
 }
@@ -515,7 +525,8 @@ int AVLTree<T>::getRank(T object, int *place)
         }
         else
         {
-            return rank + current->getLeftRank();
+            place += 1;
+            return rank + current->getLeftRank() + current->getRank();
         }
     }
     return rank;
