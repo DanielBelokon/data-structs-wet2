@@ -100,43 +100,13 @@ StatusType PromoteEmployee(void *DS, int EmployeeID, int BumpGrade)
     }
 }
 
-StatusType SumOfBumpGradeBetweenTopWorkersByGroup(void *DS, int companyID, int m, void **sum)
-{
-    if (DS == NULL || sum == NULL)
-        return INVALID_INPUT;
-    try
-    {
-        *sum = new double(((MainDataStructure *)DS)->SumOfBumpGradeBetweenTopWorkersByGroup(companyID, m));
-        return SUCCESS;
-    }
-    catch (std::exception &e)
-    {
-        return ExceptionToEnum(e);
-    }
-}
-
-StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int lowerSalary, int higherSalary, void **averageBumpGrade)
-{
-    if (DS == NULL || averageBumpGrade == NULL)
-        return INVALID_INPUT;
-    try
-    {
-        *averageBumpGrade = new double(((MainDataStructure *)DS)->AverageBumpGradeBetweenSalaryByGroup(companyID, lowerSalary, higherSalary));
-        return SUCCESS;
-    }
-    catch (std::exception &e)
-    {
-        return ExceptionToEnum(e);
-    }
-}
-
-StatusType CompanyValue(void *DS, int CompanyID, void **Value)
+StatusType SumOfBumpGradeBetweenTopWorkersByGroup(void *DS, int companyID, int m)
 {
     if (DS == NULL)
         return INVALID_INPUT;
     try
     {
-        *Value = new double(((MainDataStructure *)DS)->companyValue(CompanyID));
+        ((MainDataStructure *)DS)->SumOfBumpGradeBetweenTopWorkersByGroup(companyID, m);
         return SUCCESS;
     }
     catch (std::exception &e)
@@ -144,6 +114,42 @@ StatusType CompanyValue(void *DS, int CompanyID, void **Value)
         return ExceptionToEnum(e);
     }
 }
+
+StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int lowerSalary, int higherSalary)
+{
+    if (DS == NULL)
+        return INVALID_INPUT;
+    try
+    {
+        ((MainDataStructure *)DS)->AverageBumpGradeBetweenSalaryByGroup(companyID, lowerSalary, higherSalary);
+        return SUCCESS;
+    }
+    catch (std::exception &e)
+    {
+        return ExceptionToEnum(e);
+    }
+}
+
+StatusType CompanyValue(void *DS, int CompanyID)
+{
+    if (DS == NULL)
+        return INVALID_INPUT;
+    try
+    {
+        ((MainDataStructure *)DS)->companyValue(CompanyID);
+        return SUCCESS;
+    }
+    catch (std::exception &e)
+    {
+        return ExceptionToEnum(e);
+    }
+}
+
+StatusType BumpGradeToEmployees(void *DS, int lowerSalary, int higherSalary, int bumpGrade)
+{
+    return SUCCESS;
+}
+
 void Quit(void **DS)
 {
     MainDataStructure *ds = (MainDataStructure *)*DS;
