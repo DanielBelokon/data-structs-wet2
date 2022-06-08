@@ -37,7 +37,7 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int grade)
 
     Company *company = findCompanyById(companyID);
     Employee *employee = new Employee(employeeID, company, 0, grade);
-    if (!employees.isEmpty(employeeID))
+    if (employees.search(employeeID) != nullptr)
     {
         delete employee;
         throw EmployeeAlreadyExistsException();
