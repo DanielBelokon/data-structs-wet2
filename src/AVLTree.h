@@ -213,7 +213,9 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         {
             temp = temp->getLeft();
         }
+
         T tempData = temp->getData();
+
         removeAux(temp->getData(), root, nullptr);
         current->setData(tempData);
     }
@@ -365,9 +367,15 @@ Node<T> *AVLTree<T>::mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int si
             merged[k] = arr1[i];
             i++;
         }
-        else
+        else if (compare(arr2[i].getData(), arr1[j].getData()))
         {
             merged[k] = arr2[j];
+            j++;
+        }
+        else
+        {
+            merged[k] = arr1[i];
+            i++;
             j++;
         }
         k++;
