@@ -84,7 +84,7 @@ void Company::removeEmployee(Employee *employee)
 
 void Company::merge(Company *company, double factor)
 {
-    if (company == nullptr)
+    if (company == nullptr || company == this)
         return;
 
     num_of_employees += company->getNumOfEmployees();
