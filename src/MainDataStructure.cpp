@@ -208,6 +208,15 @@ double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, in
             amt_min++;
     }
     //checking
+    
+    //if no employee tree is 0 , and all the employee are slaves, and lowerSalary is 0
+    if( cur_tree->getSize()==0 && lowerSalary==0){
+        int rankSum = company->getInternsGradeSum();
+        int amount= company->getInternsEmployeesCount();
+        printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)(rankSum) / (amount));
+        return (double)(rankSum) / (amount);
+    }
+
     if (higherSalary != 0)
     {
         Employee tempMaxEmp = Employee(INT32_MAX, nullptr, higherSalary, 0);
