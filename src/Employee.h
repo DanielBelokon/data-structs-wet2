@@ -17,8 +17,7 @@ public:
     // copyconstructor
     Employee(const Employee &);
     Employee(int employee_id, Company *company, int salary , int grade);
-    ~Employee()=default;
-
+    ~Employee() = default;
 
     int getGrade() const;
     int getSalary() const;

@@ -58,6 +58,10 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     Employee *employee = findEmployeeById(employeeID);
     Company *company = employee->getCompany();
 
+    if (employee->getSalary() != 0)
+    {
+        employees_tree_by_salary.remove(employee);
+    }
     company->removeEmployee(employee);
     employees.remove(employeeID);
     employees_tree_by_salary.remove(employee);
@@ -89,11 +93,16 @@ void MainDataStructure::EmployeeSalaryIncrease(int employeeID, int salaryIncreas
     }
 
     Employee *employee = findEmployeeById(employeeID);
+    int prevSalary = employee->getSalary();
     employee->increaseSalary(salaryIncrease);
-    employees_tree_by_salary.remove(employee);
-    employees_tree_by_salary.insert(employee, employee->getGrade());
     Company *company = employee->getCompany();
-    company->getEmployeesTreeBySalary()->remove(employee);
+    if (prevSalary != 0)
+    {
+        employees_tree_by_salary.remove(employee);
+        company->getEmployeesTreeBySalary()->remove(employee);
+    }
+
+    employees_tree_by_salary.insert(employee, employee->getGrade());
     company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
 
@@ -166,10 +175,10 @@ double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, in
     Node<Employee *> *max_node;
     Node<Employee *> *min_node;
 
-    Employee tempMinEmp = Employee(0, nullptr, lowerSalary, 0);
+    Employee tempMinEmp(0, nullptr, lowerSalary, 0);
     Node<Employee *> *temp_min_node = cur_tree->findNode(&tempMinEmp, &min_node);
 
-    Employee tempMaxEmp = Employee(INT32_MAX, nullptr, higherSalary, 0);
+    Employee tempMaxEmp(INT32_MAX, nullptr, higherSalary, 0);
     Node<Employee *> *temp_max_node = cur_tree->findNode(&tempMaxEmp, &max_node);
 
     min_node = (temp_min_node == nullptr) ? min_node : temp_min_node;

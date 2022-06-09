@@ -88,6 +88,9 @@ T AVLTree<T>::getHighest()
 template <typename T>
 void AVLTree<T>::insert(T data, int rank)
 {
+    if (find(data) != nullptr)
+        return;
+
     if (root == nullptr)
     {
         root = new Node<T>(data, rank);
@@ -132,7 +135,7 @@ Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int ra
 template <typename T>
 void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
 {
-    if (current == nullptr)
+    if (current == nullptr || (parent != nullptr && (parent->getRight() != current && parent->getLeft() != current)))
     {
         return;
     }
@@ -188,6 +191,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
     {
         replaceChild(parent, current, nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else if (current->getRight() == nullptr && current->getLeft() != nullptr)
@@ -196,6 +200,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setLeft(nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else if (current->getRight() != nullptr && current->getLeft() == nullptr)
@@ -204,6 +209,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setRight(nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else
@@ -213,9 +219,11 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         {
             temp = temp->getLeft();
         }
+        int tempRank = temp->getRank();
         T tempData = temp->getData();
         removeAux(temp->getData(), root, nullptr);
         current->setData(tempData);
+        current->setRank(tempRank);
     }
 
     if (current != nullptr)
@@ -323,8 +331,8 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
-    if (find(object) == nullptr)
-        return;
+    // if (find(object) == nullptr)
+    //     return;
     removeAux(object, root, nullptr);
     size--;
 }
