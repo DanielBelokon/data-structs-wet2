@@ -62,6 +62,10 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     Employee *employee = findEmployeeById(employeeID);
     Company *company = employee->getCompany();
 
+    if (employee->getSalary() != 0)
+    {
+        employees_tree_by_salary.remove(employee);
+    }
     company->removeEmployee(employee);
     if (employee->getSalary() != 0)
     {
@@ -102,10 +106,12 @@ void MainDataStructure::EmployeeSalaryIncrease(int employeeID, int salaryIncreas
     }
 
     Employee *employee = findEmployeeById(employeeID);
+
     employees_tree_by_salary.remove(employee);
     Company *company = employee->getCompany();
     company->getEmployeesTreeBySalary()->remove(employee);
     employee->increaseSalary(salaryIncrease);
+
     employees_tree_by_salary.insert(employee, employee->getGrade());
     company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
     company->upgradeIntern(employee);
@@ -217,6 +223,7 @@ double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, in
             amt_max++;
         }
     }
+
 
     int rankSum = rank_max - rank_min;
     int amount = amt_max - amt_min;

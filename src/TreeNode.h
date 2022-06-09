@@ -69,6 +69,7 @@ public:
         }
         else
         {
+            // take the max of the left and right subtree heights
             if (left->getHeight() > right->getHeight())
             {
 

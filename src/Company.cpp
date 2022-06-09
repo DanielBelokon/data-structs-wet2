@@ -85,8 +85,10 @@ void Company::removeEmployee(Employee *employee)
 {
     // employees_tree.remove(employee);
     employees.remove(employee->getEmployeeID());
+
     employees_tree_by_salary.remove(employee);
     upgradeIntern(employee);
+
     num_of_employees--;
     if (employee == highest_earner) // if this employee was the richest
     {
