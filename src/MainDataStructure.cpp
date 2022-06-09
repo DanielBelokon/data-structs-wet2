@@ -207,7 +207,7 @@ double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, in
         else
             amt_min++;
     }
-
+    //checking
     if (higherSalary != 0)
     {
         Employee tempMaxEmp = Employee(INT32_MAX, nullptr, higherSalary, 0);
