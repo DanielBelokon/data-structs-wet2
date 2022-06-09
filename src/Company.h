@@ -15,6 +15,8 @@ class Company
     AVLTree<Employee *> employees_tree_by_salary;
     double factor;
     double parent_value_at_purchase;
+    int interns_employees_count;
+    int interns_grade_sum;
 
 public:
     Company() = default;
@@ -42,6 +44,9 @@ public:
     int SumOfBumpGradeBetweenTopWorkersByGroup(int m);
     static bool compareByPointer(Company *const &a, Company *const &b);
     HashTable<Employee *> *getEmployees();
+    void upgradeIntern(Employee *employee);
+    int getInternsEmployeesCount() const;
+    int getInternsGradeSum() const;
 
 private:
     void transferEmployees(Company *new_company, Node<Employee *> *current);

@@ -2,7 +2,7 @@
         "cmake.debugConfig": {
             "args": [
                 "<",
-                "${workspaceFolder}/tests/input/in0.txt"
+                "${workspaceFolder}/tests/input/in17.txt"
             ]
         },
     "files.associations": {

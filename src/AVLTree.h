@@ -188,6 +188,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
     {
         replaceChild(parent, current, nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else if (current->getRight() == nullptr && current->getLeft() != nullptr)
@@ -196,6 +197,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setLeft(nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else if (current->getRight() != nullptr && current->getLeft() == nullptr)
@@ -204,6 +206,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setRight(nullptr);
         delete current;
+        current = nullptr;
         return;
     }
     else
@@ -215,9 +218,11 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         }
 
         T tempData = temp->getData();
+        int tempRank = temp->getRank();
 
         removeAux(temp->getData(), root, nullptr);
         current->setData(tempData);
+        current->setRank(tempRank);
     }
 
     if (current != nullptr)
@@ -340,8 +345,6 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     Node<T> *tree1 = getInOrderArray();
     Node<T> *tree2 = tree->getInOrderArray();
     Node<T> *merged = mergeArrays(tree1, tree2, size, tree->size);
-    delete[] tree1;
-    delete[] tree2;
     size += tree->size;
     int new_height = std::ceil(std::log2(size + 1)) - 1;
     int to_delete = std::exp2(new_height + 1) - size - 1;
@@ -351,6 +354,8 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     trim(root, nullptr, &to_delete);
     int index = 0;
     insertSortedArrayInOrder(root, &merged, &index, size);
+    delete[] tree1;
+    delete[] tree2;
     delete[] merged;
 }
 
@@ -367,7 +372,7 @@ Node<T> *AVLTree<T>::mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int si
             merged[k] = arr1[i];
             i++;
         }
-        else if (compare(arr2[i].getData(), arr1[j].getData()))
+        else if (compare(arr2[j].getData(), arr1[i].getData()))
         {
             merged[k] = arr2[j];
             j++;
