@@ -33,12 +33,12 @@ foreach(filename ${outputs})
     set_tests_properties(compare${filename_no_extension} PROPERTIES DEPENDS "${input_no_extension}")
 endforeach()
 
-foreach (filename ${inputs})
-    #add_test(${filename} data-structs-1 ${filename})
-    add_test(NAME "${filename}"
-       COMMAND sh -c "$<TARGET_FILE:data-structs-wet2> < ${filename}")
-    set_tests_properties(${filename} PROPERTIES LABELS Memcheck)
-endforeach()
+# foreach (filename ${inputs})
+#     #add_test(${filename} data-structs-1 ${filename})
+#     add_test(NAME "${filename}"
+#        COMMAND sh -c "$<TARGET_FILE:data-structs-wet2> < ${filename}")
+#     set_tests_properties(${filename} PROPERTIES LABELS Memcheck)
+# endforeach()
 
 # add_custom_target(test_memcheck
 #     COMMAND ${CMAKE_CTEST_COMMAND} 

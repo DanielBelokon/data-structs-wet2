@@ -8,6 +8,8 @@ Company::Company(int companyID, int value) : companyID(companyID), value(value)
     factor = 0;
     parent_value_at_purchase = 0;
     employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
+    interns_employees_count = 0;
+    interns_grade_sum = 0;
 };
 
 int Company::getCompanyID() const
@@ -58,17 +60,34 @@ void Company::addEmployee(Employee *employee)
 {
     setHighesEarner(employee); // checking if the new employee is the new highest earner.
     num_of_employees++;
-    employees.insert(employee->getEmployeeID(), employee);
+    this->employees.insert(employee->getEmployeeID(), employee);
+    if (employee->getSalary() == 0)
+    {
+        this->interns_employees_count++;
+        this->interns_grade_sum += employee->getGrade();
+    }
+
     // employees_tree.insert(employee);
     // employees_tree_by_salary.insert(employee);
+}
+
+// function to change the data of employees that  is not Used anymore by is cruel manager
+void Company::upgradeIntern(Employee *employee)
+{
+    if (employee->getSalary() == 0)
+    {
+        interns_employees_count--;
+        interns_grade_sum -= employee->getGrade();
+    }
 }
 
 void Company::removeEmployee(Employee *employee)
 {
     // employees_tree.remove(employee);
     employees.remove(employee->getEmployeeID());
-    if (employee->getSalary() != 0)
-        employees_tree_by_salary.remove(employee);
+
+    employees_tree_by_salary.remove(employee);
+    upgradeIntern(employee);
 
     num_of_employees--;
     if (employee == highest_earner) // if this employee was the richest
@@ -86,7 +105,7 @@ void Company::removeEmployee(Employee *employee)
 
 void Company::merge(Company *company, double factor)
 {
-    if (company == nullptr)
+    if (company == nullptr || company == this)
         return;
 
     num_of_employees += company->getNumOfEmployees();
@@ -103,11 +122,12 @@ void Company::merge(Company *company, double factor)
         if (emp != nullptr)
         {
             emp->setCompany(this);
+            // targetEmployees->remove(emp->getEmployeeID());
             this->addEmployee(emp);
         }
     }
 
-    employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
+    this->employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
     setHighesEarner(company->getHighestEarner());
 }
 
@@ -155,4 +175,12 @@ void Company::setParentValueAtPurchase(double parent_value_at_purchase)
 void Company::setFactor(double factor)
 {
     this->factor = factor;
+}
+int Company::getInternsEmployeesCount() const
+{
+    return interns_employees_count;
+}
+int Company::getInternsGradeSum() const
+{
+    return interns_grade_sum;
 }

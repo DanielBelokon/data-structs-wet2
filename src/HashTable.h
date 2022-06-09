@@ -61,12 +61,14 @@ public:
         }
         iterator &operator++()
         {
+            if (current == capacity)
+                return *this;
             current++;
             return *this;
         }
         bool operator!=(const iterator &other) const
         {
-            return current != other.current;
+            return this->current != other.current;
         }
         T operator*()
         {
@@ -160,6 +162,8 @@ T HashTable<T>::search(int id)
 template <typename T>
 int HashTable<T>::hash(int id)
 {
+    if (id < 0)
+        throw std::invalid_argument("id must be positive");
     double tmp;
     int key = (int)(modf(id * BETA, &tmp) * capacity);
     // Linear Probing
@@ -193,15 +197,20 @@ void HashTable<T>::resize()
 {
     capacity *= 2;
     HashNode *new_array = new HashNode[capacity];
+    HashNode *prev_array = table;
+    table = new_array;
     for (int i = 0; i < capacity / 2; i++)
     {
-        int key = hash(table[i].getId());
-        new_array[key].setData(table[i].getData());
-        new_array[key].setId(table[i].getId());
-        new_array[key].setDeleted(table[i].isDeleted());
+        if (prev_array[i].getId() == -1 || prev_array[i].isDeleted())
+            continue;
+        int key = hash(prev_array[i].getId());
+        if (key >= capacity || key < 0)
+            throw std::bad_alloc();
+        new_array[key].setData(prev_array[i].getData());
+        new_array[key].setId(prev_array[i].getId());
+        // new_array[key].setDeleted(table[i].isDeleted());
     }
-    delete[] table;
-    table = new_array;
+    delete[] prev_array;
 }
 
 template <typename T>
