@@ -45,7 +45,6 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int grade)
         throw EmployeeAlreadyExistsException();
     }
 
-    // employees[employeeID] = employee;
     employees.insert(employeeID, employee);
     company->addEmployee(employee);
     interns_employees_count++;
@@ -61,7 +60,7 @@ void MainDataStructure::RemoveEmployee(int employeeID)
 
     Employee *employee = findEmployeeById(employeeID);
     Company *company = employee->getCompany();
-
+    company = findCompanyById(company->getCompanyID());
     company->removeEmployee(employee);
     if (employee->getSalary() != 0)
     {
@@ -148,8 +147,11 @@ void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
     employees_tree_by_salary.remove(employee);
     employees_tree_by_salary.insert(employee, employee->getGrade());
     Company *company = employee->getCompany();
-    if (company != findCompanyById(company->getCompanyID()))
-        return;
+    Company *other = findCompanyById(company->getCompanyID());
+    if (company->getCompanyID() != other->getCompanyID())
+    {
+        findCompanyById(company->getCompanyID());
+    }
     company->getEmployeesTreeBySalary()->remove(employee);
     company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
@@ -187,7 +189,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         throw InvalidInputException();
     }
     AVLTree<Employee *> *tree;
-    bool include_zero_salary = lowerSalary == 0;
+    bool include_zero_salary = (lowerSalary == 0);
     int rank_sum = 0, worker_count = 0;
     Company *company;
     if (companyID == 0)
@@ -224,8 +226,9 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         rank_sum += tree->getRank(max_emp_node->getData(), &maxAmount);
         if (max_emp_node->getData()->getSalary() > higherSalary)
         {
-            maxAmount--;
+
             rank_sum -= max_emp_node->getRank();
+            maxAmount--;
         }
 
         worker_count += (maxAmount - minAmount);
@@ -245,9 +248,9 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         }
     }
 
-    if (worker_count == 0)
+    if (worker_count <= 0)
         throw EmployeeNotFoundException();
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)rank_sum / worker_count);
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", rank_sum / (double)worker_count);
 }
 
 double MainDataStructure::companyValue(int compnayID)
