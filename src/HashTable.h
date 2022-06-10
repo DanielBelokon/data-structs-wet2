@@ -11,12 +11,12 @@ template <typename T>
 class HashNode
 {
 private:
-    T data = NULL;
+    T data = 0;
     int id = -1;
     bool is_deleted;
 
 public:
-    HashNode() : data(NULL), id(-1), is_deleted(false) {}
+    HashNode() : data(0), id(-1), is_deleted(false) {}
 
     T getData() { return data; }
     void setData(T data) { this->data = data; }
@@ -63,7 +63,7 @@ public:
         T operator*()
         {
             if (current >= table->capacity)
-                return NULL;
+                return 0;
             return table->table[current].getData();
         }
     };
@@ -115,9 +115,11 @@ void HashTable<T>::insert(int id, T value)
 
     int key = hash(id);
     if (key >= capacity || key < 0)
-        throw std::invalid_argument("Invalid key");
+        throw;
     if (isDeleted(key))
         size++;
+    // else
+    //     throw std::invalid_argument("Key already exists");
     table[key].setData(value);
     table[key].setId(id);
     table[key].setDeleted(false);
@@ -128,12 +130,30 @@ void HashTable<T>::remove(int id)
 {
     int key = hash(id);
     if (key >= capacity || key < 0)
-        throw std::invalid_argument("Invalid key");
+        throw;
+    for (int i = 0; i < capacity; i++)
+    {
+        if (key >= capacity || key < 0)
+            throw;
+        if (!table[key].isDeleted())
+        {
+            if (table[key].getId() == id)
+            {
+                break;
+            }
+            else if (table[key].getId() == -1)
+            {
+                return;
+            }
+        }
+        key = (key + 1) % capacity;
+    }
+
     size--;
-    table[key].setId(-1);
-    table[key].setData(nullptr);
+    table[key].setId(0);
+    table[key].setData(0);
     table[key].setDeleted(true);
-    if (size < RESIZE_THRESHOLD * capacity / 2)
+    if (size < RESIZE_THRESHOLD * capacity / 2 && capacity > INITIAL_CAPACITY)
         resize(true);
 }
 
@@ -144,7 +164,7 @@ T HashTable<T>::search(int id)
     for (int i = 0; i < capacity; i++)
     {
         if (key >= capacity || key < 0)
-            throw std::invalid_argument("Invalid key");
+            throw;
         if (!table[key].isDeleted())
         {
             if (table[key].getId() == id)
@@ -166,16 +186,16 @@ template <typename T>
 int HashTable<T>::hash(int id)
 {
     if (id < 0)
-        throw std::invalid_argument("id must be positive");
+        throw;
     double tmp;
     int key = (int)(modf(id * BETA, &tmp) * capacity);
     // Linear Probing
     while (!isDeleted(key) && table[key].getId() != id)
     {
         key = (key + 1) % capacity;
-    };
+    }
     if (key >= capacity || key < 0)
-        throw std::invalid_argument("Invalid key");
+        throw;
     return key;
 }
 
@@ -195,7 +215,7 @@ template <typename T>
 bool HashTable<T>::isDeleted(int key)
 {
     if (key >= capacity || key < 0)
-        throw std::invalid_argument("Invalid key");
+        throw;
     return (table[key].getId() == -1 || table[key].isDeleted());
 }
 
@@ -254,7 +274,7 @@ template <typename T>
 T HashTable<T>::getDataAt(int key)
 {
     if (key >= capacity || key < 0)
-        return nullptr;
+        return 0;
     return table[key].getData();
 }
 

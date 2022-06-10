@@ -6,6 +6,7 @@ add_compile_options (-std=c++11 -Wall -Wextra -Werror -Wno-unused-parameter)
 
 # source directory
 add_subdirectory(src)
+add_subdirectory(tests)
 
 file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.txt")
 file(GLOB outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.txt")
