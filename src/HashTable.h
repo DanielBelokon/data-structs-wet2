@@ -2,60 +2,50 @@
 #define HASHTABLE_H
 
 #include <cmath>
-#include "DynamicArray.h"
 
 #define BETA 0.356
 #define RESIZE_THRESHOLD 0.75
 #define INITIAL_CAPACITY 30
 
 template <typename T>
+class HashNode
+{
+private:
+    T data = NULL;
+    int id = -1;
+    bool is_deleted;
+
+public:
+    HashNode() : data(NULL), id(-1), is_deleted(false) {}
+
+    T getData() { return data; }
+    void setData(T data) { this->data = data; }
+    int getId() { return id; }
+    void setId(int id) { this->id = id; }
+    bool isDeleted() { return is_deleted; }
+
+    void setDeleted(bool is_deleted) { this->is_deleted = is_deleted; }
+};
+
+template <typename T>
 class HashTable
 {
 private:
-    class HashNode
-    {
-    private:
-        T data = NULL;
-        int id = -1;
-        bool is_deleted;
-
-    public:
-        HashNode() : data(NULL), is_deleted(false) { id = -1; }
-
-        HashNode(const HashNode &node) : data(node.data), is_deleted(node.is_deleted) { id = node.id; }
-        T getData() { return data; }
-        void setData(T data) { this->data = data; }
-        int getId() { return id; }
-        void setId(int id) { this->id = id; }
-        bool isDeleted() { return is_deleted; }
-        // operator=
-        HashNode &operator=(const HashNode &node)
-        {
-            data = node.data;
-            is_deleted = node.is_deleted;
-            id = node.id;
-            return *this;
-        }
-
-        void setDeleted(bool is_deleted) { this->is_deleted = is_deleted; }
-    };
-
-    int *(customHash)(int);
     int capacity;
     int size;
-    HashNode *table;
+    HashNode<T> *table;
 
 public:
     class iterator
     {
     private:
         int capacity;
-        HashNode *array;
+        HashNode<T> *array;
         HashTable *table;
         int current;
 
     public:
-        iterator(int capacity, HashNode *array, HashTable *table, int current)
+        iterator(int capacity, HashNode<T> *array, HashTable *table, int current)
             : capacity(capacity), array(array), table(table), current(current)
         {
         }
@@ -72,14 +62,17 @@ public:
         }
         T operator*()
         {
-            return array[current].getData();
+            if (current >= table->capacity)
+                return NULL;
+            return table->table[current].getData();
         }
     };
 
     HashTable()
     {
-        table = new HashNode[INITIAL_CAPACITY];
+        table = new HashNode<T>[INITIAL_CAPACITY];
         capacity = INITIAL_CAPACITY;
+        size = 0;
     }
 
     iterator begin()
@@ -99,8 +92,8 @@ public:
     bool isEmpty(int id);
     int getCapacity() { return capacity; }
 
-    T operator[](int id);
-    T operator[](int id) const;
+    // T operator[](int id);
+    // T operator[](int id) const;
     T getDataAt(int key);
     void merge(HashTable<T> *other);
 
@@ -109,7 +102,7 @@ public:
 private:
     bool isDeleted(int id);
     int getId(int key);
-    void resize();
+    void resize(bool downsize = false);
 };
 
 template <typename T>
@@ -117,11 +110,14 @@ void HashTable<T>::insert(int id, T value)
 {
     if (size > RESIZE_THRESHOLD * capacity)
     {
-        resize();
+        resize(false);
     }
 
     int key = hash(id);
-    size++;
+    if (key >= capacity || key < 0)
+        throw std::invalid_argument("Invalid key");
+    if (isDeleted(key))
+        size++;
     table[key].setData(value);
     table[key].setId(id);
     table[key].setDeleted(false);
@@ -131,9 +127,14 @@ template <typename T>
 void HashTable<T>::remove(int id)
 {
     int key = hash(id);
+    if (key >= capacity || key < 0)
+        throw std::invalid_argument("Invalid key");
+    size--;
     table[key].setId(-1);
-    table[key].setData(NULL);
+    table[key].setData(nullptr);
     table[key].setDeleted(true);
+    if (size < RESIZE_THRESHOLD * capacity / 2)
+        resize(true);
 }
 
 template <typename T>
@@ -142,6 +143,8 @@ T HashTable<T>::search(int id)
     int key = hash(id);
     for (int i = 0; i < capacity; i++)
     {
+        if (key >= capacity || key < 0)
+            throw std::invalid_argument("Invalid key");
         if (!table[key].isDeleted())
         {
             if (table[key].getId() == id)
@@ -171,6 +174,8 @@ int HashTable<T>::hash(int id)
     {
         key = (key + 1) % capacity;
     };
+    if (key >= capacity || key < 0)
+        throw std::invalid_argument("Invalid key");
     return key;
 }
 
@@ -187,53 +192,69 @@ void HashTable<T>::merge(HashTable<T> *other)
 }
 
 template <typename T>
-bool HashTable<T>::isDeleted(int id)
+bool HashTable<T>::isDeleted(int key)
 {
-    return (table[id].getId() == -1 || table[id].isDeleted());
+    if (key >= capacity || key < 0)
+        throw std::invalid_argument("Invalid key");
+    return (table[key].getId() == -1 || table[key].isDeleted());
 }
 
 template <typename T>
-void HashTable<T>::resize()
+void HashTable<T>::resize(bool downsize)
 {
-    capacity *= 2;
-    HashNode *new_array = new HashNode[capacity];
-    HashNode *prev_array = table;
+    int prev_capacity = capacity;
+    if (downsize)
+        capacity /= 2;
+    else
+        capacity *= 2;
+    HashNode<T> *new_array = new HashNode<T>[capacity];
+    HashNode<T> *prev_array = table;
+    // int old_size = size;
+    size = 0;
     table = new_array;
-    for (int i = 0; i < capacity / 2; i++)
+
+    for (int i = 0; i < prev_capacity; i++)
     {
         if (prev_array[i].getId() == -1 || prev_array[i].isDeleted())
             continue;
-        int key = hash(prev_array[i].getId());
-        if (key >= capacity || key < 0)
-            throw std::bad_alloc();
-        new_array[key].setData(prev_array[i].getData());
-        new_array[key].setId(prev_array[i].getId());
+        // int key = hash(prev_array[i].getId());
+        // if (key >= capacity || key < 0)
+        //     throw std::bad_alloc();
+        insert(prev_array[i].getId(), prev_array[i].getData());
+        // new_array[key].setData(prev_array[i].getData());
+        // new_array[key].setId(prev_array[i].getId());
+        // new_size++;
         // new_array[key].setDeleted(table[i].isDeleted());
     }
+
     delete[] prev_array;
 }
 
-template <typename T>
-T HashTable<T>::operator[](int id)
-{
-    return search(id);
-}
+// template <typename T>
+// T HashTable<T>::operator[](int id)
+// {
+//     return search(id);
+// }
 
-template <typename T>
-T HashTable<T>::operator[](int id) const
-{
-    return search(id);
-}
+// template <typename T>
+// T HashTable<T>::operator[](int id) const
+// {
+//     return search(id);
+// }
 
 template <typename T>
 int HashTable<T>::getId(int key)
 {
+    if (key >= capacity || key < 0)
+        return -1;
     return table[key].getId();
 }
 
 template <typename T>
 T HashTable<T>::getDataAt(int key)
 {
+    if (key >= capacity || key < 0)
+        return nullptr;
     return table[key].getData();
 }
 
@@ -246,7 +267,7 @@ bool HashTable<T>::isEmpty(int id)
 template <typename T>
 HashTable<T>::~HashTable()
 {
-    delete[] table;
+    // delete[] table;
 }
 
 #endif /* HASHTABLE_H */
