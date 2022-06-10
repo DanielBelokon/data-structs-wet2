@@ -1,9 +1,5 @@
 #include "Company.h"
 
-void Company::increaseInternsGradeSum(int bumpGrade)
-{
-    interns_grade_sum += bumpGrade;
-}
 Company::Company(int companyID, int value) : companyID(companyID), value(value)
 {
     num_of_employees = 0;
@@ -60,11 +56,10 @@ void Company::addEmployee(Employee *employee)
 // function to change the data of employees that  is not Used anymore by is cruel manager
 void Company::upgradeIntern(Employee *employee)
 {
-    if (employee->getSalary() == 0)
-    {
-        interns_employees_count--;
-        interns_grade_sum -= employee->getGrade();
-    }
+
+    interns_employees_count--;
+    interns_grade_sum -= employee->getGrade();
+    return;
 }
 
 void Company::removeEmployee(Employee *employee)
@@ -72,8 +67,8 @@ void Company::removeEmployee(Employee *employee)
     // employees_tree.remove(employee);
     if (employee->getSalary() != 0)
         employees_tree_by_salary.remove(employee);
-    else
-        upgradeIntern(employee);
+    // else
+    //     upgradeIntern(employee);
 
     num_of_employees--;
 }
@@ -88,18 +83,22 @@ void Company::merge(Company *company, double factor)
 
     // TODO: Transfer employees to new company
     HashTable<Employee *> *targetEmployees = company->getEmployees();
-    for (auto emp : *targetEmployees)
+    employees.merge(targetEmployees);
+
+    for (auto emp : employees)
     {
         if (emp != nullptr)
         {
             emp->setCompany(this);
-            targetEmployees->remove(emp->getEmployeeID());
-            this->addEmployee(emp);
+            // this->addEmployee(emp);
+            // targetEmployees->remove(emp->getEmployeeID());
+            // if (emp->getSalary() > 0)
+            //     employees_tree_by_salary.insert(emp);
         }
     }
-
+    this->interns_employees_count += company->getInternsEmployeesCount();
+    this->interns_grade_sum += company->getInternsGradeSum();
     this->employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
-    setHighesEarner(company->getHighestEarner());
 }
 
 AVLTree<Employee *> *Company::getEmployeesTreeBySalary()
@@ -147,5 +146,7 @@ int Company::getInternsGradeSum() const
 }
 void Company::increaseInternsGradeSum(int bumpGrade)
 {
+    if (bumpGrade < 0)
+        return;
     interns_grade_sum += bumpGrade;
 }
