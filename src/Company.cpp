@@ -1,5 +1,9 @@
 #include "Company.h"
 
+void Company::increaseInternsGradeSum(int bumpGrade)
+{
+    interns_grade_sum += bumpGrade;
+}
 Company::Company(int companyID, int value) : companyID(companyID), value(value)
 {
     num_of_employees = 0;
@@ -51,9 +55,6 @@ void Company::addEmployee(Employee *employee)
         this->interns_employees_count++;
         this->interns_grade_sum += employee->getGrade();
     }
-
-    // employees_tree.insert(employee);
-    // employees_tree_by_salary.insert(employee);
 }
 
 // function to change the data of employees that  is not Used anymore by is cruel manager
@@ -69,23 +70,12 @@ void Company::upgradeIntern(Employee *employee)
 void Company::removeEmployee(Employee *employee)
 {
     // employees_tree.remove(employee);
-    employees.remove(employee->getEmployeeID());
-
-    employees_tree_by_salary.remove(employee);
-    upgradeIntern(employee);
+    if (employee->getSalary() != 0)
+        employees_tree_by_salary.remove(employee);
+    else
+        upgradeIntern(employee);
 
     num_of_employees--;
-    if (employee == highest_earner) // if this employee was the richest
-    {
-        if (this->getNumOfEmployees() > 0)
-        {
-            highest_earner = employees_tree_by_salary.getHighest(); // set new one.
-        }
-        else
-        {
-            highest_earner = nullptr; // no employee in the company
-        }
-    }
 }
 
 void Company::merge(Company *company, double factor)
@@ -95,10 +85,6 @@ void Company::merge(Company *company, double factor)
 
     num_of_employees += company->getNumOfEmployees();
     this->setValue(factor * (company->getValue()) + this->getValue());
-
-    // company->updateIds(this->getCompanyID(), company->getEmployeesTree()->getRoot());
-    // company->transferEmployees(this, company->getEmployeesTree()->getRoot());
-    // employees_tree.merge(company->getEmployeesTree());
 
     // TODO: Transfer employees to new company
     HashTable<Employee *> *targetEmployees = company->getEmployees();
@@ -115,16 +101,6 @@ void Company::merge(Company *company, double factor)
     this->employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
     setHighesEarner(company->getHighestEarner());
 }
-
-// void Company::transferEmployees(Company *new_company, Node<Employee *> *current)
-// {
-//     if (current == nullptr)
-//         return;
-
-//     current->getData()->setCompany(new_company);
-//     transferEmployees(new_company, current->getLeft());
-//     transferEmployees(new_company, current->getRight());
-// }
 
 AVLTree<Employee *> *Company::getEmployeesTreeBySalary()
 {
