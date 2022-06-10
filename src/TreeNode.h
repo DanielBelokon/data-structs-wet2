@@ -29,6 +29,7 @@ public:
 
     Node()
     {
+        data = nullptr;
         left = nullptr;
         right = nullptr;
         height = 0;
