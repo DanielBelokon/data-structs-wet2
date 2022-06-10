@@ -167,11 +167,15 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
 
     if (companyID == 0)
     {
+        if (employees_tree_by_salary.getSize() < m)
+            throw EmployeeNotFoundException();
         sum = employees_tree_by_salary.getHighestMRankSum(m);
     }
     else
     {
         Company *company = findCompanyById(companyID);
+        if (company->getEmployeesTreeBySalary()->getSize() < m)
+            throw EmployeeNotFoundException();
         sum = company->SumOfBumpGradeBetweenTopWorkersByGroup(m);
     }
 
@@ -253,7 +257,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
 
 double MainDataStructure::companyValue(int compnayID)
 {
-    if (compnayID < 0 || compnayID > num_of_companies)
+    if (compnayID <= 0 || compnayID > num_of_companies)
     {
         throw InvalidInputException();
     }
