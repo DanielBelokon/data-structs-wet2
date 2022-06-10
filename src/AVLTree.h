@@ -39,6 +39,8 @@ public:
 private:
     bool compare(T const &node1, T const &node2)
     {
+        if (!node1 || !node2)
+            return false;
         if (customCompare != nullptr)
         {
             return customCompare(node1, node2);
@@ -58,6 +60,7 @@ private:
     Node<T> *buildEmptyTree(int h);
     void rotateLeft(Node<T> *current, Node<T> *parent);
     void rotateRight(Node<T> *current, Node<T> *parent);
+    void setRoot(Node<T> *root);
 
 public:
     Node<T> *findNode(T object, Node<T> **prev = nullptr);
@@ -192,6 +195,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, nullptr);
         delete current;
         current = nullptr;
+        size--;
         return;
     }
     else if (current->getRight() == nullptr && current->getLeft() != nullptr)
@@ -201,6 +205,8 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         current->setLeft(nullptr);
         delete current;
         current = nullptr;
+        size--;
+
         return;
     }
     else if (current->getRight() != nullptr && current->getLeft() == nullptr)
@@ -210,6 +216,8 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         current->setRight(nullptr);
         delete current;
         current = nullptr;
+        size--;
+
         return;
     }
     else
@@ -222,7 +230,8 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         T tempData = temp->getData();
         int tempRank = temp->getRank();
 
-        removeAux(temp->getData(), root, nullptr);
+        removeAux(tempData, root, nullptr);
+
         current->setData(tempData);
         current->setRank(tempRank);
     }
@@ -300,7 +309,7 @@ template <typename T>
 Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 {
     Node<T> *current = root;
-    Node<T> *parent;
+    Node<T> *parent = nullptr;
     while (current != nullptr)
     {
         if (compare(current->getData(), object))
@@ -332,10 +341,13 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
-    // if (find(object) == nullptr)
-    //     return;
     removeAux(object, root, nullptr);
-    size--;
+}
+
+template <typename T>
+void AVLTree<T>::setRoot(Node<T> *root)
+{
+    this->root = root;
 }
 
 template <typename T>
@@ -344,14 +356,25 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     // Merge tree with O(n) complexity
     if (tree == nullptr || tree->getSize() == 0)
         return;
+
+    if (size == 0)
+    {
+        root = tree->getRoot();
+        size = tree->getSize();
+        tree->setRoot(nullptr);
+        return;
+    }
+
     Node<T> *tree1 = getInOrderArray();
     Node<T> *tree2 = tree->getInOrderArray();
     Node<T> *merged = mergeArrays(tree1, tree2, size, tree->size);
     size += tree->size;
+
     int new_height = std::ceil(std::log2(size + 1)) - 1;
     int to_delete = std::exp2(new_height + 1) - size - 1;
 
     delete root;
+    delete tree->root;
     root = buildEmptyTree(new_height);
     trim(root, nullptr, &to_delete);
     int index = 0;
@@ -371,17 +394,20 @@ Node<T> *AVLTree<T>::mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int si
     {
         if (compare(arr1[i].getData(), arr2[j].getData()))
         {
-            merged[k] = arr1[i];
+            merged[k].setData(arr1[i].getData());
+            merged[k].setRank(arr1[i].getRank());
             i++;
         }
         else if (compare(arr2[j].getData(), arr1[i].getData()))
         {
-            merged[k] = arr2[j];
+            merged[k].setData(arr2[j].getData());
+            merged[k].setRank(arr2[j].getRank());
             j++;
         }
         else
         {
-            merged[k] = arr1[i];
+            merged[k].setData(arr2[j].getData());
+            merged[k].setRank(arr2[j].getRank());
             i++;
             j++;
         }
@@ -389,13 +415,15 @@ Node<T> *AVLTree<T>::mergeArrays(Node<T> *arr1, Node<T> *arr2, int size1, int si
     }
     while (i < size1)
     {
-        merged[k] = arr1[i];
+        merged[k].setData(arr1[i].getData());
+        merged[k].setRank(arr1[i].getRank());
         i++;
         k++;
     }
     while (j < size2)
     {
-        merged[k] = arr2[j];
+        merged[k].setData(arr2[j].getData());
+        merged[k].setRank(arr2[j].getRank());
         j++;
         k++;
     }
@@ -407,10 +435,19 @@ void AVLTree<T>::insertSortedArrayInOrder(Node<T> *current, Node<T> **arr, int *
 {
     if (current == nullptr)
         return;
+
     insertSortedArrayInOrder(current->getLeft(), arr, index, size);
-    Node<T> temp = (*arr)[(*index)++];
-    current->setData(temp.getData());
-    current->setRank(temp.getRank());
+    if (*index < size)
+    {
+        current->setData((*arr)[(*index)].getData());
+        current->setRank((*arr)[(*index)].getRank());
+        (*index)++;
+    }
+    else
+    {
+        current->setData(nullptr);
+        current->setRank(0);
+    }
     insertSortedArrayInOrder(current->getRight(), arr, index, size);
     current->updateHeight();
 }
@@ -465,7 +502,8 @@ void AVLTree<T>::inOrderAux(Node<T> *array, int *index, Node<T> *current, int am
     if ((*index) < amount)
     {
         int cur_index = (*index)++;
-        array[cur_index] = *current;
+        array[cur_index].setData(current->getData());
+        array[cur_index].setRank(current->getRank());
         array[cur_index].setRight(nullptr);
         array[cur_index].setLeft(nullptr);
     }
