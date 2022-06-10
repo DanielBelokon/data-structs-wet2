@@ -41,7 +41,7 @@ public:
     bool operator>(const Company &other) const;
     bool operator==(const Company &other) const;
     bool operator!=(const Company &other) const;
-    int SumOfBumpGradeBetweenTopWorkersByGroup(int m);
+    long long SumOfBumpGradeBetweenTopWorkersByGroup(int m);
     static bool compareByPointer(Company *const &a, Company *const &b);
     HashTable<Employee *> *getEmployees();
     void upgradeIntern(Employee *employee);

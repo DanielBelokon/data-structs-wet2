@@ -163,7 +163,7 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
         throw InvalidInputException();
     }
 
-    int sum;
+    long long sum;
 
     if (companyID == 0)
     {
@@ -175,10 +175,7 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
         sum = company->SumOfBumpGradeBetweenTopWorkersByGroup(m);
     }
 
-    if (sum == 0)
-        throw EmployeeNotFoundException();
-
-    printf("SumOfBumpGradeBetweenTopWorkersByGroup: %d\n", sum);
+    printf("SumOfBumpGradeBetweenTopWorkersByGroup: %lld\n", sum);
     return sum;
 }
 
@@ -190,7 +187,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
     }
     AVLTree<Employee *> *tree;
     bool include_zero_salary = (lowerSalary == 0);
-    int rank_sum = 0, worker_count = 0;
+    long long rank_sum = 0, worker_count = 0;
     Company *company;
     if (companyID == 0)
     {
@@ -247,10 +244,11 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
             worker_count += company->getInternsEmployeesCount();
         }
     }
-
+    // TODO: replace print for final submission
     if (worker_count <= 0)
         throw EmployeeNotFoundException();
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", rank_sum / (double)worker_count);
+    long double testing_value = std::round((rank_sum / (long double)worker_count) * 10.0) / 10.0;
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1Lf\n", testing_value); // rank_sum / (double)worker_count);
 }
 
 double MainDataStructure::companyValue(int compnayID)
@@ -263,7 +261,6 @@ double MainDataStructure::companyValue(int compnayID)
     Company *company = companies.findObject(compnayID);
     Company *parentCompany = findCompanyById(compnayID);
 
-    // TODO: why are they sending us a damn void **
     if (company == parentCompany)
     {
         printf("CompanyValue: %.1f\n", (double)parentCompany->getValue());

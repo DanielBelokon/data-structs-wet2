@@ -114,7 +114,7 @@ HashTable<Employee *> *Company::getEmployees()
 {
     return &employees;
 }
-int Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
+long long Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {
     return employees_tree_by_salary.getHighestMRankSum(m);
 }

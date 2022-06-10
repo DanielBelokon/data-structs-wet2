@@ -27,12 +27,12 @@ public:
     int getSize();
     Node<T> *getRoot() { return root; }
 
-    int getRank(T data, int *place);
+    long long getRank(T data, int *place);
 
     T find(T object);
     T *getInOrderArray(int amount = 0);
     T getHighest();
-    int getHighestMRankSum(int m);
+    long long getHighestMRankSum(int m);
 
     ~AVLTree();
 
@@ -502,9 +502,9 @@ void AVLTree<T>::updateRankPostorder(Node<T> *current)
 
 // find the node that have m bigger node than the current node
 template <typename T>
-int AVLTree<T>::getHighestMRankSum(int m)
+long long AVLTree<T>::getHighestMRankSum(int m)
 {
-    int cur_bigger_rank = 0;
+    long long cur_bigger_rank = 0;
     int cur_bigger_size = 0;
 
     Node<T> *cur_node = this->root;
@@ -533,10 +533,10 @@ int AVLTree<T>::getHighestMRankSum(int m)
 }
 
 template <typename T>
-int AVLTree<T>::getRank(T object, int *place)
+long long AVLTree<T>::getRank(T object, int *place)
 {
     Node<T> *current = root;
-    int rank = 0;
+    long long rank = 0;
     *place = 0;
     while (current != nullptr)
     {
