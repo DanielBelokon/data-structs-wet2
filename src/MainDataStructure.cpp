@@ -39,7 +39,7 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int grade)
 
     Company *company = findCompanyById(companyID);
     Employee *employee = new Employee(employeeID, company, 0, grade);
-    if (employees.search(employeeID) != nullptr)
+    if (!employees.isEmpty(employeeID))
     {
         delete employee;
         throw EmployeeAlreadyExistsException();
@@ -62,10 +62,6 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     Employee *employee = findEmployeeById(employeeID);
     Company *company = employee->getCompany();
 
-    if (employee->getSalary() != 0)
-    {
-        employees_tree_by_salary.remove(employee);
-    }
     company->removeEmployee(employee);
     if (employee->getSalary() != 0)
     {
@@ -78,7 +74,7 @@ void MainDataStructure::RemoveEmployee(int employeeID)
         interns_grade_sum -= employee->getGrade();
         company->upgradeIntern(employee);
     }
-    delete employee;
+    // delete employee;
 }
 
 bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, double factor)
@@ -90,7 +86,10 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
 
     Company *company = findCompanyById(companyID);
     Company *acquiredCompany = findCompanyById(acquiredCompanyID);
-
+    if (company == acquiredCompany)
+    {
+        throw InvalidInputException();
+    }
     company->merge(acquiredCompany, factor);
     companies.merge(companyID, acquiredCompanyID);
     acquiredCompany->setFactor(factor);
@@ -106,17 +105,25 @@ void MainDataStructure::EmployeeSalaryIncrease(int employeeID, int salaryIncreas
     }
 
     Employee *employee = findEmployeeById(employeeID);
+    int prevSalary = employee->getSalary();
+    Company *company = employee->getCompany();
 
     employees_tree_by_salary.remove(employee);
-    Company *company = employee->getCompany();
     company->getEmployeesTreeBySalary()->remove(employee);
+
     employee->increaseSalary(salaryIncrease);
 
-    employees_tree_by_salary.insert(employee, employee->getGrade());
-    company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
-    company->upgradeIntern(employee);
-    interns_employees_count--;
-    interns_grade_sum -= employee->getGrade();
+    if (employee->getSalary() > 0)
+    {
+        employees_tree_by_salary.insert(employee, employee->getGrade());
+        company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
+        if (prevSalary == 0)
+        {
+            company->upgradeIntern(employee);
+            interns_employees_count--;
+            interns_grade_sum -= employee->getGrade();
+        }
+    }
 }
 
 void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
@@ -132,12 +139,17 @@ void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
     if (employee->getSalary() == 0)
     {
         if (bumpGrade > 0)
+        {
             interns_grade_sum += bumpGrade;
+            employee->getCompany()->increaseInternsGradeSum(bumpGrade);
+        }
         return;
     }
     employees_tree_by_salary.remove(employee);
     employees_tree_by_salary.insert(employee, employee->getGrade());
     Company *company = employee->getCompany();
+    if (company != findCompanyById(company->getCompanyID()))
+        return;
     company->getEmployeesTreeBySalary()->remove(employee);
     company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
@@ -168,82 +180,74 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
     return sum;
 }
 
-double MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary)
+void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int lowerSalary, int higherSalary)
 {
     if (companyID < 0 || companyID > num_of_companies || lowerSalary < 0 || higherSalary < 0 || higherSalary < lowerSalary)
     {
         throw InvalidInputException();
     }
-    AVLTree<Employee *> *cur_tree;
+    AVLTree<Employee *> *tree;
+    bool include_zero_salary = lowerSalary == 0;
+    int rank_sum = 0, worker_count = 0;
     Company *company;
-    // take the correct tree
     if (companyID == 0)
     {
-        cur_tree = &employees_tree_by_salary;
+        tree = &employees_tree_by_salary;
     }
     else
     {
         company = findCompanyById(companyID);
-        cur_tree = company->getEmployeesTreeBySalary();
+        tree = company->getEmployeesTreeBySalary();
     }
-    // if no employees in the company and grade no in the range
-    if (cur_tree->getSize() == 0 && lowerSalary != 0)
+
+    // calculate sum and amount in range between salaried workers
+    // find minimum salaried node that is close to range?
+    if (higherSalary != 0 && tree->getSize() != 0)
+    {
+        int minAmount = 0, maxAmount = 0;
+        Employee temp_min_emp = Employee(0, nullptr, lowerSalary, 0);
+        Node<Employee *> *min_emp_node;
+        Node<Employee *> *node = tree->findNode(&temp_min_emp, &min_emp_node);
+        min_emp_node = (node != nullptr) ? node : min_emp_node;
+        rank_sum -= tree->getRank(min_emp_node->getData(), &minAmount);
+        // if the minimun not in our range
+        if (min_emp_node->getData()->getSalary() >= lowerSalary)
+        {
+            rank_sum += min_emp_node->getRank();
+            minAmount--;
+        }
+
+        Employee temp_max_emp = Employee(INT32_MAX, nullptr, higherSalary, 0);
+        Node<Employee *> *max_emp_node;
+        Node<Employee *> *node2 = tree->findNode(&temp_max_emp, &max_emp_node);
+        max_emp_node = (node2 != nullptr) ? node2 : max_emp_node;
+        rank_sum += tree->getRank(max_emp_node->getData(), &maxAmount);
+        if (max_emp_node->getData()->getSalary() > higherSalary)
+        {
+            maxAmount--;
+            rank_sum -= max_emp_node->getRank();
+        }
+
+        worker_count += (maxAmount - minAmount);
+    }
+
+    if (include_zero_salary)
+    {
+        if (companyID == 0)
+        {
+            rank_sum += interns_grade_sum;
+            worker_count += interns_employees_count;
+        }
+        else
+        {
+            rank_sum += company->getInternsGradeSum();
+            worker_count += company->getInternsEmployeesCount();
+        }
+    }
+
+    if (worker_count == 0)
         throw EmployeeNotFoundException();
-
-    Node<Employee *> *max_node;
-    Node<Employee *> *min_node;
-    int amt_min = 0, amt_max = 0, rank_min = 0, rank_max = 0;
-
-    if (lowerSalary != 0)
-    {
-        Employee tempMinEmp = Employee(0, nullptr, lowerSalary, 0);
-        Node<Employee *> *temp_min_node = cur_tree->findNode(&tempMinEmp, &min_node);
-        min_node = (temp_min_node == nullptr) ? min_node : temp_min_node;
-        rank_min = cur_tree->getRank(min_node->getData(), &amt_min);
-        if (min_node->getData()->getSalary() >= lowerSalary)
-        {
-            rank_min -= min_node->getRank();
-        }
-        else
-            amt_min++;
-    }
-    //checking
-    
-    //if no employee tree is 0 , and all the employee are slaves, and lowerSalary is 0
-    if( cur_tree->getSize()==0 && lowerSalary==0){
-        int rankSum = company->getInternsGradeSum();
-        int amount= company->getInternsEmployeesCount();
-        printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)(rankSum) / (amount));
-        return (double)(rankSum) / (amount);
-    }
-
-    if (higherSalary != 0)
-    {
-        Employee tempMaxEmp = Employee(INT32_MAX, nullptr, higherSalary, 0);
-        Node<Employee *> *temp_max_node = cur_tree->findNode(&tempMaxEmp, &max_node);
-        max_node = (temp_max_node == nullptr) ? max_node : temp_max_node;
-        rank_max = cur_tree->getRank(max_node->getData(), &amt_max);
-        if (max_node->getData()->getSalary() > higherSalary)
-        {
-            rank_max -= max_node->getRank();
-        }
-        else
-        {
-            amt_max++;
-        }
-    }
-
-
-    int rankSum = rank_max - rank_min;
-    int amount = amt_max - amt_min;
-    if (lowerSalary == 0)
-    {
-        rankSum += companyID == 0 ? interns_grade_sum : company->getInternsGradeSum();
-        amount += companyID == 0 ? interns_employees_count : company->getInternsEmployeesCount();
-    }
-
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)(rankSum) / (amount));
-    return (double)(rankSum) / (amount);
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (double)rank_sum / worker_count);
 }
 
 double MainDataStructure::companyValue(int compnayID)
@@ -269,26 +273,6 @@ double MainDataStructure::companyValue(int compnayID)
 void MainDataStructure::BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade)
 {
 }
-
-// void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees)
-// {
-//     if (current == nullptr)
-//         return;
-
-//     if (current->getData()->getEmployeeID() >= minId && current->getData()->getEmployeeID() <= maxId)
-//     {
-//         (*inRange)++;
-//         if (current->getData()->getSalary() >= minSalary && current->getData()->getGrade() >= minGrade)
-//         {
-//             (*numOfEmployees)++;
-//         }
-//     }
-
-//     if (current->getData()->getEmployeeID() >= minId)
-//         checkInRangeRocourisve(current->getLeft(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
-//     if (current->getData()->getEmployeeID() <= maxId)
-//         checkInRangeRocourisve(current->getRight(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
-// }
 
 Company *MainDataStructure::findCompanyById(int id)
 {
