@@ -27,12 +27,14 @@ template <class T>
 UnionFind<T>::UnionFind(int initial)
 {
     size = new int[initial];
+    parent = new int[initial];
+
     for (int i = 0; i < initial; i++)
     {
         size[i] = 0;
+        parent[i] = i;
     }
 
-    parent = new int[initial];
     objects = new T[initial];
 }
 
@@ -68,17 +70,17 @@ void UnionFind<T>::merge(int set1, int set2)
 {
     int root1 = compressRecoursive(set1);
     int root2 = compressRecoursive(set2);
+    parent[root2] = root1;
+    size[root1] += size[root2];
 
-    if (size[root1] < size[root2])
-    {
-        parent[root1] = root2;
-        size[root2] += size[root1];
-    }
-    else
-    {
-        parent[root2] = root1;
-        size[root1] += size[root2];
-    }
+    // if (size[root1] < size[root2])
+    // {
+    // }
+    // else
+    // {
+    //     parent[root2] = root1;
+    //     size[root1] += size[root2];
+    // }
 }
 
 template <class T>
