@@ -553,7 +553,7 @@ int AVLTree<T>::getRank(T object, int *place)
         }
         else
         {
-            (*place) += 1;
+            (*place) += current->getLeftSize() + 1;
             return rank + current->getLeftRank() + current->getRank();
         }
     }
