@@ -47,6 +47,7 @@ public:
     void upgradeIntern(Employee *employee);
     int getInternsEmployeesCount() const;
     int getInternsGradeSum() const;
+    void increaseInternsGradeSum(int bumpGrade);
 
 private:
     void transferEmployees(Company *new_company, Node<Employee *> *current);

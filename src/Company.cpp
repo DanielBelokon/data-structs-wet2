@@ -42,23 +42,8 @@ void Company::setValue(int value)
     this->value = value;
 }
 
-void Company::setHighesEarner(Employee *emp)
-{
-    if (emp != nullptr &&
-        (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp)))
-    {
-        highest_earner = emp;
-    }
-}
-
-// AVLTree<Employee *> *Company::getEmployeesTree()
-// {
-//     return &employees_tree;
-// }
-
 void Company::addEmployee(Employee *employee)
 {
-    setHighesEarner(employee); // checking if the new employee is the new highest earner.
     num_of_employees++;
     this->employees.insert(employee->getEmployeeID(), employee);
     if (employee->getSalary() == 0)
@@ -122,7 +107,7 @@ void Company::merge(Company *company, double factor)
         if (emp != nullptr)
         {
             emp->setCompany(this);
-            // targetEmployees->remove(emp->getEmployeeID());
+            targetEmployees->remove(emp->getEmployeeID());
             this->addEmployee(emp);
         }
     }
@@ -183,4 +168,8 @@ int Company::getInternsEmployeesCount() const
 int Company::getInternsGradeSum() const
 {
     return interns_grade_sum;
+}
+void Company::increaseInternsGradeSum(int bumpGrade)
+{
+    interns_grade_sum += bumpGrade;
 }
