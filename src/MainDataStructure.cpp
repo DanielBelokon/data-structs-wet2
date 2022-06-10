@@ -39,7 +39,7 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int grade)
 
     Company *company = findCompanyById(companyID);
     Employee *employee = new Employee(employeeID, company, 0, grade);
-    if (!employees.isEmpty(employeeID))
+    if (employees.search(employeeID) != nullptr)
     {
         delete employee;
         throw EmployeeAlreadyExistsException();
@@ -62,9 +62,9 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     Company *company = employee->getCompany();
     company = findCompanyById(company->getCompanyID());
     company->removeEmployee(employee);
+    employees.remove(employeeID);
     if (employee->getSalary() != 0)
     {
-        employees.remove(employeeID);
         employees_tree_by_salary.remove(employee);
     }
     else
