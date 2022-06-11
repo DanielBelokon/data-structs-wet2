@@ -67,6 +67,7 @@ public:
             right_size = 0;
             height = 1 + left->getHeight();
             left_rank = left->getRankSum();
+            right_rank = 0;
         }
         else
         {
