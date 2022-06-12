@@ -296,17 +296,13 @@ Employee *MainDataStructure::findEmployeeById(int id)
 
 MainDataStructure::~MainDataStructure()
 {
-    // Employee **employees = employees_tree.getInOrderArray();
-    // for (int i = 0; i < employees_tree.getSize(); i++)
-    // {
-    //     delete employees[i];
-    // }
-    // delete[] employees;
+    for (Employee *emp : employees)
+    {
+        delete emp;
+    }
 
-    // Company **companies = companies_tree.getInOrderArray();
-    // for (int i = 0; i < companies_tree.getSize(); i++)
-    // {
-    //     delete companies[i];
-    // }
-    // delete[] companies;
+    for (int i = 1; i <= num_of_companies; i++)
+    {
+        delete companies.findObject(i);
+    }
 }

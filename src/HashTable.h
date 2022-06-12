@@ -287,7 +287,7 @@ bool HashTable<T>::isEmpty(int id)
 template <typename T>
 HashTable<T>::~HashTable()
 {
-    // delete[] table;
+    delete[] table;
 }
 
 #endif /* HASHTABLE_H */

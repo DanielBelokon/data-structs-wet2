@@ -95,4 +95,12 @@ T UnionFind<T>::findObject(int id)
     return objects[id];
 }
 
+template <class T>
+UnionFind<T>::~UnionFind()
+{
+    delete[] size;
+    delete[] parent;
+    delete[] objects;
+}
+
 #endif /* UNIONFIND_H */
