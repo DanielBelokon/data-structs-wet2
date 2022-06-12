@@ -228,13 +228,13 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         {
             temp = temp->getLeft();
         }
-        T tempData = temp->getData();
-        int tempRank = temp->getRank();
 
+        T tempData = temp->getData();
+        current->setRank(temp->getRank());
         removeAux(tempData, root, nullptr);
 
         current->setData(tempData);
-        current->setRank(tempRank);
+        current->updateHeight();
     }
 
     if (current != nullptr)
