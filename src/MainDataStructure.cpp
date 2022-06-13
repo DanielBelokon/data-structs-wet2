@@ -87,7 +87,7 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
         throw InvalidInputException();
     }
     company->merge(acquiredCompany, factor);
-    companies.merge(companyID, acquiredCompanyID);
+    companies.merge(companyID, acquiredCompanyID, factor);
     acquiredCompany->setFactor(factor);
     acquiredCompany->setParentValueAtPurchase(company->getValue());
     return true;
@@ -160,7 +160,7 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
     {
         if (employees_tree_by_salary.getSize() < m)
             throw EmployeeNotFoundException();
-        sum = employees_tree_by_salary.getHighestMRankSum(m);
+        sum = employees_tree_by_salary.getHighestMValueSum(m);
     }
     else
     {
@@ -203,11 +203,11 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         Node<Employee *> *min_emp_node;
         Node<Employee *> *node = tree->findNode(&temp_min_emp, &min_emp_node);
         min_emp_node = (node != nullptr) ? node : min_emp_node;
-        rank_sum -= tree->getRank(min_emp_node->getData(), &minAmount);
+        rank_sum -= tree->getValueSumUpto(min_emp_node->getData(), &minAmount);
         // if the minimun not in our range
         if (min_emp_node->getData()->getSalary() >= lowerSalary)
         {
-            rank_sum += min_emp_node->getRank();
+            rank_sum += min_emp_node->getNodeValue();
             minAmount--;
         }
 
@@ -215,10 +215,10 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         Node<Employee *> *max_emp_node;
         Node<Employee *> *node2 = tree->findNode(&temp_max_emp, &max_emp_node);
         max_emp_node = (node2 != nullptr) ? node2 : max_emp_node;
-        rank_sum += tree->getRank(max_emp_node->getData(), &maxAmount);
+        rank_sum += tree->getValueSumUpto(max_emp_node->getData(), &maxAmount);
         if (max_emp_node->getData()->getSalary() > higherSalary)
         {
-            rank_sum -= max_emp_node->getRank();
+            rank_sum -= max_emp_node->getNodeValue();
             maxAmount--;
         }
 
@@ -251,17 +251,18 @@ double MainDataStructure::companyValue(int compnayID)
     {
         throw InvalidInputException();
     }
+    printf("CompanyValue: %.1Lf\n", companies.getValue(compnayID));
+    return 0;
+    // Company *company = companies.findObject(compnayID);
+    // Company *parentCompany = findCompanyById(compnayID);
 
-    Company *company = companies.findObject(compnayID);
-    Company *parentCompany = findCompanyById(compnayID);
-
-    if (company == parentCompany)
-    {
-        printf("CompanyValue: %.1f\n", (double)parentCompany->getValue());
-        return company->getValue();
-    }
-    printf("CompanyValue: %.1f\n", parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue());
-    return parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue();
+    // if (company == parentCompany)
+    // {
+    //     printf("CompanyValue: %.1f\n", (double)parentCompany->getValue());
+    //     return company->getValue();
+    // }
+    // printf("CompanyValue: %.1f\n", parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue());
+    // return parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue();
 }
 
 void MainDataStructure::BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade)

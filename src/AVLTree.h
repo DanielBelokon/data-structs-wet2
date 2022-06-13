@@ -22,19 +22,19 @@ public:
     {
     }
 
-    void insert(T data, int rank = 0);
+    void insert(T data, int value = 0);
     void remove(T data);
     void merge(AVLTree<T> *tree);
 
     int getSize();
     Node<T> *getRoot() { return root; }
 
-    long long getRank(T data, int *place);
+    long long getValueSumUpto(T data, int *place);
 
     T find(T object);
     T *getInOrderArray(int amount = 0);
     T getHighest();
-    long long getHighestMRankSum(int m);
+    long long getHighestMValueSum(int m);
 
     ~AVLTree();
 
@@ -50,7 +50,7 @@ private:
         return node1 < node2;
     }
 
-    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent, int rank = 0);
+    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent, int value = 0);
     void removeAux(T toDelete, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
@@ -92,39 +92,39 @@ T AVLTree<T>::getHighest()
 }
 
 template <typename T>
-void AVLTree<T>::insert(T data, int rank)
+void AVLTree<T>::insert(T data, int value)
 {
     if (find(data) != nullptr)
         return;
 
     if (root == nullptr)
     {
-        root = new Node<T>(data, rank);
+        root = new Node<T>(data, value);
         size++;
         return;
     }
     Node<T> *current = root;
-    insertAux(data, current, nullptr, rank);
+    insertAux(data, current, nullptr, value);
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int rank)
+Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int value)
 {
     if (current == nullptr)
     {
-        current = new Node<T>(data, rank);
+        current = new Node<T>(data, value);
         size++;
         return current;
     }
     if (compare(data, current->getData()))
     {
-        Node<T> *newNode = insertAux(data, current->getLeft(), current, rank);
+        Node<T> *newNode = insertAux(data, current->getLeft(), current, value);
         if (newNode != nullptr)
             current->setLeft(newNode);
     }
     else if (compare(current->getData(), data))
     {
-        Node<T> *newNode = insertAux(data, current->getRight(), current, rank);
+        Node<T> *newNode = insertAux(data, current->getRight(), current, value);
         if (newNode != nullptr)
             current->setRight(newNode);
     }
@@ -146,7 +146,7 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
         return;
     }
 
-    current->updateHeight();
+    current->updateParameters();
     int balanceFactor = current->getBalanceFactor();
     if (balanceFactor > 1)
     {
@@ -227,7 +227,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         }
 
         T tempData = temp->getData();
-        current->setRank(temp->getRank());
+        current->setValue(temp->getNodeValue());
         removeAux(tempData, root, nullptr);
 
         current->setData(tempData);
@@ -247,11 +247,11 @@ void AVLTree<T>::rotateLeft(Node<T> *root, Node<T> *parent)
     root->setRight(new_root->getLeft());
     new_root->setLeft(root);
 
-    new_root->getLeft()->updateHeight();
-    new_root->updateHeight();
+    new_root->getLeft()->updateParameters();
+    new_root->updateParameters();
     if (parent != nullptr)
     {
-        parent->updateHeight();
+        parent->updateParameters();
     }
 }
 
@@ -263,11 +263,11 @@ void AVLTree<T>::rotateRight(Node<T> *root, Node<T> *parent)
     root->setLeft(new_root->getRight());
     new_root->setRight(root);
 
-    new_root->getRight()->updateHeight();
-    new_root->updateHeight();
+    new_root->getRight()->updateParameters();
+    new_root->updateParameters();
     if (parent != nullptr)
     {
-        parent->updateHeight();
+        parent->updateParameters();
     }
 }
 
@@ -434,7 +434,7 @@ void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
         (*amount)--;
         if (parent != nullptr)
         {
-            parent->updateHeight();
+            parent->updateParameters();
         }
         return;
     }
@@ -495,13 +495,13 @@ void AVLTree<T>::updateRankPostorder(Node<T> *current)
         return;
     updateRankPostorder(current->getLeft());
     updateRankPostorder(current->getRight());
-    current->setRank(current->getData()->getGrade());
-    current->updateHeight();
+    current->setValue(current->getData()->getGrade());
+    current->updateParameters();
 }
 
 // find the node that have m bigger node than the current node
 template <typename T>
-long long AVLTree<T>::getHighestMRankSum(int m)
+long long AVLTree<T>::getHighestMValueSum(int m)
 {
     long long cur_bigger_rank = 0;
     int cur_bigger_size = 0;
@@ -517,13 +517,13 @@ long long AVLTree<T>::getHighestMRankSum(int m)
         }
         else if (cur_bigger_size + cur_node->getRightSize() < m - 1)
         {
-            cur_bigger_rank += cur_node->getRightRank() + cur_node->getRank();
+            cur_bigger_rank += cur_node->getRightValue() + cur_node->getNodeValue();
             cur_bigger_size += cur_node->getRightSize() + 1;
             cur_node = cur_node->getLeft();
         }
         else if (cur_bigger_size + cur_node->getRightSize() == m - 1)
         {
-            cur_bigger_rank += cur_node->getRightRank() + cur_node->getRank();
+            cur_bigger_rank += cur_node->getRightValue() + cur_node->getNodeValue();
             return cur_bigger_rank;
         }
     }
@@ -532,10 +532,10 @@ long long AVLTree<T>::getHighestMRankSum(int m)
 }
 
 template <typename T>
-long long AVLTree<T>::getRank(T object, int *place)
+long long AVLTree<T>::getValueSumUpto(T object, int *place)
 {
     Node<T> *current = root;
-    long long rank = 0;
+    long long value = 0;
     *place = 0;
     while (current != nullptr)
     {
@@ -545,7 +545,7 @@ long long AVLTree<T>::getRank(T object, int *place)
         }
         else if (compare(current->getData(), object))
         {
-            rank += current->getLeftRank() + current->getRank();
+            value += current->getLeftValue() + current->getNodeValue();
             (*place) += current->getLeftSize() + 1;
 
             current = current->getRight();
@@ -553,10 +553,10 @@ long long AVLTree<T>::getRank(T object, int *place)
         else
         {
             (*place) += current->getLeftSize() + 1;
-            return rank + current->getLeftRank() + current->getRank();
+            return value + current->getLeftValue() + current->getNodeValue();
         }
     }
-    return rank;
+    return value;
 }
 
 template <typename T>

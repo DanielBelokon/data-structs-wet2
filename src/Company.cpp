@@ -104,7 +104,7 @@ HashTable<Employee *> *Company::getEmployees()
 }
 long long Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {
-    return employees_tree_by_salary.getHighestMRankSum(m);
+    return employees_tree_by_salary.getHighestMValueSum(m);
 }
 double Company::getFactor() const
 {
