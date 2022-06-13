@@ -114,7 +114,7 @@ public:
     ~HashTable();
 
 private:
-    bool isDeleted(int id);
+    bool isDeleted(int key);
     int getId(int key);
     void resize(bool downsize = false);
 };
