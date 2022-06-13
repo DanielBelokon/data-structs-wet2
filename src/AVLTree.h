@@ -369,6 +369,7 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     delete root;
     delete tree->root;
     tree->root = nullptr;
+    tree->size = 0;
     root = buildEmptyTree(new_height);
     trim(root, nullptr, &to_delete);
     int index = 0;
