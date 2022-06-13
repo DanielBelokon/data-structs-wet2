@@ -5,18 +5,18 @@
 
 #define BETA 0.356
 #define RESIZE_THRESHOLD 0.75
-#define INITIAL_CAPACITY 30
+#define INITIAL_CAPACITY 29
 
 template <typename T>
 class HashNode
 {
 private:
-    T data = 0;
+    T data = T{};
     int id = -1;
     bool is_deleted;
 
 public:
-    HashNode() : data(0), id(-1), is_deleted(false) {}
+    HashNode() : data(T{}), id(-1), is_deleted(false) {}
 
     T getData() { return data; }
     void setData(T data) { this->data = data; }
@@ -165,7 +165,7 @@ void HashTable<T>::remove(int id)
 
     size--;
     table[key].setId(-1);
-    table[key].setData(nullptr);
+    table[key].setData({});
     table[key].setDeleted(true);
     if (size < RESIZE_THRESHOLD * capacity / 2 && capacity > INITIAL_CAPACITY)
         resize(true);
@@ -187,13 +187,13 @@ T HashTable<T>::search(int id)
             }
             else if (table[key].getId() == -1)
             {
-                return nullptr;
+                return T{};
             }
         }
         key = (key + 1) % capacity;
     }
 
-    return nullptr;
+    return T{};
 }
 
 template <typename T>
@@ -218,9 +218,10 @@ void HashTable<T>::merge(HashTable<T> *other)
 {
     for (int i = 0; i < other->getCapacity(); i++)
     {
-        if (other->getId(i) != -1 && !other->isDeleted(i))
+        if (other->getDataAt(i) != T{})
         {
-            insert(other->getId(i), other->getDataAt(i));
+            this->insert(other->getId(i), other->getDataAt(i));
+            other->remove(other->getId(i));
         }
     }
 }
@@ -288,7 +289,7 @@ template <typename T>
 T HashTable<T>::getDataAt(int key)
 {
     if (key >= capacity || key < 0)
-        return 0;
+        return T{};
     return table[key].getData();
 }
 
