@@ -19,6 +19,8 @@ public:
     bool isEmpty(int id);
     T findObject(int id);
 
+    ~UnionFind();
+
 private:
     int compressRecoursive(int id);
 };
