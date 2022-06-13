@@ -60,20 +60,17 @@ void MainDataStructure::RemoveEmployee(int employeeID)
 
     Employee *employee = findEmployeeById(employeeID);
     Company *company = employee->getCompany();
-    company = findCompanyById(company->getCompanyID());
     company->removeEmployee(employee);
     employees.remove(employeeID);
-    if (employee->getSalary() != 0)
-    {
-        employees_tree_by_salary.remove(employee);
-    }
-    else
+    employees_tree_by_salary.remove(employee);
+
+    if (employee->getSalary() == 0)
     {
         interns_employees_count--;
         interns_grade_sum -= employee->getGrade();
         company->upgradeIntern(employee);
     }
-    // delete employee;
+    delete employee;
 }
 
 bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, double factor)
@@ -85,7 +82,7 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
 
     Company *company = findCompanyById(companyID);
     Company *acquiredCompany = findCompanyById(acquiredCompanyID);
-    if (company == acquiredCompany)
+    if (company->getCompanyID() == acquiredCompany->getCompanyID())
     {
         throw InvalidInputException();
     }
@@ -112,16 +109,14 @@ void MainDataStructure::EmployeeSalaryIncrease(int employeeID, int salaryIncreas
 
     employee->increaseSalary(salaryIncrease);
 
-    if (employee->getSalary() > 0)
+    employees_tree_by_salary.insert(employee, employee->getGrade());
+
+    company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
+    if (prevSalary == 0)
     {
-        employees_tree_by_salary.insert(employee, employee->getGrade());
-        company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
-        if (prevSalary == 0)
-        {
-            company->upgradeIntern(employee);
-            interns_employees_count--;
-            interns_grade_sum -= employee->getGrade();
-        }
+        company->upgradeIntern(employee);
+        interns_employees_count--;
+        interns_grade_sum -= employee->getGrade();
     }
 }
 
@@ -134,7 +129,8 @@ void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
 
     if (bumpGrade > 0)
         employee->increaseGrade(bumpGrade);
-
+    else
+        return;
     if (employee->getSalary() == 0)
     {
         if (bumpGrade > 0)
@@ -147,11 +143,6 @@ void MainDataStructure::PromoteEmployee(int employeeID, int bumpGrade)
     employees_tree_by_salary.remove(employee);
     employees_tree_by_salary.insert(employee, employee->getGrade());
     Company *company = employee->getCompany();
-    Company *other = findCompanyById(company->getCompanyID());
-    if (company->getCompanyID() != other->getCompanyID())
-    {
-        findCompanyById(company->getCompanyID());
-    }
     company->getEmployeesTreeBySalary()->remove(employee);
     company->getEmployeesTreeBySalary()->insert(employee, employee->getGrade());
 }
@@ -227,7 +218,6 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         rank_sum += tree->getRank(max_emp_node->getData(), &maxAmount);
         if (max_emp_node->getData()->getSalary() > higherSalary)
         {
-
             rank_sum -= max_emp_node->getRank();
             maxAmount--;
         }
