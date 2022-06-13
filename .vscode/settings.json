@@ -2,7 +2,7 @@
         "cmake.debugConfig": {
             "args": [
                 "<",
-                "${workspaceFolder}/tests/input/in17.txt"
+                "${workspaceFolder}/tests/input/in0.txt"
             ]
         },
     "files.associations": {
@@ -41,6 +41,19 @@
         "deque": "cpp",
         "iterator": "cpp",
         "queue": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "cstdint": "cpp",
+        "exception": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "sstream": "cpp",
+        "cinttypes": "cpp"
     }
 }
