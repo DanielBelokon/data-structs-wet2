@@ -164,8 +164,8 @@ void HashTable<T>::remove(int id)
     }
 
     size--;
-    table[key].setId(0);
-    table[key].setData(0);
+    table[key].setId(-1);
+    table[key].setData(nullptr);
     table[key].setDeleted(true);
     if (size < RESIZE_THRESHOLD * capacity / 2 && capacity > INITIAL_CAPACITY)
         resize(true);
