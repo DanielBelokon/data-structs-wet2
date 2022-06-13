@@ -9,7 +9,7 @@ class UnionFind
 private:
     int *size;
     int *parent;
-    int *current_index;
+    int *set_representative;
     T *objects;
     long double *value;
 
@@ -34,13 +34,13 @@ UnionFind<T>::UnionFind(int initial)
     size = new int[initial];
     value = new long double[initial];
     parent = new int[initial];
-    current_index = new int[initial];
+    set_representative = new int[initial];
     for (int i = 0; i < initial; i++)
     {
         size[i] = 0;
         value[i] = i;
         parent[i] = i;
-        current_index[i] = i;
+        set_representative[i] = i;
     }
 
     objects = new T[initial];
@@ -52,7 +52,7 @@ void UnionFind<T>::makeSet(T element, int id)
     objects[id] = element;
     parent[id] = id;
     value[id] = id;
-    current_index[id] = id;
+    set_representative[id] = id;
     size[id] = 1;
 }
 
@@ -60,7 +60,7 @@ template <class T>
 T UnionFind<T>::find(int id)
 {
     int rootId = compressRecoursive(id);
-    return objects[current_index[rootId]];
+    return objects[set_representative[rootId]];
 }
 
 template <class T>
@@ -83,21 +83,20 @@ void UnionFind<T>::merge(int set1, int set2, double factor)
 {
     int root1 = compressRecoursive(set1); // the index of the oopsite root
     int root2 = compressRecoursive(set2);
-    long double new_value = value[root2] * factor;
+    long double new_value = getValue(set_representative[root2]) * factor;
     if (size[root1] >= size[root2])
     {
         value[root1] += new_value;
         value[root2] -= value[root1];
         parent[root2] = root1;
         size[root1] += size[root2];
-        current_index[root2] = current_index[root1];
     }
     else
     {
         // b buy a - but B pointing to A because size(B)<size(A)
         // r(b)new = value[root1] + newvalue - value[root2]
-        value[root1] = value[root1] + new_value - value[root2];
-        current_index[root2] = current_index[root1];
+        value[root1] += +new_value - value[root2];
+        set_representative[root2] = set_representative[root1];
         parent[root1] = root2;
         size[root2] += size[root1];
     }
@@ -128,7 +127,8 @@ UnionFind<T>::~UnionFind()
     delete[] size;
     delete[] parent;
     delete[] objects;
-    // delete[] value;
+    delete[] set_representative;
+    delete[] value;
 }
 
 #endif /* UNIONFIND_H */
