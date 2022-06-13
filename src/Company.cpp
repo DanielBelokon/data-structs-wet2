@@ -1,13 +1,11 @@
 #include "Company.h"
 
-Company::Company(int companyID, int value) : companyID(companyID), value(value)
+Company::Company(int companyID, int value) : companyID(companyID), value(value), employees(), employees_tree_by_salary(Employee::compareBySalary)
 {
     num_of_employees = 0;
     highest_earner = nullptr;
-    employees = HashTable<Employee *>();
     factor = 0;
     parent_value_at_purchase = 0;
-    employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
     interns_employees_count = 0;
     interns_grade_sum = 0;
 };
