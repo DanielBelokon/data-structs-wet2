@@ -16,7 +16,9 @@ private:
     bool (*customCompare)(const T &a, const T &b);
 
 public:
-    AVLTree(bool (*customCompare)(const T &a, const T &b) = nullptr) : root(nullptr), size(0), customCompare(customCompare)
+    AVLTree(bool (*customCompare)(const T &a, const T &b) = nullptr) : root(nullptr),
+                                                                       size(0),
+                                                                       customCompare(customCompare)
     {
     }
 
@@ -195,7 +197,6 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
     {
         replaceChild(parent, current, nullptr);
         delete current;
-        current = nullptr;
         size--;
         return;
     }
@@ -205,9 +206,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setLeft(nullptr);
         delete current;
-        current = nullptr;
         size--;
-
         return;
     }
     else if (current->getRight() != nullptr && current->getLeft() == nullptr)
@@ -216,9 +215,7 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setRight(nullptr);
         delete current;
-        current = nullptr;
         size--;
-
         return;
     }
     else
@@ -234,7 +231,6 @@ void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
         removeAux(tempData, root, nullptr);
 
         current->setData(tempData);
-        current->updateHeight();
     }
 
     if (current != nullptr)
@@ -374,8 +370,8 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     trim(root, nullptr, &to_delete);
     int index = 0;
     insertSortedArrayInOrder(root, &merged, &index, size);
-    updateRankPostorder(root);
     delete[] merged;
+    updateRankPostorder(root);
 }
 
 // helper function for merge arrays
