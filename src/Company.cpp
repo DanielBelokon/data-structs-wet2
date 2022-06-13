@@ -72,24 +72,18 @@ void Company::merge(Company *company, double factor)
     if (company == nullptr || company == this)
         return;
 
-    num_of_employees += company->getNumOfEmployees();
     this->setValue(factor * (company->getValue()) + this->getValue());
 
-    // TODO: Transfer employees to new company
-    HashTable<Employee *> *targetEmployees = company->getEmployees();
-    employees.merge(targetEmployees);
-
-    for (auto emp : employees)
+    for (auto emp : *company->getEmployees())
     {
         if (emp != nullptr)
         {
+            this->employees.insert(emp->getEmployeeID(), emp);
             emp->setCompany(this);
-            // this->addEmployee(emp);
-            // targetEmployees->remove(emp->getEmployeeID());
-            // if (emp->getSalary() > 0)
-            //     employees_tree_by_salary.insert(emp);
         }
     }
+
+    num_of_employees += company->getNumOfEmployees();
     this->interns_employees_count += company->getInternsEmployeesCount();
     this->interns_grade_sum += company->getInternsGradeSum();
     this->employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
