@@ -63,7 +63,7 @@ public:
         T operator*()
         {
             if (current >= table->capacity)
-                return 0;
+                return T{};
             return table->table[current].getData();
         }
     };
