@@ -54,7 +54,6 @@ void Company::addEmployee(Employee *employee)
 // function to change the data of employees that  is not Used anymore by is cruel manager
 void Company::upgradeIntern(Employee *employee)
 {
-
     interns_employees_count--;
     interns_grade_sum -= employee->getGrade();
     return;
@@ -62,11 +61,8 @@ void Company::upgradeIntern(Employee *employee)
 
 void Company::removeEmployee(Employee *employee)
 {
-    // employees_tree.remove(employee);
-    if (employee->getSalary() != 0)
-        employees_tree_by_salary.remove(employee);
-    // else
-    //     upgradeIntern(employee);
+    employees_tree_by_salary.remove(employee);
+    employees.remove(employee->getEmployeeID());
 
     num_of_employees--;
 }
