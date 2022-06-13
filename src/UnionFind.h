@@ -60,7 +60,7 @@ template <class T>
 T UnionFind<T>::find(int id)
 {
     int rootId = compressRecoursive(id);
-    return objects[rootId];
+    return objects[current_index[rootId]];
 }
 
 template <class T>
@@ -84,30 +84,23 @@ void UnionFind<T>::merge(int set1, int set2, double factor)
     int root1 = compressRecoursive(set1); // the index of the oopsite root
     int root2 = compressRecoursive(set2);
     long double new_value = value[root2] * factor;
-    value[root1] += new_value;
-    value[root2] -= value[root1];
-    parent[root2] = root1;
-    size[root1] += size[root2];
-    // if (size[root1] > size[root2])
-    // {
-    // }
-    // else
-    // {
-    //     // b buy a - but B pointing to A because size(B)<size(A)
-    //     //r(b) new = value[root1] + newvalue - value[root2]
-    //     value[root2] += value[root1];
-    //     value[root1] -= value[root2];
-
-    //     T temp = objects[root1];
-    //     objects[root1] = objects[root2];
-    //     objects[root2] = temp;
-
-    //     current_index[root1] = root2;
-    //     current_index[root2] = root1;
-
-    //     parent[root1] = root2;
-    //     size[root2] += size[root1];
-    // }
+    if (size[root1] >= size[root2])
+    {
+        value[root1] += new_value;
+        value[root2] -= value[root1];
+        parent[root2] = root1;
+        size[root1] += size[root2];
+        current_index[root2] = current_index[root1];
+    }
+    else
+    {
+        // b buy a - but B pointing to A because size(B)<size(A)
+        // r(b)new = value[root1] + newvalue - value[root2]
+        value[root1] = value[root1] + new_value - value[root2];
+        current_index[root2] = current_index[root1];
+        parent[root1] = root2;
+        size[root2] += size[root1];
+    }
 }
 
 template <class T>
@@ -135,6 +128,7 @@ UnionFind<T>::~UnionFind()
     delete[] size;
     delete[] parent;
     delete[] objects;
+    // delete[] value;
 }
 
 #endif /* UNIONFIND_H */
