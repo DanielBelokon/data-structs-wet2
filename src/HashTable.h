@@ -75,6 +75,20 @@ public:
         size = 0;
     }
 
+    HashTable<T> &operator=(const HashTable &other)
+    {
+        if (this == &other)
+            return *this;
+        this->capacity = other.capacity;
+        this->size = other.size;
+        this->table = new HashNode<T>[capacity];
+        for (int i = 0; i < capacity; i++)
+        {
+            this->table[i] = other.table[i];
+        }
+        return *this;
+    }
+
     iterator begin()
     {
         return iterator(capacity, table, this, 0);
