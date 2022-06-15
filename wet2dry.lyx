@@ -1,0 +1,1163 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%Customisation
+\usepackage[tableposition=top]{caption}
+\usepackage{chngcntr}
+\renewcommand{\arraystretch}{2}
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+% Convert the LyX colors into more pleasent colors
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{14,107,217}
+\definecolor{green}{RGB}{0,158,40}
+\definecolor{red}{RGB}{235,16,16}
+\definecolor{brown}{RGB}{164,66,0}
+\definecolor{orange}{RGB}{231,135,26}
+\definecolor{purple}{RGB}{94,53,177}
+%fixing parentheses
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\setotherlanguage{english}
+\newfontfamily\hebrewfont[Script=Hebrew]{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+eqs-within-sections
+figs-within-sections
+theorems-ams-bytype
+theorems-sec-bytype
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_author "Daniel Belokon"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבני נתונים - תרגיל רטוב
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Section
+תיאור מבנה הנתונים:
+\end_layout
+
+\begin_layout Subsection
+עץ 
+\begin_inset Formula $\mathtt{AVL-Rank}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למען פתרון התרגיל מימשנו עץ דרגות 
+\begin_inset Formula $AVL$
+\end_inset
+
+ גנרי המחזיק מידע נוסף, המשתמש בפעולת השוואה בעזרת פונקציית 
+\begin_inset Formula $\text{bool customCompare(T, T)}$
+\end_inset
+
+ אשר מסופקת בבנאי - או, בברירת המחדל, אופרטור השוואה 
+\begin_inset Formula $<$
+\end_inset
+
+ המוגדר עבור אותו אובייקט גנרי.
+ בסיס העץ הינו העץ מתרגיל רטוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם שיפורים לתמיכה בדרגות וסכימה של ערך נוסף.
+\end_layout
+
+\begin_layout Standard
+העץ מורכב ממצביע לשורש שהוא מטיפוס 
+\begin_inset Formula $\text{Node}$
+\end_inset
+
+ גנרי, בנוסף מכיל שדה המציין את גודל העץ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Node$
+\end_inset
+
+: מחלקה המייצגת צומת בעץ, מכילה שדות - 
+\begin_inset Formula $\text{left\_size, right\_size, right\_value, left\_value, height}$
+\end_inset
+
+ ומצביעים לצומת ימנית ושמאלית.
+\end_layout
+
+\begin_layout Standard
+העץ תומך בפעולות הסטנדרטיות: הוספה, חיפוש, מחיקה ואיחוד בין עצים.
+ בנוסף לאלו, העץ תומך בפעולות 
+\begin_inset Formula $\text{getValueSumUpTo}$
+\end_inset
+
+ שמחזירה את סכום השדות 
+\begin_inset Formula $value$
+\end_inset
+
+ של כלל הצמתים שקטנים מצומת ספציפית - בנוסף מעבירה את דרגת הצומת במשתנה
+ עזר.
+\end_layout
+
+\begin_layout Subsection
+טבלת ערבול 
+\end_layout
+
+\begin_layout Standard
+למען פתרון התרגיל מימשנו טבלת ערבול כפי שנלמד בהרצאה, פונקציית הערבול היא
+ על פי שיטת הכפל כפי שראינו בהרצאה.
+ הטבלה מטפלת בהתנגשויות עם 
+\begin_inset Formula $\text{linear probing}$
+\end_inset
+
+, ושומרת את מספר האיברים הנמצאים בתוכה.
+ במידת הצורך, מתבצעת הגדלה של המבנה על ידי יצירת מערך חדש וערבול מחדש של
+ האיברים לתוכה בעזרת הגודל החדש.
+\end_layout
+
+\begin_layout Standard
+הטבלה עצמה מחזיקה מערך של 
+\begin_inset Formula $HashNode$
+\end_inset
+
+ שהיא מחלקה גנרית המחזיקה שדה של 
+\begin_inset Formula $Id$
+\end_inset
+
+, שדה של מידע ושדה שמסמן את אותו התא כמחוק.
+ המבנה תומך בפעולות הסטנדרטיות - הכנסה, הסרה, חיפוש, ואיחוד.
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\text{Union-Find}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למען פתרון התרגיל מימשנו 
+\begin_inset Formula $UF$
+\end_inset
+
+ עם איחוד קבוצות וכיווץ מסלולים והאיחוד מתבצע לפי גודל ולכן בסך הכל הסיבוכיות
+ המשוערכת היא 
+\begin_inset Formula $O\left(\log^{*}(n)\right)$
+\end_inset
+
+ לחיפוש ואיחוד.
+ המבנה מומש בעזרת חמישה מערכים בגודל מספר האיברים - שלושה מערכים כפי שראינו
+ בהרצאה )האיבר, גודל והורה( ושני מערכים נוספים התומכים בפעולות הנדרשות בתרגיל
+ - האחד, 
+\begin_inset Formula $value$
+\end_inset
+
+ שומר ערך של קבוצה ומבצע חישובים בדומה לשיטת הארגזים שראינו בתרגול.
+ השני, 
+\begin_inset Formula $\text{set\_representative}$
+\end_inset
+
+ שומר בפועל מי הוא הנציג של אותה קבוצה - כדי שנוכל לבצע איחודים בסיבוכיות
+ נכונה ועדיין לשמור על נכונות בחירת הנציגים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+המערכת
+\end_layout
+
+\begin_layout Standard
+המערכת תנהל שני אובייקטים - עובדים וחברות.
+ כל חברה תכיל )אולי( עובדים, וכל עובד יהיה שייך לחברה.
+ כלל האובייקטים במערכת ינוהלו, יווצרו, וימחקו על ידי המערכת.
+ היחסים בין עובדים לחברות ישמרו בתור התייחסויות עם מצביעים בלבד.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+למען עמידה בסיבוכיות הדרושה, המערכת תחזיק את החברות ב
+\begin_inset Formula $\text{UnionFind}$
+\end_inset
+
+ כשערך כל חברה ינוהל גם בעזרתו - ואת מספרן במשתנה נוסף.
+ בנוסף, 
+\emph on
+כלל העובדים
+\emph default
+ בערכת יוחזקו ב
+\begin_inset Formula $\text{HashTable}$
+\end_inset
+
+ כאשר התחום הוא תעודות הזהות של העובדים - בנוסף נחזיק עץ דרגות מאוזן שיכיל
+ את כלל העובדים שאינם מתמחים )שכר גבוהה מ
+\numeric on
+0
+\numeric off
+( ממוין לפי שכר, ועבור כל שאר העובדים )שכר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+( נחזיק משתנים נוספים אשר מונים את סכום הדרגותיהם ומספרם, כל זאת על מנת
+ לעמוד בדרישות התרגיל ובש' ההגשה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+חברה:
+\end_layout
+
+\begin_layout Standard
+כל חברה תכיל שדה מזהה, את ערכה ההתחלתי וְ- 
+\begin_inset Formula $\text{HashTable}$
+\end_inset
+
+ של מצביעים לכלל העובדים של החברה - ובנוסף, בדומה למערכת, תכיל עץ דרגות
+ של העובדים בחברה עם שכר וסכום דרגות שאר העובדים ומספרם בנפרד.
+\end_layout
+
+\begin_layout Subsubsection
+עובד:
+\end_layout
+
+\begin_layout Standard
+העובד יכיל שדה של מזהה, שכר, דרגה ומצביע לחברה בה הוא עובד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Sloth/Downloads/wet1plan.drawio.png
+	lyxscale 50
+	width 100text%
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ממשק
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:סיבוכיות-זמן:"
+
+\end_inset
+
+סיבוכיות זמן: 
+\end_layout
+
+\begin_layout Standard
+למען פשטות והקלת הקריאה עבור הקורא המסור, נציין שֶ-
+\end_layout
+
+\begin_layout Itemize
+פעולות החיפוש, סיבוכיות ההסרה, החיפוש וההכנסה ב
+\begin_inset Formula $\text{HashTable}$
+\end_inset
+
+ העובדים היא כפי שראינו בהרצאה, תחת הנחת הפיזור האחיד הפשוט של שלושת הפעולות
+ היא משוערכת להיות 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ בממוצע על הקלט.
+\end_layout
+
+\begin_layout Itemize
+פעולות החיפוש והאיחוד ב
+\begin_inset Formula $UF$
+\end_inset
+
+ החברות מתבצעות בסיבוכיות, כפי שראינו בהרצאה, של 
+\begin_inset Formula $O(\text{log}^{*}n)$
+\end_inset
+
+ - זאת בעזרת כיווץ מסלולים ואיחוד לפי גודל.
+\end_layout
+
+\begin_layout Itemize
+הסרה והוספה בעץ העובדים עם שכר היא 
+\begin_inset Formula $\log n$
+\end_inset
+
+ – כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מספר העובדים במערכת.
+ אלגוריתם החיפוש עובד לפי שמורת החיפוש בעץ ולכן כפי שנלמד בהרצאה יקח 
+\begin_inset Formula $\log n$
+\end_inset
+
+, אלגוריתם ההוספה עובד גם כפי הנלמד בהרצאה ולכן שומר על אותה סיבוכיות הזמן.
+ במקרה ההסרה, במקרה הגרוע נבצע לאורך המסלול עד לשורש תיקונים ל
+\begin_inset Formula $BF$
+\end_inset
+
+ ולכן הסיבוכיות היא אותה הסיבוכיות זמן.
+ בנוסף במהלך חלק מהפונקציות אנו מבצעים דפוס החוזר על עצמו : בדיקה האם האיבר
+ בעץ, הכנסה / הוצאה , נציין שאם נבצע 
+\begin_inset Formula $L$
+\end_inset
+
+ פעמים חיפוש בעץ עדיין מתקיים שעבור 
+\begin_inset Formula $J,L$
+\end_inset
+
+ מספר טבעי : 
+\begin_inset Formula $J\log k+L\log n=O(\log k+\log n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+סיבוכיות מקום:
+\end_layout
+
+\begin_layout Standard
+במערכת כולה יוחזקו 
+\begin_inset Formula $n$
+\end_inset
+
+ עובדים ו
+\begin_inset Formula $k$
+\end_inset
+
+ חברות - בנוסף לאובייקטים עצמם השמורים בזכרון, יהיו העצים והטבלאות הערבול
+ המוכלים במערכת, ובחברות, תלויים לינארית באותם משתנים.
+ סכום כל הצמתים והתאים של עצי וטבלאות העובדים בתוך החברות הינו 
+\begin_inset Formula $2n$
+\end_inset
+
+ מכיוון שזו חלוקה של העובדים )כל עובד יכול להיות בחברה אחת וישנו עץ וטבלה
+ אחת בכל חברה(, בנוסף - בתוך המערכת, ה
+\begin_inset Formula $UF$
+\end_inset
+
+ המחזיק את החברות מחזיק מספר קבוע של מערכים בגודל כמות החברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שבמערכת, העץ וטבלת הערבול של העובדים גם כן מחזיקים מספר קבוע של צמתים/תאים
+ כתלות לינארים במספר העובדים במערכת )נדגיש כי טבלת הערבול מבצעת צמצום אם
+ התפוסה קטנה מ
+\begin_inset Formula $25\%$
+\end_inset
+
+, ולכן גודלה תמיד לינארי בתפוסתה(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{init}}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+בפעולה מאתחלת את מבנה הנתונים, יוצרת 
+\begin_inset Formula $k$
+\end_inset
+
+ חברות ריקות ומכניסה כל אחת מהן לקבוצה משלה ב
+\begin_inset Formula $UnionFind$
+\end_inset
+
+ החברות.
+ בנוסף, יוצרת עץ ריק וטבלת ערבול ריקה של עובדים סך הכל, 
+\begin_inset Formula $O(k)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{AddEmployee}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+נבדוק את ערכי הפרמטרים, במידה ולא עומדים בתנאים נחזיר את השגיאה המתאימה.
+ נבצע חיפוש למציאת החברה שעלינו להוסיף את העובד ב
+\begin_inset Formula $UF$
+\end_inset
+
+ החברות )כפי שפירטנו בסעיף 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:סיבוכיות-זמן:"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הסיבוכיות היא 
+\begin_inset Formula $O(\log^{*}k)$
+\end_inset
+
+( אם החברה אינה נמצאת – נחזיר את השגיאה המתאימה.
+ ניצור את העובד, ונבצע חיפוש בטבלת הערבול לבדוק אם העובד כבר קיים במבנה
+ )
+\begin_inset Formula $O(1)$
+\end_inset
+
+(, אם הוא אינו קיים נבצע הכנסה אך ורק לטבלת הערבול )שכרו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(, ונבצע הכנסה לחברה )שגם מבצעת הכנסה רק לטבלת הערבול(.
+ נוסף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למניית הזוטרים ונוסיף את דרגתו לסכימת דרגותהים של הזוטרים.
+ סך הכל הסיבוכיות הינה 
+\begin_inset Formula $O\left(\log^{*}(k)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{RemoveEmployee}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+נבדוק את תקינות הפרמטרים, אם יש בעיה נחזיר את ערך ההחזרה המבוקש.
+ נחפש את העובד לפי המזהה, ונשיג את החברה שבה הוא עובד ממנו )
+\begin_inset Formula $O(1)$
+\end_inset
+
+(.
+ נסיר את העובד מכלל המבנים שבהם הוא נמצא, סך הכל 
+\begin_inset Formula $O(\log n)$
+\end_inset
+
+.
+ אם העובד בעל שכר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, נדע כי הוא זוטר ולא שווה הכנסה לעץ ולכן רק נסיר את דרגתו מסכום הדרגות
+ של הזוטרים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{AcquireCompany}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+נמצא את החברה הרוכשת והחברה הנרכשת ב
+\begin_inset Formula $UF$
+\end_inset
+
+ )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:סיבוכיות-זמן:"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( ונוודא שאכן שתי החברות בקבוצות זרות.
+ במידה והרכישה יכולה להתבצע נבצע מיזוג של החברות, כלומר מיזוג בין שני הקבוצות
+ ב
+\begin_inset Formula $UF$
+\end_inset
+
+ בתוספת ה
+\begin_inset Formula $factor$
+\end_inset
+
+, שיבצע עדכון הערך של קבוצת החברה הרוכשת ב
+\begin_inset Formula $UF$
+\end_inset
+
+.
+ בנוסף, נבצע מיזוג בין החברות שיעביר את כלל העובדים מטבלת הנרכש לרוכש ויבצע
+ מיזוג בין העצים.
+ סך הכל 
+\begin_inset Formula $O(\log^{*}k+n_{\text{Acquirer}}+n_{\text{Target}})$
+\end_inset
+
+ בשל שימוש בפונקציית 
+\begin_inset Formula $\text{merge}$
+\end_inset
+
+ וחיפוש החברות המתאימות.
+ נדגיש כי המבנים שמכילים עובדים בעץ הנרכש מתרוקנים ולכן לא משפיעים על סיבוכיות
+ המקום, על אף שהחברה נותרת במערכת.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{employeeSalaryIncrase}}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+נמצא את העובד המבוקש בטבלה, נשמור את השכר הנוכחי שלו לפני העדכון.
+ נשיג את החברה שהוא עובד בה ב
+\begin_inset Formula $O(1)$
+\end_inset
+
+ מהשדה השמור בעובד.
+ נסיר את העובד מעץ המשכורות של המערכת ושל החברה, נעדכן את שכרו ונחזיר אותו
+ לשני העצים.
+ לאחר מכן, אם שכרו הקודם היה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר הוא היה זוטר, נוריד את הדרגה שלו מסכום הדרגות ונקטין את מספר הזוטרים
+ ב
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כן בחברה וכן במערכת.
+ סך הכל, 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ בממוצע על הקלט.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{PromoteEmployee}}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ נמצא את העובד, נגדיר את דרגתו אם הפרמטר חיובי, אחרת נצא ונחזיר הצלחה.
+ אם העלנו את דרגתו, נוציא ונחזיר אותו לעצים של השכר אם הוא בעל שכר גבוהה
+ מ
+\numeric on
+0
+\numeric off
+.
+ אחרת, נעלה את סכימת הדרגות של הזוטרים בפרמטר הנתון.
+ סך הכל, בדומה ל
+\begin_inset Formula $salaryIncrease$
+\end_inset
+
+ הסיבוכיות היא 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{SumOfBumpGradeBetweenTopWorkersByGroup}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+לאחר בדיקת נכנות הקלט, נמצא את העץ הנכון לפי הפרמטר 
+\begin_inset Formula $companyID$
+\end_inset
+
+ כמפורט בתרגיל.
+ אם אין חברה מתאימה, נחזיר שגיאה.
+ לאחר מכן, נשתמש בפונקציית העץ 
+\begin_inset Formula $getHighetMValueSum$
+\end_inset
+
+ כדי לקבל את הערך הרצוי - סך הכל, זהו חיפוש בינארי בעץ דרגות מאוזן ולכן
+ 
+\begin_inset Formula $O(\log^{*}k+\log n)$
+\end_inset
+
+ בשל חיפוש החברה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{AverageBumpGradeBetweenSalaryByGroup}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+לאחר בדיקת נכונות הקלו, נמצא את העץ הנכון לפי הפרמטר כמפורט בתרגיל.
+ אם אין חברה מתאימה, נחזיר שגיאה.
+ לאחר מכן, נשתמש בפונקציית העץ 
+\begin_inset Formula $findNode$
+\end_inset
+
+ בכדי למצוא את ה
+\begin_inset Formula $node$
+\end_inset
+
+ הקרוב ביותר לתחום העליון - מימין, ולתחום התחתון - משמאל.
+ זאת נעשה על ידי 
+\begin_inset Quotes eld
+\end_inset
+
+חיפוש
+\begin_inset Quotes erd
+\end_inset
+
+ עובד עם 
+\begin_inset Formula $Id$
+\end_inset
+
+ מינימאלי ומקסימלי בהתאם עם השכר הרצוי.
+ לאחר שמצאנו את הצמתים הקרובים, נבצע תיקונים בהתאם להימצאותם בטווח.
+ כעת, נשתמש בפונקציית 
+\begin_inset Formula $getValueSumUpto$
+\end_inset
+
+ עבור שני הצמתים בקצוות הטווח ונחסיר את הקטן )בעצם - סכום הדרגות הקטנות
+ מהטווח הקטן( מהגדול, ונקבל את הטווח הרצוי בדיוק.
+ בדומה לכך, עם פרמטר שהעברנו לפונקציה נקבל גם את הכמות בכל תחום כזה.
+ נחשב את הממוצע כפי שלמדנו בטכניון ונחזיר אותו.
+ סך הכל, מתבצעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חיפושים בעץ מאוזן בנוסף לחיפוש החברה המתאימה )אולי( לכן בסך הכל 
+\begin_inset Formula $O\left(\log^{*}k+\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{GetAllEmployeesBySalary}}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+נבחר את עץ העובדים המממוין לפי השכר המתאים עפ
+\begin_inset Quotes erd
+\end_inset
+
+י ה 
+\begin_inset Formula $\text{companyID}$
+\end_inset
+
+, במידת הצורך על פי חיפוש בעץ החברות.
+ נקבל מערך 
+\begin_inset Formula $\text{inOrder}$
+\end_inset
+
+ של העץ לפי השכר בשימוש בפונקציה של העץ, ממנו ניצור מערך של תעודות זהות
+ ונחזיר את המערך הזה.
+ סך הכל סיבוכיות 
+\begin_inset Formula $O(\log k+n_{company})$
+\end_inset
+
+ כש
+\begin_inset Formula $\text{companyId > 0}$
+\end_inset
+
+, אחרת זהו מערך כל העובדים ולכן 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{companyValue}}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+נמצא את החברה המתאימה ב
+\begin_inset Formula $UnionFind$
+\end_inset
+
+ ונחזיר את הערך שלה שחישבנו בתוך המבנה כפי שראינו בתרגיל בשיטת הארגזים בתרגול.
+ סך הכל 
+\begin_inset Formula $O(\log^{*}k)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\textbf{Quit}}$
+\end_inset
+
+: תתבצע מחיקה של כלל העובדים במערכת לפי עץ העובדים הראשי, ומחיקה של כלל
+ החברות במערכת לפי עץ החברות הראשי.
+ כלל העצים מורכבים ממצביעים והינם תתי עצים של עצים אלו, לכן זו תהיה מחיקה
+ של כל הזכרון שהוקצה דינאמית.
+ 
+\end_layout
+
+\end_body
+\end_document
