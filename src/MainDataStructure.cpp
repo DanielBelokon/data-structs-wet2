@@ -88,8 +88,8 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
     }
     company->merge(acquiredCompany, factor);
     companies.merge(companyID, acquiredCompanyID, factor);
-    acquiredCompany->setFactor(factor);
-    acquiredCompany->setParentValueAtPurchase(company->getValue());
+    // acquiredCompany->setFactor(factor);
+    // acquiredCompany->setParentValueAtPurchase(company->getValue());
     return true;
 }
 

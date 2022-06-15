@@ -4,8 +4,8 @@ Company::Company(int companyID, int value) : companyID(companyID), value(value),
 {
     num_of_employees = 0;
     highest_earner = nullptr;
-    factor = 0;
-    parent_value_at_purchase = 0;
+    // factor = 0;
+    // parent_value_at_purchase = 0;
     interns_employees_count = 0;
     interns_grade_sum = 0;
 };
@@ -106,24 +106,24 @@ long long Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {
     return employees_tree_by_salary.getHighestMValueSum(m);
 }
-double Company::getFactor() const
-{
-    return factor;
-}
+// double Company::getFactor() const
+// {
+//     return factor;
+// }
 
-double Company::getParentValueAtPurchase() const
-{
-    return parent_value_at_purchase;
-}
+// double Company::getParentValueAtPurchase() const
+// {
+//     return parent_value_at_purchase;
+// }
 
-void Company::setParentValueAtPurchase(double parent_value_at_purchase)
-{
-    this->parent_value_at_purchase = parent_value_at_purchase;
-}
-void Company::setFactor(double factor)
-{
-    this->factor = factor;
-}
+// void Company::setParentValueAtPurchase(double parent_value_at_purchase)
+// {
+//     this->parent_value_at_purchase = parent_value_at_purchase;
+// }
+// void Company::setFactor(double factor)
+// {
+//     this->factor = factor;
+// }
 int Company::getInternsEmployeesCount() const
 {
     return interns_employees_count;
