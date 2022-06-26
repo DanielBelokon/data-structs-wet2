@@ -236,8 +236,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
     // TODO: replace print for final submission
     if (worker_count <= 0)
         throw EmployeeNotFoundException();
-    long double testing_value = std::round((rank_sum / (long double)worker_count) * 10.0) / 10.0;
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1Lf\n", testing_value); // rank_sum / (double)worker_count);
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (rank_sum / (double)worker_count));
 }
 
 double MainDataStructure::companyValue(int compnayID)
