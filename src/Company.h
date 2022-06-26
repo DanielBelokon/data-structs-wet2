@@ -13,8 +13,6 @@ class Company
     Employee *highest_earner;
     HashTable<Employee *> employees;
     AVLTree<Employee *> employees_tree_by_salary;
-    // double factor;
-    // double parent_value_at_purchase;
     int interns_employees_count;
     unsigned long long interns_grade_sum;
 
