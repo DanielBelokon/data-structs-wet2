@@ -151,7 +151,7 @@ int MainDataStructure::SumOfBumpGradeBetweenTopWorkersByGroup(int companyID, int
         throw InvalidInputException();
     }
 
-    long long sum;
+    unsigned long long sum;
 
     if (companyID == 0)
     {
@@ -178,7 +178,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         throw InvalidInputException();
     }
     AVLTree<Employee *> *tree;
-    long long rank_sum = 0, worker_count = 0;
+    unsigned long long rank_sum = 0, worker_count = 0;
     Company *company;
     if (companyID == 0)
     {
@@ -236,7 +236,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
     // TODO: replace print for final submission
     if (worker_count <= 0)
         throw EmployeeNotFoundException();
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1Lf\n", rank_sum / (long double)worker_count);
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", (rank_sum / (double)worker_count));
 }
 
 double MainDataStructure::companyValue(int compnayID)

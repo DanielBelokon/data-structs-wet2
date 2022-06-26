@@ -22,19 +22,19 @@ public:
     {
     }
 
-    void insert(T data, int value = 0);
+    void insert(T data, unsigned long long value = 0);
     void remove(T data);
     void merge(AVLTree<T> *tree);
 
     int getSize();
     Node<T> *getRoot() { return root; }
 
-    long long getValueSumUpto(T data, int *place);
+    unsigned long long getValueSumUpto(T data, int *place);
 
     T find(T object);
     T *getInOrderArray(int amount = 0);
     T getHighest();
-    long long getHighestMValueSum(int m);
+    unsigned long long getHighestMValueSum(int m);
 
     ~AVLTree();
 
@@ -50,7 +50,7 @@ private:
         return node1 < node2;
     }
 
-    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent, int value = 0);
+    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent, unsigned long long value = 0);
     void removeAux(T toDelete, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
@@ -92,7 +92,7 @@ T AVLTree<T>::getHighest()
 }
 
 template <typename T>
-void AVLTree<T>::insert(T data, int value)
+void AVLTree<T>::insert(T data, unsigned long long value)
 {
     if (find(data) != nullptr)
         return;
@@ -108,7 +108,7 @@ void AVLTree<T>::insert(T data, int value)
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, int value)
+Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent, unsigned long long value)
 {
     if (current == nullptr)
     {
@@ -501,9 +501,9 @@ void AVLTree<T>::updateRankPostorder(Node<T> *current)
 
 // find the node that have m bigger node than the current node
 template <typename T>
-long long AVLTree<T>::getHighestMValueSum(int m)
+unsigned long long AVLTree<T>::getHighestMValueSum(int m)
 {
-    long long cur_bigger_rank = 0;
+    unsigned long long cur_bigger_rank = 0;
     int cur_bigger_size = 0;
 
     Node<T> *cur_node = this->root;
@@ -532,10 +532,10 @@ long long AVLTree<T>::getHighestMValueSum(int m)
 }
 
 template <typename T>
-long long AVLTree<T>::getValueSumUpto(T object, int *place)
+unsigned long long AVLTree<T>::getValueSumUpto(T object, int *place)
 {
     Node<T> *current = root;
-    long long value = 0;
+    unsigned long long value = 0;
     *place = 0;
     while (current != nullptr)
     {

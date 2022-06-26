@@ -102,7 +102,7 @@ HashTable<Employee *> *Company::getEmployees()
 {
     return &employees;
 }
-long long Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
+unsigned long long Company::SumOfBumpGradeBetweenTopWorkersByGroup(int m)
 {
     return employees_tree_by_salary.getHighestMValueSum(m);
 }
@@ -128,13 +128,11 @@ int Company::getInternsEmployeesCount() const
 {
     return interns_employees_count;
 }
-int Company::getInternsGradeSum() const
+unsigned long long Company::getInternsGradeSum() const
 {
     return interns_grade_sum;
 }
-void Company::increaseInternsGradeSum(int bumpGrade)
+void Company::increaseInternsGradeSum(unsigned long long bumpGrade)
 {
-    if (bumpGrade < 0)
-        return;
     interns_grade_sum += bumpGrade;
 }
