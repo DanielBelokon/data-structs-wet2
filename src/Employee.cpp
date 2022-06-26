@@ -22,7 +22,7 @@ bool Employee::compareByPointer(Employee *const &temp1, Employee *const &temp2)
     return temp1->getEmployeeID() < temp2->getEmployeeID();
 }
 
-int Employee::getGrade() const
+unsigned long long Employee::getGrade() const
 {
     return grade;
 };
@@ -45,7 +45,8 @@ Company *Employee::getCompany() const
     return company;
 }
 
-void Employee::setGrade(int grade){
+void Employee::setGrade(unsigned long long grade)
+{
     this->grade = grade;
 }
 

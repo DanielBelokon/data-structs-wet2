@@ -7,8 +7,8 @@ class Company;
 class Employee
 {
     int employee_id;
-    int salary;
-    int grade; // the rank of the employee
+    unsigned long long salary;
+    unsigned long long grade; // the rank of the employee
     Company *company;
 
 public:
@@ -19,13 +19,13 @@ public:
     Employee(int employee_id, Company *company, int salary , int grade);
     ~Employee() = default;
 
-    int getGrade() const;
+    unsigned long long getGrade() const;
     int getSalary() const;
     int getEmployeeID() const;
     int getCompanyID() const;
     Company *getCompany() const;
     void setCompany(Company *company);
-    void setGrade(int grade);
+    void setGrade(unsigned long long grade);
     void increaseGrade(int bumpGrade);
     void setSalary(int salary);
     void increaseSalary(int salary);

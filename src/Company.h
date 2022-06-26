@@ -16,7 +16,7 @@ class Company
     // double factor;
     // double parent_value_at_purchase;
     int interns_employees_count;
-    int interns_grade_sum;
+    unsigned long long interns_grade_sum;
 
 public:
     Company() = default;
@@ -41,13 +41,13 @@ public:
     bool operator>(const Company &other) const;
     bool operator==(const Company &other) const;
     bool operator!=(const Company &other) const;
-    long long SumOfBumpGradeBetweenTopWorkersByGroup(int m);
+    unsigned long long SumOfBumpGradeBetweenTopWorkersByGroup(int m);
     static bool compareByPointer(Company *const &a, Company *const &b);
     HashTable<Employee *> *getEmployees();
     void upgradeIntern(Employee *employee);
     int getInternsEmployeesCount() const;
-    int getInternsGradeSum() const;
-    void increaseInternsGradeSum(int bumpGrade);
+    unsigned long long getInternsGradeSum() const;
+    void increaseInternsGradeSum(unsigned long long bumpGrade);
 
 private:
     void transferEmployees(Company *new_company, Node<Employee *> *current);

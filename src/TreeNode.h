@@ -5,11 +5,11 @@ class Node
 {
 private:
     T data;
-    int value;
+    unsigned long long value;
     Node<T> *left;
     Node<T> *right;
-    int left_value; // sum of the ranks of all the nodes in the left subtree
-    int right_value;
+    unsigned long long left_value; // sum of the ranks of all the nodes in the left subtree
+    unsigned long long right_value;
     int left_size; // number of nodes in the left subtree
     int right_size;
     int height;
@@ -39,9 +39,9 @@ public:
     }
     T getData() { return data; }
 
-    void setValue(int value) { this->value = value; }
-    int getNodeValue() { return value; }
-    int getSubtreeValue()
+    void setValue(unsigned long long value) { this->value = value; }
+    unsigned long long getNodeValue() { return value; }
+    unsigned long long getSubtreeValue()
     {
         return value + left_value + right_value;
     }
@@ -81,12 +81,12 @@ public:
         updateParameters();
     }
 
-    int getRightValue()
+    unsigned long long getRightValue()
     {
         return right_value;
     }
 
-    int getLeftValue()
+    unsigned long long getLeftValue()
     {
         return left_value;
     }

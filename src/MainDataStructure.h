@@ -23,7 +23,7 @@ private:
     AVLTree<Employee *> employees_tree_by_salary;
     int num_of_companies;
     int interns_employees_count;
-    int interns_grade_sum;
+    unsigned long long interns_grade_sum;
 
 public:
     MainDataStructure(int k);
