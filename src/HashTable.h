@@ -244,7 +244,7 @@ void HashTable<T>::resize(bool downsize)
         capacity *= 2;
     HashNode<T> *new_array = new HashNode<T>[capacity];
     HashNode<T> *prev_array = table;
-    // int old_size = size;
+
     size = 0;
     table = new_array;
 
@@ -252,30 +252,11 @@ void HashTable<T>::resize(bool downsize)
     {
         if (prev_array[i].getId() == -1 || prev_array[i].isDeleted())
             continue;
-        // int key = hash(prev_array[i].getId());
-        // if (key >= capacity || key < 0)
-        //     throw std::bad_alloc();
         insert(prev_array[i].getId(), prev_array[i].getData());
-        // new_array[key].setData(prev_array[i].getData());
-        // new_array[key].setId(prev_array[i].getId());
-        // new_size++;
-        // new_array[key].setDeleted(table[i].isDeleted());
     }
 
     delete[] prev_array;
 }
-
-// template <typename T>
-// T HashTable<T>::operator[](int id)
-// {
-//     return search(id);
-// }
-
-// template <typename T>
-// T HashTable<T>::operator[](int id) const
-// {
-//     return search(id);
-// }
 
 template <typename T>
 int HashTable<T>::getId(int key)

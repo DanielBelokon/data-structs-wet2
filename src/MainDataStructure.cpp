@@ -2,7 +2,6 @@
 
 MainDataStructure::MainDataStructure(int k) : companies(k + 1), employees()
 {
-    // TODO: implement this
     this->num_of_companies = k;
     this->interns_employees_count = 0;
     this->interns_grade_sum = 0;
@@ -88,8 +87,6 @@ bool MainDataStructure::AcquireCompany(int companyID, int acquiredCompanyID, dou
     }
     company->merge(acquiredCompany, factor);
     companies.merge(companyID, acquiredCompanyID, factor);
-    // acquiredCompany->setFactor(factor);
-    // acquiredCompany->setParentValueAtPurchase(company->getValue());
     return true;
 }
 
@@ -181,7 +178,6 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         throw InvalidInputException();
     }
     AVLTree<Employee *> *tree;
-    bool include_zero_salary = (lowerSalary == 0);
     long long rank_sum = 0, worker_count = 0;
     Company *company;
     if (companyID == 0)
@@ -193,9 +189,8 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         company = findCompanyById(companyID);
         tree = company->getEmployeesTreeBySalary();
     }
-
     // calculate sum and amount in range between salaried workers
-    // find minimum salaried node that is close to range?
+    // find minimum salaried node that is close to range
     if (higherSalary != 0 && tree->getSize() != 0)
     {
         int minAmount = 0, maxAmount = 0;
@@ -204,7 +199,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         Node<Employee *> *node = tree->findNode(&temp_min_emp, &min_emp_node);
         min_emp_node = (node != nullptr) ? node : min_emp_node;
         rank_sum -= tree->getValueSumUpto(min_emp_node->getData(), &minAmount);
-        // if the minimun not in our range
+        // if the minimum not in our range
         if (min_emp_node->getData()->getSalary() >= lowerSalary)
         {
             rank_sum += min_emp_node->getNodeValue();
@@ -225,7 +220,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
         worker_count += (maxAmount - minAmount);
     }
 
-    if (include_zero_salary)
+    if (lowerSalary == 0)
     {
         if (companyID == 0)
         {
@@ -241,8 +236,7 @@ void MainDataStructure::AverageBumpGradeBetweenSalaryByGroup(int companyID, int 
     // TODO: replace print for final submission
     if (worker_count <= 0)
         throw EmployeeNotFoundException();
-    long double testing_value = std::round((rank_sum / (long double)worker_count) * 10.0) / 10.0;
-    printf("AverageBumpGradeBetweenSalaryByGroup: %.1Lf\n", testing_value); // rank_sum / (double)worker_count);
+    printf("AverageBumpGradeBetweenSalaryByGroup: %.1Lf\n", rank_sum / (long double)worker_count);
 }
 
 double MainDataStructure::companyValue(int compnayID)
@@ -253,16 +247,6 @@ double MainDataStructure::companyValue(int compnayID)
     }
     printf("CompanyValue: %.1Lf\n", companies.getValue(compnayID));
     return 0;
-    // Company *company = companies.findObject(compnayID);
-    // Company *parentCompany = findCompanyById(compnayID);
-
-    // if (company == parentCompany)
-    // {
-    //     printf("CompanyValue: %.1f\n", (double)parentCompany->getValue());
-    //     return company->getValue();
-    // }
-    // printf("CompanyValue: %.1f\n", parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue());
-    // return parentCompany->getValue() - company->getParentValueAtPurchase() + company->getValue();
 }
 
 void MainDataStructure::BumpGradeToEmployees(int lowerSalary, int higherSalary, int bumpGrade)

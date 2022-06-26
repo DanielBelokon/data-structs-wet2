@@ -1,8 +1,6 @@
 #ifndef UNIONFIND_H
 #define UNIONFIND_H
 
-#include "DynamicArray.h"
-
 template <class T>
 class UnionFind
 {
